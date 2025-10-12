@@ -21,7 +21,7 @@ export const ThemeToggle = () => {
       variant="outline"
       size="icon"
       onClick={toggleTheme}
-      className="fixed bottom-8 right-6 rounded-full w-12 h-12 border-2 border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
+      className="fixed bottom-8 right-6 md:right-[calc((100vw-1280px)/2+1.5rem)] lg:right-[calc((100vw-1280px)/2+1.5rem)] rounded-full w-12 h-12 border-2 border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
       aria-label="Toggle theme"
     >
       {theme === "light" ? (
