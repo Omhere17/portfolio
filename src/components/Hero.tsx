@@ -6,7 +6,8 @@ export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-4 items-center">
+        <div className="flex flex-col lg:flex-row items-center lg:gap-6"
+
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
