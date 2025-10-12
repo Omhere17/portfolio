@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
             <div className="relative">
@@ -22,7 +22,7 @@ export const Hero = () => {
 
           {/* Content */}
           <div className="text-center lg:text-left">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 leading-tight whitespace-nowrap">
               Hello! I'm Om Tiwari
             </h1>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold italic text-primary mb-8 leading-tight">
