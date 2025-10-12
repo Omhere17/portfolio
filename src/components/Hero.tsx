@@ -5,7 +5,7 @@ import profileImage from "@/assets/profile.png";
 export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-0">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Profile Image */}
           <div className="flex justify-center lg:justify-start">
@@ -30,10 +30,8 @@ export const Hero = () => {
             </h2>
 
             <p className="text-base sm:text-lg text-muted-foreground mb-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              Designing with intent, blending innovation and aesthetics to create
-              intuitive, user-centered experiences. Passionate about using design
-              for social good, currently honing my craft as a UXD student at
-              MIT-SD.
+              Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.
+              Passionate about using design for social good, currently honing my craft as a UXD student at MIT-SD.
             </p>
 
             <div className="flex items-center gap-2 mb-8 justify-center lg:justify-start">
