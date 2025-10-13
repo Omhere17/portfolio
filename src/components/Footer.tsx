@@ -1,0 +1,101 @@
+import { Button } from "@/components/ui/button";
+import { ArrowUp, ArrowUpRight } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
+
+export const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  return (
+    <>
+      {/* Scroll Up Button */}
+      <div className="flex justify-center py-12 bg-background">
+        <Button
+          variant="outline"
+          size="lg"
+          onClick={scrollToTop}
+          className="rounded-full px-8 py-6 text-base font-medium"
+        >
+          <ArrowUp className="h-5 w-5 mr-2" />
+          Scroll Up
+        </Button>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-[#2d3e7e] text-white">
+        <div className="container mx-auto px-6 py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            {/* Left Section */}
+            <div className="space-y-8">
+              <h2 className="text-5xl font-bold">Om.</h2>
+              
+              <div className="flex gap-6">
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-8 w-8 fill-[#0077b5]" />
+                </a>
+                <a
+                  href="https://behance.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  aria-label="Behance"
+                >
+                  <svg
+                    className="h-8 w-8"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                  >
+                    <path d="M6.5 4.5h5.062c1.875 0 3.438 1.5 3.438 3.375 0 1.312-.75 2.438-1.875 2.938 1.5.375 2.625 1.687 2.625 3.312 0 2.063-1.688 3.375-3.75 3.375H6.5V4.5zm2.25 5.25h2.625c.75 0 1.313-.563 1.313-1.313s-.563-1.312-1.313-1.312H8.75v2.625zm0 5.625h3c.75 0 1.5-.75 1.5-1.5s-.75-1.5-1.5-1.5h-3v3zM15.5 7.5h5.25V9H15.5V7.5zm2.625 3.75c-2.063 0-3.75 1.688-3.75 3.75s1.687 3.75 3.75 3.75c1.687 0 3.187-1.125 3.562-2.625h-2.062c-.188.563-.75.938-1.5.938-1.125 0-1.875-.75-1.875-1.875h5.625c.063-.375.063-.563.063-.75 0-2.063-1.688-3.938-3.813-3.938zm-1.5 3c.188-.938.938-1.5 1.688-1.5s1.5.562 1.687 1.5h-3.375z" />
+                  </svg>
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:opacity-80 transition-opacity"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-8 w-8" />
+                </a>
+              </div>
+            </div>
+
+            {/* Right Section */}
+            <div className="space-y-8">
+              <p className="text-lg leading-relaxed flex items-start gap-2">
+                I'd love to hear your thoughts or suggestions on my work! You can
+                also reach out for collaborations or just say hello!
+                <ArrowUpRight className="h-5 w-5 flex-shrink-0 mt-1" />
+              </p>
+
+              <nav className="flex flex-col gap-4 text-lg">
+                <a href="#work" className="hover:opacity-80 transition-opacity">
+                  Work
+                </a>
+                <a href="#about" className="hover:opacity-80 transition-opacity">
+                  About
+                </a>
+                <a href="#contact" className="hover:opacity-80 transition-opacity">
+                  Contact
+                </a>
+              </nav>
+            </div>
+          </div>
+
+          {/* Bottom Bar */}
+          <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
+            <p>© 2024 Om.</p>
+            <p>Developed & Designed by Om.</p>
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
