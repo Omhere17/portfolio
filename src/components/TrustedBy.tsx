@@ -5,8 +5,8 @@ import antefLogo from "@/assets/antef-logo.png";
 export const TrustedBy = () => {
   const logos = [
     { src: devncoLogo, alt: "Devnco", size: "h-8" },
-    { src: mitsdLogo, alt: "MITSD", size: "h-6" },
-    { src: antefLogo, alt: "Antef", size: "h-6" },
+    { src: mitsdLogo, alt: "MITSD", size: "h-8" },
+    { src: antefLogo, alt: "Antef", size: "h-8" },
   ];
 
   // Triple logos for seamless endless loop
