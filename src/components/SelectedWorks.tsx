@@ -30,7 +30,7 @@ const projects = [
 
 export const SelectedWorks = () => {
   return (
-    <section className="relative min-h-screen py-16 lg:py-24">
+    <section className="relative min-h-screen py-32 lg:py-48">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:gap-12">
           {/* Sticky Title - Desktop */}
@@ -49,18 +49,18 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Mobile/Tablet Title - Sticky */}
-          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-6 mb-12">
+          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-8 sm:px-10 mb-8 sm:mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap">
               Selected Works
             </h2>
           </div>
 
           {/* Projects Grid */}
-          <div className="flex-1 space-y-32 lg:space-y-48">
+          <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48">
             {projects.map((project) => (
               <article 
                 key={project.id} 
-                className="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-16"
+                className="flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16"
               >
                 {/* Project Image */}
                 <div className="lg:w-1/2">
@@ -74,17 +74,17 @@ export const SelectedWorks = () => {
                 </div>
 
                 {/* Project Details */}
-                <div className="lg:w-1/2 space-y-6">
-                  <h3 className="text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                <div className="lg:w-1/2 space-y-4 sm:space-y-6">
+                  <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
                     {project.title}
                   </h3>
 
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 scrollbar-hide">
                     {project.tags.map((tag, index) => (
                       <Badge 
                         key={index}
                         variant="outline" 
-                        className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground"
+                        className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground whitespace-nowrap flex-shrink-0"
                       >
                         {tag}
                       </Badge>
