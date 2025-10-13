@@ -21,26 +21,14 @@ export const ThemeToggle = () => {
       variant="outline"
       size="icon"
       onClick={toggleTheme}
-      className="
-        fixed 
-        bottom-8 
-        right-[calc((100vw-1280px)/2+1.5rem)] 
-        md:right-[calc((100vw-1280px)/2+7rem)]
-        lg:right-[calc((100vw-1280px)/2+8rem)]
-        rounded-full 
-        w-12 
-        h-12 
-        border-2 
-        border-foreground 
-        hover:bg-foreground 
-        hover:text-background 
-        transition-all 
-        duration-300
-        z-50
-      "
+      className="fixed bottom-8 right-6 md:right-[calc((100vw-1280px)/2+1.5rem)] lg:right-[calc((100vw-1280px)/2+1.5rem)] rounded-full w-12 h-12 border-2 border-foreground hover:bg-foreground hover:text-background transition-all duration-300"
       aria-label="Toggle theme"
     >
-      {theme === "light" ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+      {theme === "light" ? (
+        <Moon className="h-5 w-5" />
+      ) : (
+        <Sun className="h-5 w-5" />
+      )}
     </Button>
   );
 };
