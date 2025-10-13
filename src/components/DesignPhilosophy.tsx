@@ -14,7 +14,7 @@ export const DesignPhilosophy = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="rounded-full px-8 py-6 text-base font-medium hover:bg-black hover:text-white dark:bg-[#222222] dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
+              className="rounded-full px-8 py-6 text-base font-medium"
               asChild
             >
               <a href="#work" className="flex items-center gap-2">
@@ -26,7 +26,7 @@ export const DesignPhilosophy = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="rounded-full px-8 py-6 text-base font-medium hover:bg-black hover:text-white dark:bg-[#222222] dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black"
+              className="rounded-full px-8 py-6 text-base font-medium"
               asChild
             >
               <a href="#about" className="flex items-center gap-2">
