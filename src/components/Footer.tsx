@@ -107,6 +107,16 @@ export const Footer = () => {
               </div>
 
               {/* Desktop: Navigation Links aligned with social icons */}
+            </div>
+
+            {/* Right Section */}
+            <div className="space-y-8">
+              <p className="text-lg leading-relaxed">
+                I'd love to hear your thoughts or suggestions on my work! You can
+                also reach out for collaborations or just say hello!
+              </p>
+
+              {/* Desktop: Navigation Links under text */}
               <nav className="hidden lg:flex gap-12 text-lg">
                 <a href="#work" className="hover:opacity-80 transition-opacity">
                   Work
@@ -121,14 +131,6 @@ export const Footer = () => {
                   Resume
                 </a>
               </nav>
-            </div>
-
-            {/* Right Section */}
-            <div className="space-y-8">
-              <p className="text-lg leading-relaxed">
-                I'd love to hear your thoughts or suggestions on my work! You can
-                also reach out for collaborations or just say hello!
-              </p>
             </div>
           </div>
 
