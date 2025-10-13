@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowUp, ArrowUpRight } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { Linkedin, Instagram } from "lucide-react";
 
 export const Footer = () => {
@@ -25,7 +25,7 @@ export const Footer = () => {
       {/* Footer */}
       <footer className="bg-[#2d3e7e] text-white">
         <div className="container mx-auto px-6 py-16">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             {/* Left Section */}
             <div className="space-y-8">
               <h2 className="text-5xl font-bold">Om.</h2>
@@ -38,7 +38,7 @@ export const Footer = () => {
                   className="hover:opacity-80 transition-opacity"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin className="h-8 w-8 fill-[#0077b5]" />
+                  <Linkedin className="h-8 w-8" />
                 </a>
                 <a
                   href="https://behance.net"
@@ -69,30 +69,33 @@ export const Footer = () => {
 
             {/* Right Section */}
             <div className="space-y-8">
-              <p className="text-lg leading-relaxed flex items-start gap-2">
+              <p className="text-lg leading-relaxed">
                 I'd love to hear your thoughts or suggestions on my work! You can
                 also reach out for collaborations or just say hello!
-                <ArrowUpRight className="h-5 w-5 flex-shrink-0 mt-1" />
               </p>
-
-              <nav className="flex flex-col gap-4 text-lg">
-                <a href="#work" className="hover:opacity-80 transition-opacity">
-                  Work
-                </a>
-                <a href="#about" className="hover:opacity-80 transition-opacity">
-                  About
-                </a>
-                <a href="#contact" className="hover:opacity-80 transition-opacity">
-                  Contact
-                </a>
-              </nav>
             </div>
           </div>
 
+          {/* Navigation Links */}
+          <nav className="flex flex-wrap gap-6 lg:gap-12 text-lg mb-12 justify-center lg:justify-start">
+            <a href="#work" className="hover:opacity-80 transition-opacity">
+              Work
+            </a>
+            <a href="#about" className="hover:opacity-80 transition-opacity">
+              About
+            </a>
+            <a href="#contact" className="hover:opacity-80 transition-opacity">
+              Contact
+            </a>
+            <a href="#resume" className="hover:opacity-80 transition-opacity">
+              Resume
+            </a>
+          </nav>
+
           {/* Bottom Bar */}
           <div className="border-t border-white/20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm">
-            <p>© 2024 Om.</p>
-            <p>Developed & Designed by Om.</p>
+            <p>© 2025 Om</p>
+            <p>Developed and designed by om.</p>
           </div>
         </div>
       </footer>
