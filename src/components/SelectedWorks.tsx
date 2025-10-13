@@ -34,10 +34,10 @@ export const SelectedWorks = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:gap-12">
           {/* Sticky Title - Desktop */}
-          <div className="hidden lg:block lg:w-48">
+          <div className="hidden lg:block lg:w-32">
             <div className="sticky top-1/2 -translate-y-1/2">
               <h2 
-                className="text-7xl xl:text-8xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center"
+                className="text-5xl xl:text-6xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center"
                 style={{ 
                   writingMode: 'vertical-rl',
                   transform: 'rotate(180deg)'
@@ -48,9 +48,9 @@ export const SelectedWorks = () => {
             </div>
           </div>
 
-          {/* Mobile Title */}
-          <div className="lg:hidden mb-12">
-            <h2 className="text-6xl sm:text-7xl font-bold text-muted-foreground/30">
+          {/* Mobile/Tablet Title - Sticky */}
+          <div className="lg:hidden sticky top-20 z-10 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6 mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap">
               Selected Works
             </h2>
           </div>
