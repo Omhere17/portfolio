@@ -35,8 +35,8 @@ export const SelectedWorks = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:gap-6">
           {/* Sticky Title - Desktop */}
-          <div className="hidden lg:block lg:w-32 lg:self-start">
-            <div className="sticky top-1/2 -translate-y-1/2 h-screen">
+          <div className="hidden lg:block lg:w-32">
+            <div className="sticky top-1/2 -translate-y-1/2">
               <h2
                 className="text-5xl xl:text-6xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center"
                 style={{
