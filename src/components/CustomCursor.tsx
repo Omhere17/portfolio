@@ -17,9 +17,9 @@ export const CustomCursor = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-[42px] h-[42px] pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-[24px] h-[24px] pointer-events-none z-[9999]"
       style={{
-        transform: `translate(${position.x - 21}px, ${position.y - 21}px)`,
+        transform: `translate(${position.x - 12}px, ${position.y - 12}px)`,
       }}
     >
       <div className="w-full h-full rounded-full bg-black dark:bg-white" />
