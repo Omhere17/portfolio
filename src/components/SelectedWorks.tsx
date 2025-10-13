@@ -30,7 +30,7 @@ const projects = [
 
 export const SelectedWorks = () => {
   return (
-    <section className="relative min-h-screen pt-32 lg:pt-48 pb-16 lg:pb-24">
+    <section className="relative min-h-screen pt-32 lg:pt-48 pb-0">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:gap-12">
           {/* Sticky Title - Desktop */}
