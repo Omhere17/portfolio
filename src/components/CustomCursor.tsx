@@ -47,12 +47,12 @@ export const CustomCursor = () => {
     >
       <div className={`w-full h-full flex items-center justify-center ${
         isOverProject 
-          ? 'rounded-full bg-primary text-primary-foreground text-sm font-medium' 
+          ? 'rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium' 
           : isOverText 
             ? 'bg-primary' 
             : 'rounded-full bg-black dark:bg-white'
       }`}>
-        {isOverProject && <span>View Project</span>}
+        {isOverProject && <span>view</span>}
       </div>
     </div>
   );
