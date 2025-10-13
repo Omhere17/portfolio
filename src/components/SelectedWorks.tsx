@@ -33,7 +33,7 @@ export const SelectedWorks = () => {
   return (
     <section className="relative min-h-screen pt-32 lg:pt-48 pb-0">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:gap-8">
+        <div className="flex flex-col lg:flex-row lg:gap-6">
           {/* Sticky Title - Desktop */}
           <div className="hidden lg:block lg:w-32">
             <div className="sticky top-1/2 -translate-y-1/2">
