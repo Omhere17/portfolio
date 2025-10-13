@@ -35,10 +35,10 @@ export const SelectedWorks = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:gap-6">
           {/* Sticky Title - Desktop */}
-          <div className="hidden lg:block lg:w-32">
-            <div className="sticky top-1/2 -translate-y-1/2">
+          <div className="hidden lg:block lg:w-32 relative">
+            <div className="sticky top-1/2 -translate-y-1/2 h-[200vh]">
               <h2
-                className="text-5xl xl:text-6xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center"
+                className="text-5xl xl:text-6xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center sticky top-1/2 -translate-y-1/2"
                 style={{
                   writingMode: "vertical-rl",
                   transform: "rotate(180deg)",
@@ -57,7 +57,7 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-16 lg:pb-[50vh]">
+          <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-[50vh]">
             {projects.map((project) => (
               <article
                 key={project.id}
