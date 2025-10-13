@@ -14,7 +14,7 @@ export const TrustedBy = () => {
 
   return (
     <section className="py-16 overflow-hidden">
-      <div className="container mx-auto px-12 lg:px-16">
+      <div className="container mx-auto px-16 lg:px-24">
         <h3 className="text-center text-2xl font-medium mb-12">Trusted by</h3>
         
         <div className="relative flex items-center">
