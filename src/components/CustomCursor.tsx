@@ -28,7 +28,7 @@ export const CustomCursor = () => {
   }, []);
 
   const getSize = () => {
-    if (isOverProject) return { width: 120, height: 120 };
+    if (isOverProject) return { width: 80, height: 80 };
     if (isOverText) return { width: 3, height: 32 };
     return { width: 24, height: 24 };
   };
