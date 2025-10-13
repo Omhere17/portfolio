@@ -26,7 +26,7 @@ export const TrustedBy = () => {
                   alt={logo.alt}
                   className={`${logo.size} w-auto opacity-60 hover:opacity-100 transition-opacity`}
                 />
-                <div className="w-2 h-2 rounded-full bg-primary ml-16" />
+                <div className="w-4 h-4 rounded-full bg-primary ml-16" />
               </div>
             ))}
           </div>
