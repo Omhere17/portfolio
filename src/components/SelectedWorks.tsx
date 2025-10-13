@@ -49,7 +49,7 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Mobile/Tablet Title - Sticky */}
-          <div className="lg:hidden sticky top-20 z-10 bg-background/80 backdrop-blur-sm py-4 -mx-6 px-6 mb-12">
+          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-6 mb-12">
             <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap">
               Selected Works
             </h2>
