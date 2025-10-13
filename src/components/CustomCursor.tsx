@@ -17,12 +17,12 @@ export const CustomCursor = () => {
 
   return (
     <div
-      className="fixed top-0 left-0 w-16 h-16 pointer-events-none z-[9999]"
+      className="fixed top-0 left-0 w-[42px] h-[42px] pointer-events-none z-[9999]"
       style={{
-        transform: `translate(${position.x - 32}px, ${position.y - 32}px)`,
+        transform: `translate(${position.x - 21}px, ${position.y - 21}px)`,
       }}
     >
-      <div className="w-full h-full rounded-full bg-black/60 dark:bg-white/60 blur-md" />
+      <div className="w-full h-full rounded-full bg-black dark:bg-white" />
     </div>
   );
 };
