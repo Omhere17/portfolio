@@ -24,11 +24,11 @@ export const CustomCursor = () => {
   return (
     <div
       className={`fixed top-0 left-0 pointer-events-none z-[9999] ${
-        isOverText ? 'w-[2px] h-[24px]' : 'w-[24px] h-[24px]'
+        isOverText ? 'w-[3px] h-[32px]' : 'w-[24px] h-[24px]'
       }`}
       style={{
         transform: isOverText 
-          ? `translate(${position.x - 1}px, ${position.y - 12}px)`
+          ? `translate(${position.x - 1.5}px, ${position.y - 16}px)`
           : `translate(${position.x - 12}px, ${position.y - 12}px)`,
         willChange: 'transform',
       }}
