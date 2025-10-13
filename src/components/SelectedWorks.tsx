@@ -5,10 +5,11 @@ const projects = [
   {
     id: 1,
     title: "Kaze Airlines branding",
-    description: "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
+    description:
+      "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
     tags: ["Branding", "Visual Design", "Visual Design"],
     image: "/placeholder.svg",
-    link: "#"
+    link: "#",
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ const projects = [
     description: "Transforming the shopping experience with modern UI patterns and seamless checkout flows.",
     tags: ["UI/UX Design", "Research", "Prototyping"],
     image: "/placeholder.svg",
-    link: "#"
+    link: "#",
   },
   {
     id: 3,
@@ -24,23 +25,23 @@ const projects = [
     description: "Empowering patients with easy access to health records and appointment scheduling.",
     tags: ["Mobile Design", "UX Research", "Accessibility"],
     image: "/placeholder.svg",
-    link: "#"
-  }
+    link: "#",
+  },
 ];
 
 export const SelectedWorks = () => {
   return (
     <section className="relative min-h-screen pt-32 lg:pt-48 pb-0">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:gap-12">
+        <div className="flex flex-col lg:flex-row lg:gap-8">
           {/* Sticky Title - Desktop */}
           <div className="hidden lg:block lg:w-32">
             <div className="sticky top-1/2 -translate-y-1/2">
-              <h2 
+              <h2
                 className="text-5xl xl:text-6xl font-bold text-muted-foreground/30 whitespace-nowrap origin-center"
-                style={{ 
-                  writingMode: 'vertical-rl',
-                  transform: 'rotate(180deg)'
+                style={{
+                  writingMode: "vertical-rl",
+                  transform: "rotate(180deg)",
                 }}
               >
                 Selected Works
@@ -58,18 +59,14 @@ export const SelectedWorks = () => {
           {/* Projects Grid */}
           <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-[50vh]">
             {projects.map((project) => (
-              <article 
-                key={project.id} 
+              <article
+                key={project.id}
                 className="flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16"
               >
                 {/* Project Image */}
                 <div className="lg:w-1/2">
                   <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                    <img 
-                      src={project.image} 
-                      alt={project.title}
-                      className="w-full h-full object-cover"
-                    />
+                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
                   </div>
                 </div>
 
@@ -81,9 +78,9 @@ export const SelectedWorks = () => {
 
                   <div className="flex flex-wrap lg:flex-nowrap gap-2">
                     {project.tags.map((tag, index) => (
-                      <Badge 
+                      <Badge
                         key={index}
-                        variant="outline" 
+                        variant="outline"
                         className="rounded-full px-2.5 py-1 text-xs sm:px-4 sm:py-1.5 sm:text-sm border-2 border-foreground whitespace-nowrap"
                       >
                         {tag}
@@ -93,15 +90,13 @@ export const SelectedWorks = () => {
 
                   <div className="w-12 h-0.5 bg-foreground" />
 
-                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
+                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">{project.description}</p>
 
-                  <a 
+                  <a
                     href={project.link}
                     className="inline-flex items-center gap-2 text-lg font-medium text-primary hover:underline"
                   >
-                    View Project 
+                    View Project
                     <ArrowUpRight className="h-5 w-5" />
                   </a>
                 </div>
