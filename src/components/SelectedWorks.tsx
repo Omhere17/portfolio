@@ -57,7 +57,7 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Projects Grid */}
-          <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-16">
+          <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-16 lg:pb-[50vh]">
             {projects.map((project) => (
               <article
                 key={project.id}
