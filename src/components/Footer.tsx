@@ -23,7 +23,7 @@ export const Footer = () => {
       </div>
 
       {/* Footer */}
-      <footer className="bg-[#2d3e7e] text-white">
+      <footer className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-6 py-16">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             {/* Left Section */}
