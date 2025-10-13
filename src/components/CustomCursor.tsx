@@ -8,9 +8,9 @@ export const CustomCursor = () => {
     const updatePosition = (e: MouseEvent) => {
       setPosition({ x: e.clientX, y: e.clientY });
       
-      // Check if hovering over text elements
+      // Check if hovering over text elements (excluding buttons)
       const target = e.target as HTMLElement;
-      const isText = target.matches('p, h1, h2, h3, h4, h5, h6, span, a, li, label, button');
+      const isText = target.matches('p, h1, h2, h3, h4, h5, h6, span, a, li, label');
       setIsOverText(isText);
     };
 
