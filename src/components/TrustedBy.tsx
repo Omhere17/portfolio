@@ -4,16 +4,16 @@ import antefLogo from "@/assets/antef-logo.png";
 
 export const TrustedBy = () => {
   const logos = [
-    { src: devncoLogo, alt: "Devnco" },
-    { src: mitsdLogo, alt: "MITSD" },
-    { src: antefLogo, alt: "Antef" },
+    { src: devncoLogo, alt: "Devnco", size: "h-8" },
+    { src: mitsdLogo, alt: "MITSD", size: "h-6" },
+    { src: antefLogo, alt: "Antef", size: "h-6" },
   ];
 
-  // Duplicate logos for seamless loop
-  const duplicatedLogos = [...logos, ...logos];
+  // Triple logos for seamless endless loop
+  const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <section className="py-16 bg-[hsl(var(--philosophy-bg))] overflow-hidden">
+    <section className="py-16 overflow-hidden">
       <div className="container mx-auto px-6">
         <h3 className="text-center text-2xl font-medium mb-12">Trusted by</h3>
         
@@ -24,7 +24,7 @@ export const TrustedBy = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.alt}
-                  className="h-8 w-auto opacity-60 hover:opacity-100 transition-opacity"
+                  className={`${logo.size} w-auto opacity-60 hover:opacity-100 transition-opacity`}
                 />
                 <div className="w-2 h-2 rounded-full bg-primary ml-16" />
               </div>
