@@ -5,10 +5,12 @@ import { DesignPhilosophy } from "@/components/DesignPhilosophy";
 import { TrustedBy } from "@/components/TrustedBy";
 import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <CustomCursor />
       <Navigation />
       <Hero />
       <SelectedWorks />
