@@ -49,8 +49,8 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Mobile/Tablet Title - Sticky */}
-          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-8 sm:px-10 mb-8 sm:mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap">
+          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-8 sm:px-10 py-6 sm:py-8 mb-8 sm:mb-12">
+            <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap text-center">
               Selected Works
             </h2>
           </div>
@@ -79,12 +79,12 @@ export const SelectedWorks = () => {
                     {project.title}
                   </h3>
 
-                  <div className="flex flex-nowrap gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                  <div className="flex flex-wrap lg:flex-nowrap gap-2">
                     {project.tags.map((tag, index) => (
                       <Badge 
                         key={index}
                         variant="outline" 
-                        className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground whitespace-nowrap flex-shrink-0"
+                        className="rounded-full px-2.5 py-1 text-xs sm:px-4 sm:py-1.5 sm:text-sm border-2 border-foreground whitespace-nowrap"
                       >
                         {tag}
                       </Badge>
