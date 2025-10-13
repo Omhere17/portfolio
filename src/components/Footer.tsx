@@ -15,7 +15,7 @@ export const Footer = () => {
           variant="outline"
           size="lg"
           onClick={scrollToTop}
-          className="rounded-full px-8 py-6 text-base font-medium"
+          className="rounded-full px-8 py-6 text-base font-medium hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black"
         >
           <ArrowUp className="h-5 w-5 mr-2" />
           Scroll Up

@@ -45,7 +45,7 @@ export const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 border-2 border-foreground hover:bg-foreground hover:text-background transition-all duration-300 flex items-center gap-2"
+                className="rounded-full px-8 border-2 border-foreground hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 flex items-center gap-2"
               >
                 Selected Works
                 <ArrowDown className="h-4 w-4" />
@@ -53,7 +53,7 @@ export const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 border-2 border-foreground hover:bg-foreground hover:text-background transition-all duration-300 flex items-center gap-2"
+                className="rounded-full px-8 border-2 border-foreground hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all duration-300 flex items-center gap-2"
               >
                 More about me
                 <ArrowUpRight className="h-4 w-4" />
