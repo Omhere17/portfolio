@@ -17,8 +17,8 @@ export const TrustedBy = () => {
       <div className="container mx-auto px-6">
         <h3 className="text-center text-2xl font-medium mb-12">Trusted by</h3>
         
-        <div className="relative">
-          <div className="flex animate-marquee">
+        <div className="relative flex items-center">
+          <div className="flex items-center animate-marquee">
             {duplicatedLogos.map((logo, index) => (
               <div key={index} className="flex items-center mx-8 flex-shrink-0">
                 <img 
