@@ -49,8 +49,8 @@ export const SelectedWorks = () => {
           </div>
 
           {/* Mobile/Tablet Title - Sticky */}
-          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-8 sm:px-10 py-6 sm:py-8 mb-8 sm:mb-12">
-            <h2 className="text-4xl sm:text-5xl font-bold text-muted-foreground/30 whitespace-nowrap text-center">
+          <div className="lg:hidden sticky top-16 z-10 bg-background/80 backdrop-blur-sm -mx-6 px-7 sm:px-9 py-5 sm:py-7 mb-8 sm:mb-12">
+            <h2 className="text-3xl sm:text-4xl font-bold text-muted-foreground/30 whitespace-nowrap text-center">
               Selected Works
             </h2>
           </div>
@@ -75,7 +75,7 @@ export const SelectedWorks = () => {
 
                 {/* Project Details */}
                 <div className="lg:w-1/2 space-y-4 sm:space-y-6">
-                  <h3 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
+                  <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                     {project.title}
                   </h3>
 
