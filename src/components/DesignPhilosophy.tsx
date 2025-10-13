@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export const DesignPhilosophy = () => {
   return (
-    <section className="relative flex items-center justify-center pt-0 pb-8 px-6">
+    <section className="relative flex items-center justify-center min-h-screen px-6">
       <div className="container mx-auto max-w-5xl">
         <div className="flex flex-col items-center text-center space-y-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight">
