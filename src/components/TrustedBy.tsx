@@ -4,7 +4,7 @@ import antefLogo from "@/assets/antef-logo.png";
 
 export const TrustedBy = () => {
   const logos = [
-    { src: devncoLogo, alt: "Devnco", size: "h-12" },
+    { src: devncoLogo, alt: "Devnco", size: "h-10" },
     { src: mitsdLogo, alt: "MITSD", size: "h-12" },
     { src: antefLogo, alt: "Antef", size: "h-12" },
   ];
