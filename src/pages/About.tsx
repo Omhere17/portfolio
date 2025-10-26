@@ -29,43 +29,37 @@ const About = () => {
             </div>
 
             {/* Image Gallery */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 py-8">
-              <div className="flex justify-center">
-                <div className="relative w-[200px] h-[200px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer">
+            <div className="flex justify-center items-center py-8">
+              <div className="flex items-center -space-x-12 lg:-space-x-16">
+                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img
                     src={childhoodImg}
                     alt="Childhood"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                   />
                 </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="relative w-[200px] h-[200px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer">
+                
+                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img
                     src={musicImg}
                     alt="Music and Art"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                   />
                 </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="relative w-[200px] h-[200px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer">
+                
+                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img
                     src={footballImg}
                     alt="Football"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                   />
                 </div>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="relative w-[200px] h-[200px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer">
+                
+                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img
                     src={guitarImg}
                     alt="Guitar and Music"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0 group-hover:scale-110"
+                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
                   />
                 </div>
               </div>
