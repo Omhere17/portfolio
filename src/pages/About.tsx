@@ -100,12 +100,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Podar International School, Pimpri
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">Schooling</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">ICSE</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">2008-2019</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">Schooling</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">ICSE</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">2008-2019</span>
                         </div>
                       </div>
                     </div>
@@ -146,12 +148,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Nowrosjee Wadia College, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">10+2 Certification</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">HSE - Science</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">2019-2021</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">10+2 Certification</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">HSE - Science</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">2019-2021</span>
                         </div>
                       </div>
                     </div>
@@ -192,12 +196,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           MITAOE - School of Design, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">Bachelor's Degree</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Bdes - Ux Design</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">2021-2026</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">Bachelor's Degree</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">Bdes - Ux Design</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">2021-2026</span>
                         </div>
                       </div>
                     </div>
