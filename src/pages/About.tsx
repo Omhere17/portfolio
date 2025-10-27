@@ -111,7 +111,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 ml-20 md:ml-[88px]">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
@@ -157,7 +157,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 ml-20 md:ml-[88px]">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
@@ -203,7 +203,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 ml-20 md:ml-[88px]">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
@@ -258,7 +258,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pt-4 pb-6">
+                    <div className="pt-4 pb-6 ml-20 md:ml-[88px]">
                       <p className="text-foreground/80 text-lg leading-relaxed">
                         Created poster designs with strong visual hierarchy. Used Photoshop and Illustrator for editing, layout, and asset optimization.
                       </p>
@@ -291,7 +291,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pt-4 pb-6">
+                    <div className="pt-4 pb-6 ml-20 md:ml-[88px]">
                       <p className="text-foreground/80 text-lg leading-relaxed">
                         Collaborated with IIT Madras student's startup to design the initial UI by discussing user scenarios with stakeholders and created pitch decks to support their vision.
                       </p>
@@ -324,7 +324,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pt-4 pb-6">
+                    <div className="pt-4 pb-6 ml-20 md:ml-[88px]">
                       <p className="text-foreground/80 text-lg leading-relaxed">
                         Designed responsive website UI/UX (IA, flows, wireframes) with smooth developer handoff, and created product brochure for Enviro Genesis.
                       </p>
@@ -357,7 +357,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pt-4 pb-6">
+                    <div className="pt-4 pb-6 ml-20 md:ml-[88px]">
                       <p className="text-foreground/80 text-lg leading-relaxed">
                         Redesigned the Geodit mobile app by evaluating user experience and use cases. Collaborated directly with the CEO to align product vision and with developers to ensure a smooth developer handoff.
                       </p>
