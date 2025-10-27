@@ -88,7 +88,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={podarLogo} alt="Podar International School" className="w-16 h-16 object-contain flex-shrink-0" />
+                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Podar International School, Pimpri
                         </span>
@@ -134,7 +134,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-16 h-16 object-contain flex-shrink-0" />
+                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Nowrosjee Wadia College, Pune
                         </span>
@@ -180,7 +180,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-16 h-16 object-contain flex-shrink-0" />
+                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           MITAOE - School of Design, Pune
                         </span>
