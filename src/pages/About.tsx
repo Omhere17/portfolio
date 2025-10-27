@@ -19,7 +19,7 @@ const About = () => {
                 The Path that Shaped me
               </h1>
               
-              <p className="text-lg leading-relaxed text-foreground/90 max-w-4xl mx-0 my-0 lg:text-2xl">
+              <p className="text-lg leading-relaxed text-foreground/90 mx-0 my-0 lg:text-2xl">
                 Namaste! My name is Om, and I was born and raised in Pune, India. I am 
                 exploring the vast field of UX design while aligning my interests with the evolving 
                 needs of the industry.
