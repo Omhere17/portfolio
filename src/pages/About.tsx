@@ -10,6 +10,8 @@ import guitarImg from "@/assets/about-guitar.png";
 import podarLogo from "@/assets/podar-logo.png";
 import nowrosjeeLogo from "@/assets/nowrosjee-logo.png";
 import mitsdLogo from "@/assets/mitsd-logo-text.png";
+import devncoLogo from "@/assets/devnco-logo.png";
+import antefLogo from "@/assets/antef-logo.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -217,6 +219,151 @@ const About = () => {
                           <li>Departmental Sports</li>
                         </ul>
                       </div>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+
+            {/* Experience Section */}
+            <div className="space-y-6 pt-12">
+              <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+                Experience
+              </h2>
+              
+              <Accordion type="single" collapsible className="w-full">
+                {/* Zestrix Solutions */}
+                <AccordionItem value="zestrix" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 md:gap-6">
+                        <div className="w-16 h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-2xl font-bold text-primary">Z</span>
+                        </div>
+                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                          Zestrix Solutions
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
+                        <span className="hidden md:block text-lg font-medium text-foreground">
+                          Zestrix Solutions
+                        </span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
+                          <span className="text-base md:text-lg font-medium">Visual Design Intern</span>
+                          <span className="text-border">|</span>
+                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-border">|</span>
+                          <span className="text-gray-500">Mar 2024 - Jun 2024</span>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Created poster designs with strong visual hierarchy. Used Photoshop and Illustrator for editing, layout, and asset optimization.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* Ystocxx */}
+                <AccordionItem value="ystocxx" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 md:gap-6">
+                        <div className="w-16 h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-2xl font-bold text-primary">Y</span>
+                        </div>
+                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                          Ystocxx
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
+                        <span className="hidden md:block text-lg font-medium text-foreground">
+                          Ystocxx
+                        </span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
+                          <span className="text-base md:text-lg font-medium">UX Designer</span>
+                          <span className="text-border">|</span>
+                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-border">|</span>
+                          <span className="text-gray-500">Feb 2024 - June 2024</span>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Collaborated with IIT Madras student's startup to design the initial UI by discussing user scenarios with stakeholders and created pitch decks to support their vision.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* Devnco Technologies */}
+                <AccordionItem value="devnco" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 md:gap-6">
+                        <img src={devncoLogo} alt="Devnco Technologies" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                          Devnco Technologies
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
+                        <span className="hidden md:block text-lg font-medium text-foreground">
+                          Devnco Technologies
+                        </span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
+                          <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                          <span className="text-border">|</span>
+                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-border">|</span>
+                          <span className="text-gray-500">Nov 2024 - Apr 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Designed responsive website UI/UX (IA, flows, wireframes) with smooth developer handoff, and created product brochure for Enviro Genesis.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* Antef */}
+                <AccordionItem value="antef" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 md:gap-6">
+                        <img src={antefLogo} alt="Antef" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                          Antef
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
+                        <span className="hidden md:block text-lg font-medium text-foreground">
+                          Antef
+                        </span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
+                          <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                          <span className="text-border">|</span>
+                          <span className="text-base md:text-lg font-medium italic">(Full-time)</span>
+                          <span className="text-border">|</span>
+                          <span className="text-gray-500">June 2025 - Sept 2025</span>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Redesigned the Geodit mobile app by evaluating user experience and use cases. Collaborated directly with the CEO to align product vision and with developers to ensure a smooth developer handoff.
+                      </p>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
