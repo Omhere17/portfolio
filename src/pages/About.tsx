@@ -227,9 +227,7 @@ const About = () => {
 
             {/* Experience Section */}
             <div className="space-y-6 pt-12">
-              <h2 className="text-3xl font-bold text-primary lg:text-4xl">
-                Experience
-              </h2>
+              <h2 className="text-3xl font-bold text-primary lg:text-4xl">Work Experience</h2>
               
               <Accordion type="single" collapsible className="w-full">
                 {/* Zestrix Solutions */}
