@@ -102,11 +102,11 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Podar International School, Pimpri
                         </span>
-                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
                           <span>Schooling</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>ICSE</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>2008-2019</span>
                         </div>
                       </div>
@@ -148,11 +148,11 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Nowrosjee Wadia College, Pune
                         </span>
-                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
                           <span>10+2 Certification</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>HSE</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>2019-2021</span>
                         </div>
                       </div>
@@ -194,11 +194,11 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           MITAOE - School of Design, Pune
                         </span>
-                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
                           <span>Bachelor's Degree</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>Bdes Ux Design</span>
-                          <span className="hidden md:inline text-border">|</span>
+                          <span className="text-border">|</span>
                           <span>2021-2025</span>
                         </div>
                       </div>
