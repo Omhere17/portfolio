@@ -108,12 +108,23 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pl-[88px] pr-4 pb-6 text-foreground/90">
-                      <p className="text-base leading-relaxed">
-                        My foundational years at Podar International School shaped my early 
-                        education and introduced me to various creative pursuits that would 
-                        later influence my design journey.
-                      </p>
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>School Football Team Captain</li>
+                          <li>Inter-school Football Tournaments Representative</li>
+                          <li>Art Exhibition Participant</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Extra Curricular Activites</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>School Football Team</li>
+                          <li>Art Classes and Exhibitions</li>
+                          <li>Music and DJing Exploration</li>
+                        </ul>
+                      </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
@@ -138,12 +149,23 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pl-[88px] pr-4 pb-6 text-foreground/90">
-                      <p className="text-base leading-relaxed">
-                        During my time at Nowrosjee Wadia College, I completed my higher 
-                        secondary education, which provided a strong academic foundation 
-                        for my future studies in design.
-                      </p>
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>HSC Board Examination Excellence</li>
+                          <li>Academic Foundation in Sciences</li>
+                          <li>College Sports Representative</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Extra Curricular Activites</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>College Football Team</li>
+                          <li>Music and Arts Pursuit</li>
+                          <li>Community Sports Events</li>
+                        </ul>
+                      </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
