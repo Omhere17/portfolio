@@ -14,7 +14,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-12">
             {/* Header Section */}
-            <div className="space-y-6 my-0">
+            <div className="space-y-3 my-0">
               <h1 className="text-3xl font-bold text-primary lg:text-xl">
                 The Path that Shaped me
               </h1>
