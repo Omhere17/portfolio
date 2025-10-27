@@ -273,7 +273,7 @@ const About = () => {
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Remote</span>
+                            <span className="text-gray-500">On-site</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Mar 2024 - Jun 2024</span>
                           </div>
@@ -312,7 +312,7 @@ const About = () => {
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Remote</span>
+                            <span className="text-gray-500">Hybrid</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Feb 2024 - June 2024</span>
                           </div>
@@ -351,7 +351,7 @@ const About = () => {
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Remote</span>
+                            <span className="text-gray-500">On-site</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Nov 2024 - Apr 2025</span>
                           </div>
@@ -390,7 +390,7 @@ const About = () => {
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Onsite</span>
+                            <span className="text-gray-500">Remote</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">June 2025 - Sept 2025</span>
                           </div>
