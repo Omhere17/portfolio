@@ -49,13 +49,13 @@ const About = () => {
 
             {/* Story Content */}
             <div className="space-y-6 text-base lg:text-lg leading-relaxed text-foreground/90">
-              <p>
+              <p className="text-lg">
                 My journey in the creative field began when my mother enrolled me in an art class during my early school years. Art was 
                 something I enjoyed back then, but as time passed, my interests evolved. I became deeply involved in sports, 
                 especially football, and discovered a passion for all kinds of music, even exploring DJing and cars.
               </p>
               
-              <p>
+              <p className="text-lg">
                 Throughout my school years, I represented my school in various interschool 
                 football tournaments, becoming a dedicated fan of the game. If you showed me 
                 all the assists that Mesut Özil made in his career, I'd watch them on repeat—his 
@@ -63,7 +63,7 @@ const About = () => {
                 yet considered a career in creative fields.
               </p>
               
-              <p>
+              <p className="text-lg">
                 It was one fine day that my brother introduced me to the world of design. Since 
                 then, I've been exploring design, with a growing focus on projects that make a 
                 social impact. Reflecting on this journey, I've realized that everything I did as a kid, 
