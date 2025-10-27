@@ -85,7 +85,7 @@ const About = () => {
               <Accordion type="single" collapsible className="w-full">
                 {/* Podar International School */}
                 <AccordionItem value="podar" className="border-b border-border/50">
-                  <AccordionTrigger className="hover:no-underline py-6">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-accent/50 rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
                         <img src={podarLogo} alt="Podar International School" className="w-16 h-16 object-contain flex-shrink-0" />
@@ -131,7 +131,7 @@ const About = () => {
 
                 {/* Nowrosjee Wadia College */}
                 <AccordionItem value="nowrosjee" className="border-b border-border/50">
-                  <AccordionTrigger className="hover:no-underline py-6">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-accent/50 rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
                         <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-16 h-16 object-contain flex-shrink-0" />
@@ -177,7 +177,7 @@ const About = () => {
 
                 {/* MITAOE */}
                 <AccordionItem value="mitaoe" className="border-b border-border/50">
-                  <AccordionTrigger className="hover:no-underline py-6">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-accent/50 rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
                         <img src={mitsdLogo} alt="MITAOE School of Design" className="w-16 h-16 object-contain flex-shrink-0" />
