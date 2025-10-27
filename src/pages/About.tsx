@@ -93,12 +93,12 @@ const About = () => {
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={podarLogo} alt="Podar International School" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          Podar International School, Pimpri
+                          Podar International School
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
                         <span className="hidden lg:block text-xl font-medium text-foreground">
-                          Podar International School, Pimpri
+                          Podar International School
                         </span>
                         <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
                           <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
@@ -107,7 +107,7 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">ICSE</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">2008-2019</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Pimpri | 2008-2019</span>
                         </div>
                       </div>
                     </div>
@@ -141,12 +141,12 @@ const About = () => {
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          Nowrosjee Wadia College, Pune
+                          Nowrosjee Wadia College
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
                         <span className="hidden lg:block text-xl font-medium text-foreground">
-                          Nowrosjee Wadia College, Pune
+                          Nowrosjee Wadia College
                         </span>
                         <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
                           <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
@@ -155,7 +155,7 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">HSE - Science</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">2019-2021</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Pune | 2019-2021</span>
                         </div>
                       </div>
                     </div>
@@ -189,12 +189,12 @@ const About = () => {
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          MITAOE - School of Design, Pune
+                          MITAOE - School of Design
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
                         <span className="hidden lg:block text-xl font-medium text-foreground">
-                          MITAOE - School of Design, Pune
+                          MITAOE - School of Design
                         </span>
                         <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
                           <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
@@ -203,7 +203,7 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Bdes - Ux Design</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">2021-2026</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Pune | 2021-2026</span>
                         </div>
                       </div>
                     </div>
