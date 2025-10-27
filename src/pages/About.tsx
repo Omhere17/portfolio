@@ -250,7 +250,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">Visual Design Intern</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-base md:text-lg font-medium">Part-time</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">Mar 2024 - Jun 2024</span>
                         </div>
@@ -283,7 +283,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">UX Designer</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-base md:text-lg font-medium">Part-time</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">Feb 2024 - June 2024</span>
                         </div>
@@ -316,7 +316,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">UX Design Intern</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium italic">(Part-time)</span>
+                          <span className="text-base md:text-lg font-medium">Part-time</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">Nov 2024 - Apr 2025</span>
                         </div>
@@ -349,7 +349,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">UX Design Intern</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium italic">(Full-time)</span>
+                          <span className="text-base md:text-lg font-medium">Full-time</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">June 2025 - Sept 2025</span>
                         </div>
