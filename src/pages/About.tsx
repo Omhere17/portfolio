@@ -103,9 +103,9 @@ const About = () => {
                           Podar International School, Pimpri
                         </span>
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span>Schooling</span>
+                          <span className="text-base md:text-lg font-medium">Schooling</span>
                           <span className="text-border">|</span>
-                          <span>ICSE</span>
+                          <span className="text-base md:text-lg font-medium">ICSE</span>
                           <span className="text-border">|</span>
                           <span>2008-2019</span>
                         </div>
@@ -149,9 +149,9 @@ const About = () => {
                           Nowrosjee Wadia College, Pune
                         </span>
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span>10+2 Certification</span>
+                          <span className="text-base md:text-lg font-medium">10+2 Certification</span>
                           <span className="text-border">|</span>
-                          <span>HSE</span>
+                          <span className="text-base md:text-lg font-medium">HSE</span>
                           <span className="text-border">|</span>
                           <span>2019-2021</span>
                         </div>
@@ -195,9 +195,9 @@ const About = () => {
                           MITAOE - School of Design, Pune
                         </span>
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span>Bachelor's Degree</span>
+                          <span className="text-base md:text-lg font-medium">Bachelor's Degree</span>
                           <span className="text-border">|</span>
-                          <span>Bdes Ux Design</span>
+                          <span className="text-base md:text-lg font-medium">Bdes Ux Design</span>
                           <span className="text-border">|</span>
                           <span>2021-2025</span>
                         </div>
