@@ -168,12 +168,23 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="pl-[88px] pr-4 pb-6 text-foreground/90">
-                      <p className="text-base leading-relaxed">
-                        Currently pursuing my Bachelor's in UX Design at MITAOE School of Design, 
-                        where I'm developing expertise in user-centered design, interaction design, 
-                        and creating impactful digital experiences.
-                      </p>
+                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6">
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>College Academic Merit, 3rd Rank UX Design (2nd Year)</li>
+                          <li>College Academic Merit, 3rd Rank UX Design (3rd Year)</li>
+                          <li>Zonal Representative, Aaviskar 2024 - Research Competition</li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h3 className="font-semibold text-lg mb-4 text-foreground">Extra Curricular Activites</h3>
+                        <ul className="space-y-2 text-foreground/80">
+                          <li>Google Developers Group oncampus MITAOE, Creative Lead</li>
+                          <li>NASA Space Apps Challenge, Visual Designer</li>
+                          <li>Departmental Sports</li>
+                        </ul>
+                      </div>
                     </div>
                   </AccordionContent>
                 </AccordionItem>
