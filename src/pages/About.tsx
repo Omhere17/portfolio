@@ -12,6 +12,7 @@ import nowrosjeeLogo from "@/assets/nowrosjee-logo.png";
 import mitsdLogo from "@/assets/mitsd-logo-text.png";
 import devncoLogo from "@/assets/devnco-logo.png";
 import antefLogo from "@/assets/antef-logo.png";
+import ystocxxLogo from "@/assets/ystocxx-logo.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -270,9 +271,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <div className="w-16 h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-2xl font-bold text-primary">Y</span>
-                        </div>
+                        <img src={ystocxxLogo} alt="Ystocxx" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Ystocxx
                         </span>
