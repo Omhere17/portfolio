@@ -92,7 +92,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={podarLogo} alt="Podar International School" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Podar International School, Pimpri
                         </span>
                       </div>
@@ -140,7 +140,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Nowrosjee Wadia College, Pune
                         </span>
                       </div>
@@ -188,7 +188,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           MITAOE - School of Design, Pune
                         </span>
                       </div>
@@ -245,7 +245,7 @@ const About = () => {
                         <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
                           <span className="text-xl lg:text-2xl font-bold text-primary">Z</span>
                         </div>
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Zestrix Solutions
                         </span>
                       </div>
@@ -280,7 +280,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={ystocxxLogo} alt="Ystocxx" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Ystocxx
                         </span>
                       </div>
@@ -315,7 +315,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Devnco Technologies
                         </span>
                       </div>
@@ -350,7 +350,7 @@ const About = () => {
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
                         <img src={antefLogo} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Antef
                         </span>
                       </div>
