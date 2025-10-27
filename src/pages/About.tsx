@@ -89,25 +89,25 @@ const About = () => {
                 {/* Podar International School */}
                 <AccordionItem value="podar" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Podar International School, Pimpri
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Podar International School, Pimpri
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">Schooling</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">Schooling</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">ICSE</span>
+                            <span className="text-base lg:text-lg font-medium">ICSE</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">2008-2019</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">2008-2019</span>
                         </div>
                       </div>
                     </div>
@@ -137,25 +137,25 @@ const About = () => {
                 {/* Nowrosjee Wadia College */}
                 <AccordionItem value="nowrosjee" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Nowrosjee Wadia College, Pune
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Nowrosjee Wadia College, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">10+2 Certification</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">10+2 Certification</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">HSE - Science</span>
+                            <span className="text-base lg:text-lg font-medium">HSE - Science</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">2019-2021</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">2019-2021</span>
                         </div>
                       </div>
                     </div>
@@ -185,25 +185,25 @@ const About = () => {
                 {/* MITAOE */}
                 <AccordionItem value="mitaoe" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           MITAOE - School of Design, Pune
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           MITAOE - School of Design, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">Bachelor's Degree</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">Bachelor's Degree</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">Bdes - Ux Design</span>
+                            <span className="text-base lg:text-lg font-medium">Bdes - Ux Design</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">2021-2026</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">2021-2026</span>
                         </div>
                       </div>
                     </div>
@@ -240,27 +240,27 @@ const About = () => {
                 {/* Zestrix Solutions */}
                 <AccordionItem value="zestrix" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-xl md:text-2xl font-bold text-primary">Z</span>
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-xl lg:text-2xl font-bold text-primary">Z</span>
                         </div>
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Zestrix Solutions
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Zestrix Solutions
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">Visual Design Intern</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">Visual Design Intern</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                            <span className="text-base lg:text-lg font-medium">Part-time</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">Mar 2024 - Jun 2024</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Mar 2024 - Jun 2024</span>
                         </div>
                       </div>
                     </div>
@@ -277,25 +277,25 @@ const About = () => {
                 {/* Ystocxx */}
                 <AccordionItem value="ystocxx" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={ystocxxLogo} alt="Ystocxx" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={ystocxxLogo} alt="Ystocxx" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Ystocxx
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Ystocxx
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">UX Designer</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">UX Designer</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                            <span className="text-base lg:text-lg font-medium">Part-time</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">Feb 2024 - June 2024</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Feb 2024 - June 2024</span>
                         </div>
                       </div>
                     </div>
@@ -312,25 +312,25 @@ const About = () => {
                 {/* Devnco Technologies */}
                 <AccordionItem value="devnco" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Devnco Technologies
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Devnco Technologies
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">UX Design Intern</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                            <span className="text-base lg:text-lg font-medium">Part-time</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">Nov 2024 - Apr 2025</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">Nov 2024 - Apr 2025</span>
                         </div>
                       </div>
                     </div>
@@ -347,25 +347,25 @@ const About = () => {
                 {/* Antef */}
                 <AccordionItem value="antef" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 md:gap-6">
-                        <img src={antefLogo} alt="Antef" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={antefLogo} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-base font-medium text-foreground lg:hidden lg:text-lg whitespace-nowrap">
                           Antef
                         </span>
                       </div>
-                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-lg font-medium text-foreground">
                           Antef
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                            <span className="text-base lg:text-lg font-medium">UX Design Intern</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg font-medium">Full-time</span>
+                            <span className="text-base lg:text-lg font-medium">Full-time</span>
                           </div>
-                          <span className="text-border hidden md:inline">|</span>
-                          <span className="text-gray-500 w-full md:w-auto">June 2025 - Sept 2025</span>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <span className="text-gray-500 w-full lg:w-auto">June 2025 - Sept 2025</span>
                         </div>
                       </div>
                     </div>
