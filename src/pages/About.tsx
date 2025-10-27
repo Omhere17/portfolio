@@ -27,21 +27,21 @@ const About = () => {
             </div>
 
             {/* Image Gallery */}
-            <div className="flex justify-center items-center py-8">
-              <div className="flex items-center justify-center -space-x-20 lg:-space-x-32">
-                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
+            <div className="flex justify-center items-center py-8 w-full">
+              <div className="flex items-center justify-between w-full max-w-6xl -space-x-16 lg:-space-x-24">
+                <div className="relative w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img src={childhoodImg} alt="Childhood" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
-                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
+                <div className="relative w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img src={musicImg} alt="Music and Art" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
-                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
+                <div className="relative w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img src={footballImg} alt="Football" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
-                <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
+                <div className="relative w-[220px] h-[220px] lg:w-[280px] lg:h-[280px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
                   <img src={guitarImg} alt="Guitar and Music" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
               </div>
