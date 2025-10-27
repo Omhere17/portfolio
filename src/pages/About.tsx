@@ -2,12 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
@@ -107,7 +102,7 @@ const About = () => {
                           <span className="text-border">|</span>
                           <span className="text-base md:text-lg font-medium">ICSE</span>
                           <span className="text-border">|</span>
-                          <span>2008-2019</span>
+                          <span className="text-gray-500">2008-2019</span>
                         </div>
                       </div>
                     </div>
@@ -153,7 +148,7 @@ const About = () => {
                           <span className="text-border">|</span>
                           <span className="text-base md:text-lg font-medium">HSE</span>
                           <span className="text-border">|</span>
-                          <span>2019-2021</span>
+                          <span className="text-gray-500">2019-2021</span>
                         </div>
                       </div>
                     </div>
@@ -199,7 +194,7 @@ const About = () => {
                           <span className="text-border">|</span>
                           <span className="text-base md:text-lg font-medium">Bdes Ux Design</span>
                           <span className="text-border">|</span>
-                          <span>2021-2025</span>
+                          <span className="text-gray-500">2021-2025</span>
                         </div>
                       </div>
                     </div>
