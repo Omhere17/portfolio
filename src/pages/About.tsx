@@ -6,22 +6,20 @@ import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
 import guitarImg from "@/assets/about-guitar.png";
-
 const About = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <CustomCursor />
       <Navigation />
       <main className="container mx-auto px-6 pt-32 pb-20">
         <div className="max-w-6xl mx-auto">
           <div className="space-y-12">
             {/* Header Section */}
-            <div className="space-y-6">
-              <h1 className="text-3xl lg:text-4xl font-bold text-primary">
+            <div className="space-y-6 my-0">
+              <h1 className="text-3xl font-bold text-primary lg:text-xl">
                 The Path that Shaped me
               </h1>
               
-              <p className="text-lg lg:text-xl leading-relaxed text-foreground/90 max-w-4xl">
+              <p className="text-lg leading-relaxed text-foreground/90 max-w-4xl mx-0 my-0 lg:text-2xl">
                 Namaste! My name is Om, and I was born and raised in Pune, India. I am 
                 exploring the vast field of UX design while aligning my interests with the evolving 
                 needs of the industry.
@@ -32,35 +30,19 @@ const About = () => {
             <div className="flex justify-center items-center py-8">
               <div className="flex items-center -space-x-12 lg:-space-x-16">
                 <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
-                  <img
-                    src={childhoodImg}
-                    alt="Childhood"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                  />
+                  <img src={childhoodImg} alt="Childhood" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
                 <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
-                  <img
-                    src={musicImg}
-                    alt="Music and Art"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                  />
+                  <img src={musicImg} alt="Music and Art" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
                 <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
-                  <img
-                    src={footballImg}
-                    alt="Football"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                  />
+                  <img src={footballImg} alt="Football" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
                 
                 <div className="relative w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden group cursor-pointer transition-transform duration-500 hover:z-10 hover:scale-110">
-                  <img
-                    src={guitarImg}
-                    alt="Guitar and Music"
-                    className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0"
-                  />
+                  <img src={guitarImg} alt="Guitar and Music" className="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" />
                 </div>
               </div>
             </div>
@@ -94,8 +76,6 @@ const About = () => {
       </main>
       <Footer />
       <ThemeToggle />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
