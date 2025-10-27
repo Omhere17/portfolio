@@ -197,7 +197,7 @@ const About = () => {
                           <span className="text-border">|</span>
                           <span className="text-base md:text-lg font-medium">Bdes - Ux Design</span>
                           <span className="text-border">|</span>
-                          <span className="text-gray-500">2021-2025</span>
+                          <span className="text-gray-500">2021-2026</span>
                         </div>
                       </div>
                     </div>
