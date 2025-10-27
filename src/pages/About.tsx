@@ -149,7 +149,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">10+2 Certification</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">HSE</span>
+                          <span className="text-base md:text-lg font-medium">HSE - Science</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">2019-2021</span>
                         </div>
@@ -195,7 +195,7 @@ const About = () => {
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
                           <span className="text-base md:text-lg font-medium">Bachelor's Degree</span>
                           <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Bdes Ux Design</span>
+                          <span className="text-base md:text-lg font-medium">Bdes - Ux Design</span>
                           <span className="text-border">|</span>
                           <span className="text-gray-500">2021-2025</span>
                         </div>
