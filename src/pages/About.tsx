@@ -2,10 +2,19 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
 import guitarImg from "@/assets/about-guitar.png";
+import podarLogo from "@/assets/podar-logo.png";
+import nowrosjeeLogo from "@/assets/nowrosjee-logo.png";
+import mitsdLogo from "@/assets/mitsd-logo-text.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -70,6 +79,84 @@ const About = () => {
                 has helped me in unexpected ways. This path has become more than a career; 
                 it's a way for me to give back and make a difference.
               </p>
+            </div>
+
+            {/* Education Section */}
+            <div className="space-y-6 pt-12">
+              <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+                Education
+              </h2>
+              
+              <Accordion type="single" collapsible className="w-full">
+                {/* Podar International School */}
+                <AccordionItem value="podar" className="border-b border-border/50">
+                  <div className="flex items-center gap-6 py-6">
+                    <img src={podarLogo} alt="Podar International School" className="w-16 h-16 object-contain" />
+                    <div className="flex-1 flex items-center justify-between">
+                      <span className="text-lg font-medium text-foreground">
+                        Podar International School, Pimpri
+                      </span>
+                      <div className="flex items-center gap-3 text-foreground/80">
+                        <span>Schooling</span>
+                        <span className="text-border">|</span>
+                        <span>ICSE</span>
+                        <span className="text-border">|</span>
+                        <span>2008-2019</span>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionItem>
+
+                {/* Nowrosjee Wadia College */}
+                <AccordionItem value="nowrosjee" className="border-b border-border/50">
+                  <div className="flex items-center gap-6 py-6">
+                    <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-16 h-16 object-contain" />
+                    <div className="flex-1 flex items-center justify-between">
+                      <span className="text-lg font-medium text-foreground">
+                        Nowrosjee Wadia College, Pune
+                      </span>
+                      <div className="flex items-center gap-3 text-foreground/80">
+                        <span>10+2 Certification</span>
+                        <span className="text-border">|</span>
+                        <span>HSE</span>
+                        <span className="text-border">|</span>
+                        <span>2019-2021</span>
+                      </div>
+                    </div>
+                  </div>
+                </AccordionItem>
+
+                {/* MITAOE - Expandable */}
+                <AccordionItem value="mitaoe" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6">
+                    <div className="flex items-center gap-6 flex-1">
+                      <img src={mitsdLogo} alt="MITAOE School of Design" className="w-16 h-16 object-contain" />
+                      <div className="flex-1 flex items-center justify-between pr-4">
+                        <span className="text-lg font-medium text-foreground">
+                          MITAOE - School of Design, Pune
+                        </span>
+                        <div className="flex items-center gap-3 text-foreground/80">
+                          <span>Bachelor's Degree</span>
+                          <span className="text-border">|</span>
+                          <span>Bdes Ux Design</span>
+                          <span className="text-border">|</span>
+                          <span>2008-2019</span>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pl-[88px] pr-4 pb-6 text-foreground/90">
+                      <p className="text-base leading-relaxed">
+                        Namaste! My name is Om, and I was born and raised in Pune, India. 
+                        My journey in the creative field began when my mother enrolled me in an 
+                        art class during my early school years. Art was something I enjoyed 
+                        back then, but as time passed, my interests evolved.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
             </div>
           </div>
         </div>
