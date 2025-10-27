@@ -111,7 +111,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 px-4">
+                    <div className="grid md:grid-cols-2 gap-24 pt-4 pb-6 px-4">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
@@ -157,7 +157,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 px-4">
+                    <div className="grid md:grid-cols-2 gap-24 pt-4 pb-6 px-4">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
@@ -203,7 +203,7 @@ const About = () => {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    <div className="grid md:grid-cols-2 gap-12 pt-4 pb-6 px-4">
+                    <div className="grid md:grid-cols-2 gap-24 pt-4 pb-6 px-4">
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
