@@ -186,7 +186,7 @@ const About = () => {
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
-                        <span className="hidden md:block text-lg font-medium text-foreground">
+                        <span className="hidden md:block text-foreground font-medium text-xl">
                           MITAOE - School of Design, Pune
                         </span>
                         <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
