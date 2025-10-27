@@ -102,7 +102,7 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Podar International School, Pimpri
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80">
                           <span>Schooling</span>
                           <span className="text-border">|</span>
                           <span>ICSE</span>
@@ -148,7 +148,7 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Nowrosjee Wadia College, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80">
                           <span>10+2 Certification</span>
                           <span className="text-border">|</span>
                           <span>HSE</span>
@@ -194,7 +194,7 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           MITAOE - School of Design, Pune
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80">
                           <span>Bachelor's Degree</span>
                           <span className="text-border">|</span>
                           <span>Bdes Ux Design</span>
