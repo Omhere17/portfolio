@@ -247,12 +247,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Zestrix Solutions
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">Visual Design Intern</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Part-time</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">Mar 2024 - Jun 2024</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">Visual Design Intern</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">Mar 2024 - Jun 2024</span>
                         </div>
                       </div>
                     </div>
@@ -280,12 +282,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Ystocxx
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">UX Designer</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Part-time</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">Feb 2024 - June 2024</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">UX Designer</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">Feb 2024 - June 2024</span>
                         </div>
                       </div>
                     </div>
@@ -313,12 +317,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Devnco Technologies
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">UX Design Intern</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Part-time</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">Nov 2024 - Apr 2025</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">Nov 2024 - Apr 2025</span>
                         </div>
                       </div>
                     </div>
@@ -346,12 +352,14 @@ const About = () => {
                         <span className="hidden md:block text-lg font-medium text-foreground">
                           Antef
                         </span>
-                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 whitespace-nowrap">
-                          <span className="text-base md:text-lg font-medium">UX Design Intern</span>
-                          <span className="text-border">|</span>
-                          <span className="text-base md:text-lg font-medium">Full-time</span>
-                          <span className="text-border">|</span>
-                          <span className="text-gray-500">June 2025 - Sept 2025</span>
+                        <div className="flex items-center gap-2 md:gap-3 text-sm md:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-2 md:gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg font-medium">UX Design Intern</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg font-medium">Full-time</span>
+                          </div>
+                          <span className="text-border hidden md:inline">|</span>
+                          <span className="text-gray-500 w-full md:w-auto">June 2025 - Sept 2025</span>
                         </div>
                       </div>
                     </div>
