@@ -91,17 +91,17 @@ const About = () => {
                 {/* Podar International School */}
                 <AccordionItem value="podar" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6">
-                    <div className="flex items-center gap-6 flex-1">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <img src={podarLogo} alt="Podar International School" className="w-16 h-16 object-contain" />
-                      <div className="flex-1 flex items-center justify-between pr-4">
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
                         <span className="text-lg font-medium text-foreground">
                           Podar International School, Pimpri
                         </span>
-                        <div className="flex items-center gap-3 text-foreground/80">
+                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
                           <span>Schooling</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>ICSE</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>2008-2019</span>
                         </div>
                       </div>
@@ -132,17 +132,17 @@ const About = () => {
                 {/* Nowrosjee Wadia College */}
                 <AccordionItem value="nowrosjee" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6">
-                    <div className="flex items-center gap-6 flex-1">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-16 h-16 object-contain" />
-                      <div className="flex-1 flex items-center justify-between pr-4">
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
                         <span className="text-lg font-medium text-foreground">
                           Nowrosjee Wadia College, Pune
                         </span>
-                        <div className="flex items-center gap-3 text-foreground/80">
+                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
                           <span>10+2 Certification</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>HSE</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>2019-2021</span>
                         </div>
                       </div>
@@ -173,17 +173,17 @@ const About = () => {
                 {/* MITAOE */}
                 <AccordionItem value="mitaoe" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6">
-                    <div className="flex items-center gap-6 flex-1">
+                    <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <img src={mitsdLogo} alt="MITAOE School of Design" className="w-16 h-16 object-contain" />
-                      <div className="flex-1 flex items-center justify-between pr-4">
+                      <div className="flex-1 flex flex-col md:flex-row md:items-center md:justify-between gap-2 md:gap-4 md:pr-4">
                         <span className="text-lg font-medium text-foreground">
                           MITAOE - School of Design, Pune
                         </span>
-                        <div className="flex items-center gap-3 text-foreground/80">
+                        <div className="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 text-foreground/80">
                           <span>Bachelor's Degree</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>Bdes Ux Design</span>
-                          <span className="text-border">|</span>
+                          <span className="hidden md:inline text-border">|</span>
                           <span>2021-2025</span>
                         </div>
                       </div>
