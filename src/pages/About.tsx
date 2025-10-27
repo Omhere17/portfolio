@@ -100,14 +100,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Podar International School
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">Schooling</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">ICSE</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Pimpri</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">2008-2019</span>
@@ -152,14 +152,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Nowrosjee Wadia College
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">10+2 Certification</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">HSE - Science</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Pune</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">2019-2021</span>
@@ -204,14 +204,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           MITAOE - School of Design
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">Bachelor's Degree</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">Bdes - Ux Design</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Pune</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">2021-2026</span>
@@ -265,14 +265,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Zestrix Solutions
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">Visual Design Intern</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Remote</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Mar 2024 - Jun 2024</span>
@@ -304,14 +304,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Ystocxx
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">UX Designer</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Remote</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Feb 2024 - June 2024</span>
@@ -343,14 +343,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Devnco Technologies
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Remote</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">Nov 2024 - Apr 2025</span>
@@ -382,14 +382,14 @@ const About = () => {
                         <span className="hidden lg:block text-xl font-medium text-foreground">
                           Antef
                         </span>
-                        <div className="flex items-center gap-2 lg:gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-2 lg:gap-3 whitespace-nowrap">
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
                             <span className="text-border">|</span>
                             <span className="text-base md:text-lg lg:text-lg font-medium">Full-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-2 lg:gap-3">
+                          <div className="flex items-center gap-3">
                             <span className="text-gray-500">Onsite</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">June 2025 - Sept 2025</span>
