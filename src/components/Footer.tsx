@@ -117,7 +117,7 @@ export const Footer = () => {
               </p>
 
               {/* Desktop: Navigation Links under text */}
-              <nav className="hidden lg:flex gap-12 text-lg">
+              <nav className="hidden lg:flex justify-between text-lg">
                 <a href="#work" className="hover:opacity-80 transition-opacity">
                   Work
                 </a>
