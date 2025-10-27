@@ -91,7 +91,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={podarLogo} alt="Podar International School" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Podar International School, Pimpri
                         </span>
@@ -137,7 +137,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={nowrosjeeLogo} alt="Nowrosjee Wadia College" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Nowrosjee Wadia College, Pune
                         </span>
@@ -183,7 +183,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           MITAOE - School of Design, Pune
                         </span>
@@ -236,8 +236,8 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <div className="w-16 h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-2xl font-bold text-primary">Z</span>
+                        <div className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-xl md:text-2xl font-bold text-primary">Z</span>
                         </div>
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Zestrix Solutions
@@ -271,7 +271,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={ystocxxLogo} alt="Ystocxx" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={ystocxxLogo} alt="Ystocxx" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Ystocxx
                         </span>
@@ -304,7 +304,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={devncoLogo} alt="Devnco Technologies" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Devnco Technologies
                         </span>
@@ -337,7 +337,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 md:gap-6">
-                        <img src={antefLogo} alt="Antef" className="w-16 h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={antefLogo} alt="Antef" className="w-12 h-12 md:w-16 md:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-base font-medium text-foreground md:hidden md:text-lg whitespace-nowrap">
                           Antef
                         </span>
