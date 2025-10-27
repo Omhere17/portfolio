@@ -135,7 +135,7 @@ export const Footer = () => {
           </div>
 
           {/* Mobile Navigation Links */}
-          <nav className="flex lg:hidden flex-wrap gap-6 text-lg mb-12">
+          <nav className="flex md:hidden flex-wrap gap-6 text-lg mb-12">
             <a href="#work" className="hover:opacity-80 transition-opacity">
               Work
             </a>
