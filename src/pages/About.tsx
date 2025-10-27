@@ -107,7 +107,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">ICSE</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Pimpri | 2008-2019</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Pimpri</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">2008-2019</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -155,7 +159,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">HSE - Science</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Pune | 2019-2021</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Pune</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">2019-2021</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -203,7 +211,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Bdes - Ux Design</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Pune | 2021-2026</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Pune</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">2021-2026</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -260,7 +272,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Mar 2024 - Jun 2024</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Remote</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">Mar 2024 - Jun 2024</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -295,7 +311,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Feb 2024 - June 2024</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Remote</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">Feb 2024 - June 2024</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -330,7 +350,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">Nov 2024 - Apr 2025</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Remote</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">Nov 2024 - Apr 2025</span>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -365,7 +389,11 @@ const About = () => {
                             <span className="text-base md:text-lg lg:text-lg font-medium">Full-time</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
-                          <span className="text-gray-500 w-full lg:w-auto">June 2025 - Sept 2025</span>
+                          <div className="flex items-center gap-2 lg:gap-3">
+                            <span className="text-gray-500">Onsite</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">June 2025 - Sept 2025</span>
+                          </div>
                         </div>
                       </div>
                     </div>
