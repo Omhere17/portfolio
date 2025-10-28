@@ -6,7 +6,7 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { MapPin, Download, ArrowRight } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -123,18 +123,25 @@ const Contact = () => {
               </a>
 
               {/* Location */}
-              <div className="flex items-center gap-4 text-lg">
-                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                  <MapPin className="h-6 w-6 text-primary" />
+              <a 
+                href="https://maps.app.goo.gl/XMTkrxFLfeXbeyybA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 text-lg hover:opacity-80 transition-opacity group"
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <svg className="h-6 w-6 text-primary" viewBox="0 0 640 640" fill="currentColor">
+                    <path d="M320 0C246.3 0 187.4 58.9 187.4 132.6C187.4 165.1 198.9 195.1 218.3 218.3L303.6 343.4C308.8 350.3 316.7 354.3 325 354.3C333.3 354.3 341.2 350.3 346.4 343.4L431.7 218.3C451.1 195.1 462.6 165.1 462.6 132.6C462.6 58.9 403.7 0 330 0L320 0zM320 176C293.5 176 272 154.5 272 128C272 101.5 293.5 80 320 80C346.5 80 368 101.5 368 128C368 154.5 346.5 176 320 176zM157.3 271C108.2 291.4 64 345.2 64 416L64 448C64 465.7 78.3 480 96 480L160 480L160 512C160 547.3 188.7 576 224 576L416 576C451.3 576 480 547.3 480 512L480 480L544 480C561.7 480 576 465.7 576 448L576 416C576 345.2 531.8 291.4 482.7 271C452.1 315.7 405.7 354.3 352.1 366.4C345.8 387.9 333.8 407.6 318.1 424.1C300.9 442.1 279.1 455.5 255.1 463.2C243.5 467.1 231.3 469.3 219.1 469.3C161.9 469.3 110.7 442.1 76.8 400.1C71.4 393.5 66.5 386.5 62.1 379.1C71.4 355.1 88.1 334.3 109.3 319.1C135.1 300.7 167.1 291.1 201.3 291.1C223.1 291.1 245.3 296.1 265.3 305.1C276.1 310.7 285.9 317.1 294.9 325.1C298.1 327.1 301.1 330.1 304.1 333.1C299.1 325.1 295.1 316.7 291.1 308.1C280.1 281.1 274.7 252.1 274.7 222.3L274.7 213.3C238.9 233.1 197.1 243.4 152.1 243.4C121.1 243.4 91.4 237.1 64.1 226.3C64 230.9 64 235.5 64 240C64 306.3 102.7 364.1 157.3 271z"/>
+                  </svg>
                 </div>
                 <span>Pimpri, Pune</span>
-              </div>
+              </a>
             </div>
 
             {/* Download Resume Button */}
             <Button
               variant="outline"
-              className="rounded-full px-8 py-6 text-base gap-2"
+              className="rounded-full px-8 py-6 text-base gap-2 w-40"
               asChild
             >
               <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
@@ -192,16 +199,14 @@ const Contact = () => {
                 )}
               </div>
 
-              <div className="flex justify-end">
-                <Button
-                  type="submit"
-                  variant="outline"
-                  className="rounded-full px-12 py-6 text-base gap-2"
-                >
-                  Submit
-                  <ArrowRight className="h-5 w-5" />
-                </Button>
-              </div>
+              <Button
+                type="submit"
+                variant="outline"
+                className="rounded-full px-8 py-6 text-base gap-2 w-40"
+              >
+                Submit
+                <ArrowRight className="h-5 w-5" />
+              </Button>
             </form>
           </div>
         </div>
