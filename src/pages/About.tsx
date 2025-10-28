@@ -96,31 +96,31 @@ const About = () => {
               </h2>
               
               <Accordion type="single" collapsible className="w-full">
-                {/* Podar International School */}
-                <AccordionItem value="podar" className="border-b border-border/50">
+                {/* MITAOE */}
+                <AccordionItem value="mitaoe" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          Podar International School
+                          MITAOE - School of Design
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
                         <span className="hidden lg:block text-xl font-medium text-foreground">
-                          Podar International School
+                          MITAOE - School of Design
                         </span>
                         <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
                           <div className="flex items-center gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg lg:text-lg font-medium">Schooling</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Bachelor's Degree</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg lg:text-lg font-medium">ICSE</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Bdes - Ux Design</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Pimpri</span>
+                            <span className="text-gray-500">Pune</span>
                             <span className="text-border">|</span>
-                            <span className="text-gray-500">2008-2019</span>
+                            <span className="text-gray-500">2021-2026</span>
                           </div>
                         </div>
                       </div>
@@ -131,17 +131,17 @@ const About = () => {
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
-                          <li>School Football Team Captain</li>
-                          <li>Inter-school Football Tournaments Representative</li>
-                          <li>Art Exhibition Participant</li>
+                          <li>College Academic Merit, 3rd Rank UX Design (2nd Year)</li>
+                          <li>College Academic Merit, 3rd Rank UX Design (3rd Year)</li>
+                          <li>Zonal Representative, Aaviskar 2024 - Research Competition</li>
                         </ul>
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Extra Curricular Activites</h3>
                         <ul className="space-y-2 text-foreground/80">
-                          <li>School Football Team</li>
-                          <li>Art Classes and Exhibitions</li>
-                          <li>Music and DJing Exploration</li>
+                          <li>Google Developers Group oncampus MITAOE, Creative Lead</li>
+                          <li>NASA Space Apps Challenge, Visual Designer</li>
+                          <li>Departmental Sports</li>
                         </ul>
                       </div>
                     </div>
@@ -200,8 +200,8 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
 
-                {/* MITAOE */}
-                <AccordionItem value="mitaoe" className="border-b border-border/50">
+                {/* Podar International School */}
+                <AccordionItem value="podar" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
@@ -259,6 +259,84 @@ const About = () => {
               <h2 className="text-3xl font-bold text-primary lg:text-4xl">Work Experience</h2>
               
               <Accordion type="single" collapsible className="w-full">
+                {/* Antef */}
+                <AccordionItem value="antef" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={antefLogo} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                          Antef
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-xl font-medium text-foreground">
+                          Antef
+                        </span>
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Full-time</span>
+                          </div>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <div className="flex items-center gap-3">
+                            <span className="text-gray-500">Remote</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">June 2025 - Sept 2025</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6 px-4">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Redesigned the Geodit mobile app by evaluating user experience and use cases. Collaborated directly with the CEO to align product vision and with developers to ensure a smooth developer handoff.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* Devnco Technologies */}
+                <AccordionItem value="devnco" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                          Devnco Technologies
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-xl font-medium text-foreground">
+                          Devnco Technologies
+                        </span>
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <div className="flex items-center gap-3">
+                            <span className="text-gray-500">On-site</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">Nov 2024 - Apr 2025</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6 px-4">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Designed responsive website UI/UX (IA, flows, wireframes) with smooth developer handoff, and created product brochure for Enviro Genesis.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
                 {/* Zestrix Solutions */}
                 <AccordionItem value="zestrix" className="border-b border-border/50">
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
@@ -338,85 +416,51 @@ const About = () => {
                     </div>
                   </AccordionContent>
                 </AccordionItem>
-
-                {/* Devnco Technologies */}
-                <AccordionItem value="devnco" className="border-b border-border/50">
-                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          Devnco Technologies
-                        </span>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
-                        <span className="hidden lg:block text-xl font-medium text-foreground">
-                          Devnco Technologies
-                        </span>
-                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
-                            <span className="text-border">|</span>
-                            <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
-                          </div>
-                          <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-3">
-                            <span className="text-gray-500">On-site</span>
-                            <span className="text-border">|</span>
-                            <span className="text-gray-500">Nov 2024 - Apr 2025</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pt-4 pb-6 px-4">
-                      <p className="text-foreground/80 text-lg leading-relaxed">
-                        Designed responsive website UI/UX (IA, flows, wireframes) with smooth developer handoff, and created product brochure for Enviro Genesis.
-                      </p>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
-
-                {/* Antef */}
-                <AccordionItem value="antef" className="border-b border-border/50">
-                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
-                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
-                      <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={antefLogo} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
-                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          Antef
-                        </span>
-                      </div>
-                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
-                        <span className="hidden lg:block text-xl font-medium text-foreground">
-                          Antef
-                        </span>
-                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
-                          <div className="flex items-center gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg lg:text-lg font-medium">UX Design Intern</span>
-                            <span className="text-border">|</span>
-                            <span className="text-base md:text-lg lg:text-lg font-medium">Full-time</span>
-                          </div>
-                          <span className="text-border hidden lg:inline">|</span>
-                          <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Remote</span>
-                            <span className="text-border">|</span>
-                            <span className="text-gray-500">June 2025 - Sept 2025</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <div className="pt-4 pb-6 px-4">
-                      <p className="text-foreground/80 text-lg leading-relaxed">
-                        Redesigned the Geodit mobile app by evaluating user experience and use cases. Collaborated directly with the CEO to align product vision and with developers to ensure a smooth developer handoff.
-                      </p>
-                    </div>
-                  </AccordionContent>
-                </AccordionItem>
               </Accordion>
+            </div>
+
+            {/* Interests in Focus Section */}
+            <div className="space-y-6 pt-12">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+                    Interests in focus
+                  </h2>
+                  
+                  <div className="space-y-4 text-base lg:text-lg leading-relaxed text-foreground/90 max-w-md">
+                    <p>I am an avid football player who loves to sketch, meditate, listen to and occasionally mix music, play the guitar, and explore photography. I have recently picked up chess and enjoy the challenge it brings.
+
+I am enthusiastic about learning new things and understanding the science behind them.</p>
+                  </div>
+                </div>
+
+                {/* Carousel with Overlapping Images */}
+                <div className="relative">
+                  <InterestsCarousel images={[{
+                  src: interestPottery,
+                  alt: "Pottery"
+                }, {
+                  src: interestMeditation,
+                  alt: "Meditation"
+                }, {
+                  src: interestWoodwork,
+                  alt: "Woodwork"
+                }, {
+                  src: interestFootballTeam,
+                  alt: "Football Team"
+                }, {
+                  src: interestGuitar,
+                  alt: "Guitar"
+                }, {
+                  src: interestFootballAction,
+                  alt: "Football Action"
+                }, {
+                  src: interestFootballField,
+                  alt: "Football Field"
+                }]} />
+                </div>
+              </div>
             </div>
 
             {/* Extracurriculars & Volunteering Section */}
@@ -468,7 +512,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={nasaSpaceAppsLogo} alt="NASA Space Apps Challenge" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={nasaSpaceAppsLogo} alt="NASA Space Apps Challenge" className="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           NASA Space Apps Challenge
                         </span>
@@ -502,50 +546,6 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
-            </div>
-
-            {/* Interests in Focus Section */}
-            <div className="space-y-6 pt-12">
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                {/* Text Content */}
-                <div className="space-y-6">
-                  <h2 className="text-3xl font-bold text-primary lg:text-4xl">
-                    Interests in focus
-                  </h2>
-                  
-                  <div className="space-y-4 text-base lg:text-lg leading-relaxed text-foreground/90 max-w-md">
-                    <p>I am an avid football player who loves to sketch, meditate, listen to and occasionally mix music, play the guitar, and explore photography. I have recently picked up chess and enjoy the challenge it brings.
-
-I am enthusiastic about learning new things and understanding the science behind them.</p>
-                  </div>
-                </div>
-
-                {/* Carousel with Overlapping Images */}
-                <div className="relative">
-                  <InterestsCarousel images={[{
-                  src: interestPottery,
-                  alt: "Pottery"
-                }, {
-                  src: interestMeditation,
-                  alt: "Meditation"
-                }, {
-                  src: interestWoodwork,
-                  alt: "Woodwork"
-                }, {
-                  src: interestFootballTeam,
-                  alt: "Football Team"
-                }, {
-                  src: interestGuitar,
-                  alt: "Guitar"
-                }, {
-                  src: interestFootballAction,
-                  alt: "Football Action"
-                }, {
-                  src: interestFootballField,
-                  alt: "Football Field"
-                }]} />
-                </div>
-              </div>
             </div>
           </div>
         </div>
