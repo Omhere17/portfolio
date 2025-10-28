@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
@@ -13,6 +14,13 @@ import mitsdLogo from "@/assets/mitsd-logo-text.png";
 import devncoLogo from "@/assets/devnco-logo.png";
 import antefLogo from "@/assets/antef-logo.png";
 import ystocxxLogo from "@/assets/ystocxx-logo.png";
+import interestPottery from "@/assets/interest-pottery.png";
+import interestMeditation from "@/assets/interest-meditation.png";
+import interestWoodwork from "@/assets/interest-woodwork.png";
+import interestFootballTeam from "@/assets/interest-football-team.png";
+import interestGuitar from "@/assets/interest-guitar.png";
+import interestFootballAction from "@/assets/interest-football-action.png";
+import interestFootballField from "@/assets/interest-football-field.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -407,6 +415,101 @@ const About = () => {
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
+            </div>
+
+            {/* Interests in Focus Section */}
+            <div className="space-y-6 pt-12">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                {/* Text Content */}
+                <div className="space-y-6">
+                  <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+                    Interests in focus
+                  </h2>
+                  
+                  <div className="space-y-4 text-base lg:text-lg leading-relaxed text-foreground/90">
+                    <p>
+                      I am an avid football player who loves to sketch, meditate, listen to and occasionally mix music, play the guitar, and explore photography. I have recently picked up chess and enjoy the challenge it brings.
+                    </p>
+                    
+                    <p>
+                      I am enthusiastic about learning new things and understanding the science behind them.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Carousel */}
+                <div className="relative px-12">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestPottery} 
+                            alt="Pottery" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestMeditation} 
+                            alt="Meditation" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestWoodwork} 
+                            alt="Woodwork" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestFootballTeam} 
+                            alt="Football Team" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestGuitar} 
+                            alt="Guitar" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestFootballAction} 
+                            alt="Football Action" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                      <CarouselItem className="flex justify-center">
+                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                          <img 
+                            src={interestFootballField} 
+                            alt="Football Field" 
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </CarouselItem>
+                    </CarouselContent>
+                    <CarouselPrevious className="left-0" />
+                    <CarouselNext className="right-0" />
+                  </Carousel>
+                </div>
+              </div>
             </div>
           </div>
         </div>
