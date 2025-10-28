@@ -40,6 +40,7 @@ const projects = [
       {
         src: stravaIntro,
         alt: "Strava gamification introduction",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/cSx460aMzQIEwQxc39xJvS/Visual-feedback-mechanism--Toast-Notification-?page-id=0%3A1&node-id=1-70&p=f&viewport=471%2C362%2C0.18&scaling=scale-down&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
       },
       {
         src: strava2,
@@ -182,11 +183,11 @@ export default function Project() {
                     onClick={() => navigate(`/project/${otherProject.id}`)}
                   >
                     {/* Project Image */}
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted max-w-md mx-auto">
                       <img
                         src={otherProject.coverImage}
                         alt={otherProject.title}
-                        className="w-full h-full object-cover shadow-none"
+                        className="w-full h-full object-cover"
                       />
                     </div>
 
