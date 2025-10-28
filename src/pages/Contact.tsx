@@ -6,7 +6,7 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, MapPin, Download } from "lucide-react";
+import { MapPin, Download, ArrowRight } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
 
@@ -74,18 +74,20 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Section - Contact Info */}
           <div className="space-y-12">
-            <h1 className="text-4xl lg:text-5xl font-bold text-primary">
+            <h1 className="text-3xl lg:text-4xl font-bold text-primary">
               Reach out to me.
             </h1>
             
-            <div className="space-y-6">
+            <div className="space-y-10">
               {/* Email */}
               <a 
                 href="mailto:omtiwari.pune@gmail.com"
                 className="flex items-center gap-4 text-lg hover:opacity-80 transition-opacity group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail className="h-6 w-6 text-primary" />
+                  <svg className="h-6 w-6 text-primary" viewBox="0 0 640 640" fill="currentColor">
+                    <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
+                  </svg>
                 </div>
                 <span>omtiwari.pune@gmail.com</span>
               </a>
@@ -129,22 +131,22 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Download CV Button */}
+            {/* Download Resume Button */}
             <Button
               variant="outline"
               className="rounded-full px-8 py-6 text-base gap-2"
               asChild
             >
               <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
+                Resume
                 <Download className="h-5 w-5" />
-                Download CV
               </a>
             </Button>
           </div>
 
           {/* Right Section - Contact Form */}
           <div className="space-y-8">
-            <h2 className="text-4xl lg:text-5xl font-bold text-primary">
+            <h2 className="text-3xl lg:text-4xl font-bold text-primary">
               Got a project? Let's Talk.
             </h2>
 
@@ -194,9 +196,10 @@ const Contact = () => {
                 <Button
                   type="submit"
                   variant="outline"
-                  className="rounded-full px-12 py-6 text-base"
+                  className="rounded-full px-12 py-6 text-base gap-2"
                 >
                   Submit
+                  <ArrowRight className="h-5 w-5" />
                 </Button>
               </div>
             </form>
