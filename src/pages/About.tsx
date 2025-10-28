@@ -426,7 +426,7 @@ const About = () => {
                     Interests in focus
                   </h2>
                   
-                  <div className="space-y-4 text-base lg:text-lg leading-relaxed text-foreground/90">
+                  <div className="space-y-4 text-base lg:text-lg leading-relaxed text-foreground/90 max-w-md">
                     <p>I am an avid football player who loves to sketch, meditate, listen to and occasionally mix music, play the guitar, and explore photography. I have recently picked up chess and enjoy the challenge it brings.
 
 I am enthusiastic about learning new things and understanding the science behind them.</p>
