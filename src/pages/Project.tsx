@@ -42,11 +42,6 @@ const projects = [
         alt: "Strava gamification introduction",
       },
       {
-        src: strava1,
-        alt: "Visual feedback mechanism - Toast Notification",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/cSx460aMzQIEwQxc39xJvS/Visual-feedback-mechanism--Toast-Notification-?page-id=0%3A1&node-id=1-123&p=f&viewport=471%2C362%2C0.18&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
-      },
-      {
         src: strava2,
         alt: "Experience Points & Levels",
         embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/lzEeKTXYT52Vq7mjWeuX7w/Experience-Points---levels?page-id=0%3A1&node-id=1-176&p=f&viewport=417%2C193%2C0.18&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A176&embed-host=share" allowfullscreen></iframe>',
