@@ -47,7 +47,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
   return (
     <div className="relative w-full max-w-3xl mx-auto py-8">
       {/* Container for overlapping images */}
-      <div className="relative flex items-center justify-center h-64 lg:h-80">
+      <div className="relative flex items-center justify-center h-80 lg:h-96">
         {/* Far left image (second previous) */}
         <div className="absolute left-0 lg:left-4 w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden z-0 opacity-30">
           <img 
