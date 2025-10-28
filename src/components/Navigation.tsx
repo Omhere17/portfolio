@@ -62,9 +62,12 @@ export const Navigation = () => {
           <Button
             variant="secondary"
             className="hidden md:flex items-center gap-2 rounded-full px-6"
+            asChild
           >
-            Resume
-            <Download className="h-4 w-4" />
+            <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
+              Resume
+              <Download className="h-4 w-4" />
+            </a>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -113,9 +116,12 @@ export const Navigation = () => {
               <Button
                 variant="secondary"
                 className="flex items-center justify-center gap-2 rounded-full w-full"
+                asChild
               >
-                Resume
-                <Download className="h-4 w-4" />
+                <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
+                  Resume
+                  <Download className="h-4 w-4" />
+                </a>
               </Button>
             </div>
           </div>
