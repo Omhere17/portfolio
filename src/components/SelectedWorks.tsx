@@ -2,8 +2,18 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import kazeCover from "@/assets/kaze-cover.png";
+import stravaCover from "@/assets/strava-cover.png";
 
 const projects = [
+  {
+    id: "strava-gamification",
+    title: "Gamifying the Strava Experience",
+    description:
+      "Gamified the Strava app using the Octalysis Framework. Designed and tested UI concepts to boost weak core drives, improving user motivation and engagement.",
+    tags: ["UX Research", "UI Design", "Prototyping"],
+    image: stravaCover,
+    link: "/project/strava-gamification",
+  },
   {
     id: "kaze-airlines",
     title: "Kaze Airlines branding",

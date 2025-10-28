@@ -13,8 +13,55 @@ import {
 } from "@/components/ui/carousel";
 import kazeProject from "@/assets/kaze-project.png";
 import kazeCover from "@/assets/kaze-cover.png";
+import stravaCover from "@/assets/strava-cover.png";
+import strava1 from "@/assets/strava-1.png";
+import strava2 from "@/assets/strava-2.png";
+import strava3 from "@/assets/strava-3.png";
+import strava4 from "@/assets/strava-4.png";
+import strava5 from "@/assets/strava-5.png";
+
+interface ProjectImage {
+  src: string;
+  alt: string;
+  embedCode?: string;
+}
 
 const projects = [
+  {
+    id: "strava-gamification",
+    title: "Gamifying the Strava Experience",
+    description:
+      "Gamified the Strava app using the Octalysis Framework. Designed and tested UI concepts to boost weak core drives, improving user motivation and engagement.",
+    tags: ["UX Research", "UI Design", "Prototyping"],
+    coverImage: stravaCover,
+    projectImages: [
+      {
+        src: strava1,
+        alt: "Strava gamification testing insights",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/cSx460aMzQIEwQxc39xJvS/Visual-feedback-mechanism--Toast-Notification-?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+      },
+      {
+        src: strava2,
+        alt: "Experience Points & Levels",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/lzEeKTXYT52Vq7mjWeuX7w/Experience-Points---levels?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+      },
+      {
+        src: strava3,
+        alt: "Purpose-driven goals",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Xn11zNHVuQ0IoLLC8O0euh/Purpose-Driven-Goals?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+      },
+      {
+        src: strava4,
+        alt: "Real-Time Feedback / Audio Feedback",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/XpJXSMEs29em0rSDXW72ko/Real-Time-Feedback---Audio-Feedback?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+      },
+      {
+        src: strava5,
+        alt: "Badges",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/YsgPCUUckvt1mT6WclhoX5/Badges?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+      },
+    ] as ProjectImage[],
+  },
   {
     id: "kaze-airlines",
     title: "Kaze Airlines branding",
@@ -22,7 +69,12 @@ const projects = [
       "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
     tags: ["Branding", "Visual Design", "Visual Design"],
     coverImage: kazeCover,
-    projectImage: kazeProject,
+    projectImages: [
+      {
+        src: kazeProject,
+        alt: "Kaze Airlines branding",
+      },
+    ] as ProjectImage[],
   },
   {
     id: "ecommerce-redesign",
@@ -30,7 +82,12 @@ const projects = [
     description: "Transforming the shopping experience with modern UI patterns and seamless checkout flows.",
     tags: ["UI/UX Design", "Research", "Prototyping"],
     coverImage: "/placeholder.svg",
-    projectImage: "/placeholder.svg",
+    projectImages: [
+      {
+        src: "/placeholder.svg",
+        alt: "E-commerce Platform Redesign",
+      },
+    ] as ProjectImage[],
   },
   {
     id: "healthcare-app",
@@ -38,7 +95,12 @@ const projects = [
     description: "Empowering patients with easy access to health records and appointment scheduling.",
     tags: ["Mobile Design", "UX Research", "Accessibility"],
     coverImage: "/placeholder.svg",
-    projectImage: "/placeholder.svg",
+    projectImages: [
+      {
+        src: "/placeholder.svg",
+        alt: "Healthcare Mobile App",
+      },
+    ] as ProjectImage[],
   },
 ];
 
@@ -71,13 +133,28 @@ export default function Project() {
         </div>
       </nav>
 
-      {/* Full Screen Project Image */}
+      {/* Project Content */}
       <div className="w-full">
-        <img
-          src={project.projectImage}
-          alt={project.title}
-          className="w-full h-auto object-contain"
-        />
+        {project.projectImages.map((image, index) => (
+          <div key={index} className="w-full">
+            {/* Project Image */}
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto object-contain"
+            />
+            
+            {/* Figma Embed */}
+            {image.embedCode && (
+              <div className="w-full flex justify-center py-12 bg-muted/20">
+                <div 
+                  className="w-full max-w-[800px] aspect-video"
+                  dangerouslySetInnerHTML={{ __html: image.embedCode }}
+                />
+              </div>
+            )}
+          </div>
+        ))}
       </div>
 
       {/* View Other Projects Section */}
