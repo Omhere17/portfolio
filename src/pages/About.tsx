@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { InterestsCarousel } from "@/components/InterestsCarousel";
 import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
@@ -437,83 +437,19 @@ const About = () => {
                   </div>
                 </div>
 
-                {/* Carousel */}
-                <div className="relative px-12 overflow-visible">
-                  <Carousel 
-                    className="w-full"
-                    opts={{
-                      align: "center",
-                      loop: true,
-                    }}
-                  >
-                    <CarouselContent className="-ml-4">
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestPottery} 
-                            alt="Pottery" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestMeditation} 
-                            alt="Meditation" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestWoodwork} 
-                            alt="Woodwork" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestFootballTeam} 
-                            alt="Football Team" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestGuitar} 
-                            alt="Guitar" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestFootballAction} 
-                            alt="Football Action" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
-                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
-                          <img 
-                            src={interestFootballField} 
-                            alt="Football Field" 
-                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
-                          />
-                        </div>
-                      </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious className="left-0" />
-                    <CarouselNext className="right-0" />
-                  </Carousel>
+                {/* Carousel with Overlapping Images */}
+                <div className="relative">
+                  <InterestsCarousel 
+                    images={[
+                      { src: interestPottery, alt: "Pottery" },
+                      { src: interestMeditation, alt: "Meditation" },
+                      { src: interestWoodwork, alt: "Woodwork" },
+                      { src: interestFootballTeam, alt: "Football Team" },
+                      { src: interestGuitar, alt: "Guitar" },
+                      { src: interestFootballAction, alt: "Football Action" },
+                      { src: interestFootballField, alt: "Football Field" },
+                    ]}
+                  />
                 </div>
               </div>
             </div>
