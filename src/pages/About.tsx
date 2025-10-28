@@ -21,6 +21,8 @@ import interestFootballTeam from "@/assets/interest-football-team.png";
 import interestGuitar from "@/assets/interest-guitar.png";
 import interestFootballAction from "@/assets/interest-football-action.png";
 import interestFootballField from "@/assets/interest-football-field.png";
+import gdgLogo from "@/assets/gdg-logo.png";
+import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -427,9 +429,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-xl lg:text-2xl font-bold text-primary">GDG</span>
-                        </div>
+                        <img src={gdgLogo} alt="GDG on campus MITAOE" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           GDG on campus MITAOE
                         </span>
@@ -448,7 +448,7 @@ const About = () => {
                           <div className="flex items-center gap-3">
                             <span className="text-gray-500">Hybrid</span>
                             <span className="text-border">|</span>
-                            <span className="text-gray-500">June 2024 - Sep 2025</span>
+                            <span className="text-gray-500">Oct 2025 - Present</span>
                           </div>
                         </div>
                       </div>
@@ -468,9 +468,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-xl lg:text-2xl font-bold text-primary">NASA</span>
-                        </div>
+                        <img src={nasaSpaceAppsLogo} alt="NASA Space Apps Challenge" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           NASA Space Apps Challenge
                         </span>
@@ -489,7 +487,7 @@ const About = () => {
                           <div className="flex items-center gap-3">
                             <span className="text-gray-500">Hybrid</span>
                             <span className="text-border">|</span>
-                            <span className="text-gray-500">Oct 2025 - Present</span>
+                            <span className="text-gray-500">June 2024 - Sep 2025</span>
                           </div>
                         </div>
                       </div>
