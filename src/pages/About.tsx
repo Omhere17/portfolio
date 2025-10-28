@@ -417,6 +417,95 @@ const About = () => {
               </Accordion>
             </div>
 
+            {/* Extracurriculars & Volunteering Section */}
+            <div className="space-y-6 pt-12">
+              <h2 className="text-3xl font-bold text-primary lg:text-4xl">Extracurriculars & Volunteering</h2>
+              
+              <Accordion type="single" collapsible className="w-full">
+                {/* GDG on campus MITAOE */}
+                <AccordionItem value="gdg" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-xl lg:text-2xl font-bold text-primary">GDG</span>
+                        </div>
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                          GDG on campus MITAOE
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-xl font-medium text-foreground">
+                          GDG on campus MITAOE
+                        </span>
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Creative Lead</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <div className="flex items-center gap-3">
+                            <span className="text-gray-500">Hybrid</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">June 2024 - Sep 2025</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6 px-4">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Led creative initiatives for GDG on campus MITAOE, managing visual design and branding efforts for various technical events and community programs.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+
+                {/* NASA Space Apps Challenge */}
+                <AccordionItem value="nasa" className="border-b border-border/50">
+                  <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
+                    <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
+                      <div className="flex items-center gap-4 lg:gap-6">
+                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
+                          <span className="text-xl lg:text-2xl font-bold text-primary">NASA</span>
+                        </div>
+                        <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
+                          NASA Space Apps Challenge
+                        </span>
+                      </div>
+                      <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
+                        <span className="hidden lg:block text-xl font-medium text-foreground">
+                          NASA Space Apps Challenge
+                        </span>
+                        <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
+                          <div className="flex items-center gap-3 whitespace-nowrap">
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Visual Designer</span>
+                            <span className="text-border">|</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">Part-time</span>
+                          </div>
+                          <span className="text-border hidden lg:inline">|</span>
+                          <div className="flex items-center gap-3">
+                            <span className="text-gray-500">Hybrid</span>
+                            <span className="text-border">|</span>
+                            <span className="text-gray-500">Oct 2025 - Present</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <div className="pt-4 pb-6 px-4">
+                      <p className="text-foreground/80 text-lg leading-relaxed">
+                        Contributed as a Visual Designer for NASA Space Apps Challenge, creating compelling visual materials and design assets for space-related projects and presentations.
+                      </p>
+                    </div>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+
             {/* Interests in Focus Section */}
             <div className="space-y-6 pt-12">
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
