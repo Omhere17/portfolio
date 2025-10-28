@@ -116,10 +116,10 @@ export const Footer = () => {
                 <a href="#work" className="hover:opacity-80 transition-opacity">
                   Work
                 </a>
-                <a href="#about" className="hover:opacity-80 transition-opacity">
+                <a href="/about" className="hover:opacity-80 transition-opacity">
                   About
                 </a>
-                <a href="#contact" className="hover:opacity-80 transition-opacity">
+                <a href="/contact" className="hover:opacity-80 transition-opacity">
                   Contact
                 </a>
                 <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="hover:opacity-80 transition-opacity">
@@ -134,10 +134,10 @@ export const Footer = () => {
             <a href="#work" className="hover:opacity-80 transition-opacity">
               Work
             </a>
-            <a href="#about" className="hover:opacity-80 transition-opacity">
+            <a href="/about" className="hover:opacity-80 transition-opacity">
               About
             </a>
-            <a href="#contact" className="hover:opacity-80 transition-opacity">
+            <a href="/contact" className="hover:opacity-80 transition-opacity">
               Contact
             </a>
             <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="hover:opacity-80 transition-opacity">
