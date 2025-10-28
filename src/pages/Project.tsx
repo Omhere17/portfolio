@@ -14,11 +14,13 @@ import {
 import kazeProject from "@/assets/kaze-project.png";
 import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
+import stravaIntro from "@/assets/strava-intro.png";
 import strava1 from "@/assets/strava-1.png";
 import strava2 from "@/assets/strava-2.png";
 import strava3 from "@/assets/strava-3.png";
 import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
+import stravaLast from "@/assets/strava-1.png";
 
 interface ProjectImage {
   src: string;
@@ -36,29 +38,37 @@ const projects = [
     coverImage: stravaCover,
     projectImages: [
       {
+        src: stravaIntro,
+        alt: "Strava gamification introduction",
+      },
+      {
         src: strava1,
-        alt: "Strava gamification testing insights",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/cSx460aMzQIEwQxc39xJvS/Visual-feedback-mechanism--Toast-Notification-?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+        alt: "Visual feedback mechanism - Toast Notification",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/cSx460aMzQIEwQxc39xJvS/Visual-feedback-mechanism--Toast-Notification-?page-id=0%3A1&node-id=1-123&p=f&viewport=471%2C362%2C0.18&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
       },
       {
         src: strava2,
         alt: "Experience Points & Levels",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/lzEeKTXYT52Vq7mjWeuX7w/Experience-Points---levels?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/lzEeKTXYT52Vq7mjWeuX7w/Experience-Points---levels?page-id=0%3A1&node-id=1-176&p=f&viewport=417%2C193%2C0.18&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A176&embed-host=share" allowfullscreen></iframe>',
       },
       {
         src: strava3,
         alt: "Purpose-driven goals",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/Xn11zNHVuQ0IoLLC8O0euh/Purpose-Driven-Goals?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/Xn11zNHVuQ0IoLLC8O0euh/Purpose-Driven-Goals?page-id=0%3A1&node-id=1-55&p=f&viewport=541%2C438%2C0.5&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
       },
       {
         src: strava4,
         alt: "Real-Time Feedback / Audio Feedback",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/XpJXSMEs29em0rSDXW72ko/Real-Time-Feedback---Audio-Feedback?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/XpJXSMEs29em0rSDXW72ko/Real-Time-Feedback---Audio-Feedback?page-id=0%3A1&node-id=1-6&p=f&viewport=45%2C201%2C0.32&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
       },
       {
         src: strava5,
         alt: "Badges",
-        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/design/YsgPCUUckvt1mT6WclhoX5/Badges?node-id=0-1&embed-host=share" allowfullscreen></iframe>',
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/YsgPCUUckvt1mT6WclhoX5/Badges?page-id=0%3A1&node-id=0-228&p=f&viewport=200%2C93%2C0.17&scaling=min-zoom&content-scaling=fixed&embed-host=share" allowfullscreen></iframe>',
+      },
+      {
+        src: stravaLast,
+        alt: "Strava gamification summary",
       },
     ] as ProjectImage[],
   },
@@ -141,7 +151,7 @@ export default function Project() {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain shadow-none"
             />
             
             {/* Figma Embed */}
@@ -158,9 +168,9 @@ export default function Project() {
       </div>
 
       {/* View Other Projects Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-16 text-center">View Other Projects</h2>
+          <h2 className="text-2xl font-bold mb-8 text-center">View Other Projects</h2>
           
           <Carousel
             opts={{
@@ -172,8 +182,8 @@ export default function Project() {
             <CarouselContent>
               {otherProjects.map((otherProject) => (
                 <CarouselItem key={otherProject.id}>
-                  <article 
-                    className="space-y-6 cursor-pointer"
+                   <article 
+                    className="space-y-4 cursor-pointer"
                     onClick={() => navigate(`/project/${otherProject.id}`)}
                   >
                     {/* Project Image */}
@@ -181,13 +191,13 @@ export default function Project() {
                       <img
                         src={otherProject.coverImage}
                         alt={otherProject.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover shadow-none"
                       />
                     </div>
 
                     {/* Project Details */}
-                    <div className="space-y-4">
-                      <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
+                    <div className="space-y-2">
+                      <h3 className="text-xl lg:text-2xl font-bold leading-tight">
                         {otherProject.title}
                       </h3>
 
