@@ -21,6 +21,9 @@ import strava3 from "@/assets/strava-3.png";
 import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
 import stravaLast from "@/assets/strava-1.png";
+import mooloCover from "@/assets/moolo-cover.png";
+import mooloFirst from "@/assets/moolo-first.jpg";
+import mooloSecond from "@/assets/moolo-second.jpg";
 
 interface ProjectImage {
   src: string;
@@ -65,6 +68,29 @@ const projects = [
       {
         src: stravaLast,
         alt: "Strava gamification summary",
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "moolo-iot",
+    title: "IoT-Based Kids Tangible Product",
+    description:
+      "Iot based interactive device that simplifies complex financial concepts through engaging, hands-on learning.",
+    tags: ["Tangible Interaction", "IOT", "Machine learning"],
+    coverImage: mooloCover,
+    projectImages: [
+      {
+        src: mooloFirst,
+        alt: "Moolo IoT product introduction",
+      },
+      {
+        src: mooloFirst,
+        alt: "Moolo product video",
+        embedCode: '<!-- Add video embed code here -->',
+      },
+      {
+        src: mooloSecond,
+        alt: "Moolo product features",
       },
     ] as ProjectImage[],
   },
