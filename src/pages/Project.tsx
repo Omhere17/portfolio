@@ -1,7 +1,16 @@
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { CustomCursor } from "@/components/CustomCursor";
+import { Footer } from "@/components/Footer";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import kazeProject from "@/assets/kaze-project.png";
 import kazeCover from "@/assets/kaze-cover.png";
 
@@ -46,10 +55,10 @@ export default function Project() {
 
   return (
     <div className="min-h-screen">
+      <CustomCursor />
       {/* Sticky Navigation */}
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold">{project.title}</h1>
+        <div className="container mx-auto px-6 py-4 flex items-center">
           <Button
             variant="ghost"
             size="icon"
@@ -58,6 +67,7 @@ export default function Project() {
           >
             <ArrowLeft className="h-5 w-5" />
           </Button>
+          <h1 className="text-xl font-bold absolute left-1/2 -translate-x-1/2">{project.title}</h1>
         </div>
       </nav>
 
@@ -75,51 +85,61 @@ export default function Project() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-16 text-center">View Other Projects</h2>
           
-          <div className="grid md:grid-cols-2 gap-12">
-            {otherProjects.map((otherProject) => (
-              <Link
-                key={otherProject.id}
-                to={`/project/${otherProject.id}`}
-                className="group"
-              >
-                <article className="space-y-6">
-                  {/* Project Image */}
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                    <img
-                      src={otherProject.coverImage}
-                      alt={otherProject.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-
-                  {/* Project Details */}
-                  <div className="space-y-4">
-                    <h3 className="text-2xl lg:text-3xl font-bold leading-tight group-hover:text-primary transition-colors">
-                      {otherProject.title}
-                    </h3>
-
-                    <div className="flex flex-wrap gap-2">
-                      {otherProject.tags.map((tag, index) => (
-                        <Badge
-                          key={index}
-                          variant="outline"
-                          className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground"
-                        >
-                          {tag}
-                        </Badge>
-                      ))}
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full max-w-5xl mx-auto"
+          >
+            <CarouselContent>
+              {otherProjects.map((otherProject) => (
+                <CarouselItem key={otherProject.id}>
+                  <article 
+                    className="space-y-6 cursor-pointer"
+                    onClick={() => navigate(`/project/${otherProject.id}`)}
+                  >
+                    {/* Project Image */}
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                      <img
+                        src={otherProject.coverImage}
+                        alt={otherProject.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
 
-                    <p className="text-base text-muted-foreground leading-relaxed">
-                      {otherProject.description}
-                    </p>
-                  </div>
-                </article>
-              </Link>
-            ))}
-          </div>
+                    {/* Project Details */}
+                    <div className="space-y-4">
+                      <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
+                        {otherProject.title}
+                      </h3>
+
+                      <div className="flex flex-wrap gap-2">
+                        {otherProject.tags.map((tag, index) => (
+                          <Badge
+                            key={index}
+                            variant="outline"
+                            className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground"
+                          >
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+
+                      <p className="text-base text-muted-foreground leading-relaxed">
+                        {otherProject.description}
+                      </p>
+                    </div>
+                  </article>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

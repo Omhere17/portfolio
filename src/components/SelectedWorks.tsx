@@ -61,48 +61,48 @@ export const SelectedWorks = () => {
           {/* Projects Grid */}
           <div className="flex-1 space-y-16 sm:space-y-24 lg:space-y-48 pb-[50vh]">
             {projects.map((project) => (
-              <article
+              <Link
                 key={project.id}
-                className="flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16"
+                to={project.link}
+                className="block"
               >
-                {/* Project Image */}
-                <div className="lg:w-1/2">
-                  <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                    <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
-                  </div>
-                </div>
-
-                {/* Project Details */}
-                <div className="lg:w-1/2 space-y-4 sm:space-y-6">
-                  <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
-                    {project.title}
-                  </h3>
-
-                  <div className="flex flex-wrap lg:flex-nowrap gap-2">
-                    {project.tags.map((tag, index) => (
-                      <Badge
-                        key={index}
-                        variant="outline"
-                        className="rounded-full px-2.5 py-1 text-xs sm:px-4 sm:py-1.5 sm:text-sm border-2 border-foreground whitespace-nowrap"
-                      >
-                        {tag}
-                      </Badge>
-                    ))}
+                <article className="flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16 cursor-pointer group">
+                  {/* Project Image */}
+                  <div className="lg:w-1/2">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                      <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    </div>
                   </div>
 
-                  <div className="w-12 h-0.5 bg-foreground" />
+                  {/* Project Details */}
+                  <div className="lg:w-1/2 space-y-4 sm:space-y-6">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
 
-                  <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">{project.description}</p>
+                    <div className="flex flex-wrap lg:flex-nowrap gap-2">
+                      {project.tags.map((tag, index) => (
+                        <Badge
+                          key={index}
+                          variant="outline"
+                          className="rounded-full px-2.5 py-1 text-xs sm:px-4 sm:py-1.5 sm:text-sm border-2 border-foreground whitespace-nowrap"
+                        >
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
 
-                  <Link
-                    to={project.link}
-                    className="inline-flex items-center gap-2 text-lg font-medium text-primary hover:underline"
-                  >
-                    View Project
-                    <ArrowUpRight className="h-5 w-5" />
-                  </Link>
-                </div>
-              </article>
+                    <div className="w-12 h-0.5 bg-foreground" />
+
+                    <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">{project.description}</p>
+
+                    <span className="inline-flex items-center gap-2 text-lg font-medium text-primary group-hover:underline">
+                      View Project
+                      <ArrowUpRight className="h-5 w-5" />
+                    </span>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
         </div>
