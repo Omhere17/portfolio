@@ -178,12 +178,12 @@ export default function Project() {
             <CarouselContent>
               {otherProjects.map((otherProject) => (
                 <CarouselItem key={otherProject.id}>
-                   <article 
-                    className="space-y-4 cursor-pointer"
+                  <article 
+                    className="grid lg:grid-cols-2 gap-8 items-center cursor-pointer"
                     onClick={() => navigate(`/project/${otherProject.id}`)}
                   >
                     {/* Project Image */}
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted max-w-md mx-auto">
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
                       <img
                         src={otherProject.coverImage}
                         alt={otherProject.title}
@@ -192,8 +192,8 @@ export default function Project() {
                     </div>
 
                     {/* Project Details */}
-                    <div className="space-y-2">
-                      <h3 className="text-xl lg:text-2xl font-bold leading-tight">
+                    <div className="space-y-4">
+                      <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
                         {otherProject.title}
                       </h3>
 
