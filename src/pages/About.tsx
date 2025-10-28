@@ -438,69 +438,75 @@ const About = () => {
                 </div>
 
                 {/* Carousel */}
-                <div className="relative px-12">
-                  <Carousel className="w-full">
-                    <CarouselContent>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                <div className="relative px-12 overflow-visible">
+                  <Carousel 
+                    className="w-full"
+                    opts={{
+                      align: "center",
+                      loop: true,
+                    }}
+                  >
+                    <CarouselContent className="-ml-4">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestPottery} 
                             alt="Pottery" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestMeditation} 
                             alt="Meditation" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestWoodwork} 
                             alt="Woodwork" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestFootballTeam} 
                             alt="Football Team" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestGuitar} 
                             alt="Guitar" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestFootballAction} 
                             alt="Football Action" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
-                      <CarouselItem className="flex justify-center">
-                        <div className="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
+                      <CarouselItem className="pl-4 md:basis-1/2 lg:basis-1/3 flex justify-center">
+                        <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden group cursor-pointer transition-transform duration-300 hover:scale-110 hover:z-10">
                           <img 
                             src={interestFootballField} 
                             alt="Football Field" 
-                            className="w-full h-full object-cover"
+                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                           />
                         </div>
                       </CarouselItem>
