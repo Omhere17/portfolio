@@ -1,31 +1,33 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import kazeCover from "@/assets/kaze-cover.png";
 
 const projects = [
   {
-    id: 1,
+    id: "kaze-airlines",
     title: "Kaze Airlines branding",
     description:
       "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
     tags: ["Branding", "Visual Design", "Visual Design"],
-    image: "/placeholder.svg",
-    link: "#",
+    image: kazeCover,
+    link: "/project/kaze-airlines",
   },
   {
-    id: 2,
+    id: "ecommerce-redesign",
     title: "E-commerce Platform Redesign",
     description: "Transforming the shopping experience with modern UI patterns and seamless checkout flows.",
     tags: ["UI/UX Design", "Research", "Prototyping"],
     image: "/placeholder.svg",
-    link: "#",
+    link: "/project/ecommerce-redesign",
   },
   {
-    id: 3,
+    id: "healthcare-app",
     title: "Healthcare Mobile App",
     description: "Empowering patients with easy access to health records and appointment scheduling.",
     tags: ["Mobile Design", "UX Research", "Accessibility"],
     image: "/placeholder.svg",
-    link: "#",
+    link: "/project/healthcare-app",
   },
 ];
 
@@ -92,13 +94,13 @@ export const SelectedWorks = () => {
 
                   <p className="text-base lg:text-lg text-muted-foreground leading-relaxed">{project.description}</p>
 
-                  <a
-                    href={project.link}
+                  <Link
+                    to={project.link}
                     className="inline-flex items-center gap-2 text-lg font-medium text-primary hover:underline"
                   >
                     View Project
                     <ArrowUpRight className="h-5 w-5" />
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}
