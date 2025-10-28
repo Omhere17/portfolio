@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -26,6 +26,15 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
     );
   };
 
+  // Auto-play functionality
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNext();
+    }, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [currentIndex]);
+
   const getPreviousIndex = () => {
     return currentIndex === 0 ? images.length - 1 : currentIndex - 1;
   };
@@ -49,7 +58,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
       {/* Container for overlapping images */}
       <div className="relative flex items-center justify-center h-80 lg:h-96">
         {/* Far left image (second previous) */}
-        <div className="absolute left-0 lg:left-4 w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden z-0 opacity-30">
+        <div className="absolute left-0 lg:left-4 w-32 h-32 lg:w-44 lg:h-44 rounded-full overflow-hidden z-0">
           <img 
             src={images[getSecondPreviousIndex()].src} 
             alt={images[getSecondPreviousIndex()].alt}
@@ -58,7 +67,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
         </div>
         
         {/* Left side image (previous) */}
-        <div className="absolute left-12 lg:left-20 w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden z-10 opacity-50">
+        <div className="absolute left-12 lg:left-20 w-40 h-40 lg:w-56 lg:h-56 rounded-full overflow-hidden z-10">
           <img 
             src={images[getPreviousIndex()].src} 
             alt={images[getPreviousIndex()].alt}
@@ -67,7 +76,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
         </div>
         
         {/* Center main image (current) */}
-        <div className="relative z-20 w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-2xl group cursor-pointer">
+        <div className="relative z-20 w-56 h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-2xl group cursor-pointer">
           <img 
             src={images[currentIndex].src} 
             alt={images[currentIndex].alt}
@@ -76,7 +85,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
         </div>
         
         {/* Right side image (next) */}
-        <div className="absolute right-12 lg:right-20 w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden z-10 opacity-50">
+        <div className="absolute right-12 lg:right-20 w-40 h-40 lg:w-56 lg:h-56 rounded-full overflow-hidden z-10">
           <img 
             src={images[getNextIndex()].src} 
             alt={images[getNextIndex()].alt}
@@ -85,7 +94,7 @@ export const InterestsCarousel = ({ images }: InterestsCarouselProps) => {
         </div>
 
         {/* Far right image (second next) */}
-        <div className="absolute right-0 lg:right-4 w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden z-0 opacity-30">
+        <div className="absolute right-0 lg:right-4 w-32 h-32 lg:w-44 lg:h-44 rounded-full overflow-hidden z-0">
           <img 
             src={images[getSecondNextIndex()].src} 
             alt={images[getSecondNextIndex()].alt}
