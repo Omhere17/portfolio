@@ -183,6 +183,7 @@ const projects = [
       {
         src: kalakoshaProject,
         alt: "Kala Kosha artisan dashboard",
+        embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/8B9aycTf6YMcwwsLPrgMUo/Smart-Artisans?page-id=974%3A1106&node-id=3003-11222&viewport=-3121%2C-1621%2C0.11&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3003%3A11222&embed-host=share" allowfullscreen></iframe>',
       },
     ] as ProjectImage[],
   },
