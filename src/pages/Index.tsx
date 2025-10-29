@@ -19,13 +19,10 @@ const Index = () => {
     }
   }, [showLoading]);
 
-  if (showLoading) {
-    return <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />;
-  }
-
   return (
     <div className="min-h-screen">
       <CustomCursor />
+      {showLoading && <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />}
       <div className={`transition-opacity duration-500 ${showContent ? "opacity-100" : "opacity-0"}`}>
         <Navigation />
         <Hero />
