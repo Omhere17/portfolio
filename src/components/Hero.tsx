@@ -1,33 +1,54 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import profileImage from "@/assets/profile.png";
 
 export const Hero = () => {
+  const [scrollY, setScrollY] = useState(0);
+
   const scrollToWorks = () => {
     const worksSection = document.getElementById("selected-works");
     worksSection?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="min-h-screen flex items-center pt-20 pb-16">
+    <section className="min-h-screen flex items-center pt-20 pb-16 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-start animate-fade-in">
+          <div 
+            className="flex justify-center lg:justify-start animate-fade-in"
+            style={{ transform: `translateY(${scrollY * 0.15}px)` }}
+          >
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-border transition-all duration-500 hover:scale-105 hover:border-primary">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-border">
                 <img
                   src={profileImage}
                   alt="Om Tiwari - UX Designer"
-                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover grayscale"
                 />
               </div>
             </div>
           </div>
 
           {/* Content */}
-          <div className="text-center lg:text-left animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <div 
+            className="text-center lg:text-left animate-fade-in" 
+            style={{ 
+              animationDelay: "0.2s",
+              transform: `translateY(${scrollY * 0.05}px)`
+            }}
+          >
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight whitespace-nowrap">
               Hello! I'm Om Tiwari
             </h1>

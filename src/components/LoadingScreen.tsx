@@ -31,47 +31,48 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
   }, [onLoadingComplete]);
 
   // Calculate stroke dasharray for circular progress
-  const radius = 80;
+  const radius = 60;
   const circumference = 2 * Math.PI * radius;
   const strokeDashoffset = circumference - (progress / 100) * circumference;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
+    <div className="fixed inset-0 z-50 bg-background overflow-hidden">
       {/* Expanding Circle Background */}
       <div
-        className={`absolute inset-0 flex items-center justify-center transition-all duration-800 ${
-          isExpanding ? "scale-[20]" : "scale-100"
+        className={`absolute bottom-8 left-8 transition-all duration-800 ease-in-out ${
+          isExpanding ? "scale-[50]" : "scale-100"
         }`}
+        style={{ transformOrigin: "center" }}
       >
-        <div className="w-48 h-48 rounded-full bg-background" />
+        <div className="w-32 h-32 rounded-full bg-background border-2 border-border" />
       </div>
 
       {/* Content */}
       <div
-        className={`relative z-10 flex items-center gap-12 transition-opacity duration-500 ${
+        className={`absolute bottom-8 left-8 flex items-center gap-8 transition-opacity duration-500 ${
           isExpanding ? "opacity-0" : "opacity-100"
         }`}
       >
         {/* Circular Progress */}
-        <div className="relative flex items-center justify-center">
-          <svg className="w-48 h-48 transform -rotate-90">
+        <div className="relative flex items-center justify-center flex-shrink-0">
+          <svg className="w-32 h-32 transform -rotate-90">
             {/* Background circle */}
             <circle
-              cx="96"
-              cy="96"
+              cx="64"
+              cy="64"
               r={radius}
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               fill="none"
               className="text-border"
             />
             {/* Progress circle */}
             <circle
-              cx="96"
-              cy="96"
+              cx="64"
+              cy="64"
               r={radius}
               stroke="currentColor"
-              strokeWidth="2"
+              strokeWidth="1.5"
               fill="none"
               strokeDasharray={circumference}
               strokeDashoffset={strokeDashoffset}
@@ -81,18 +82,16 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
           </svg>
           {/* Percentage in center */}
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-5xl font-light tracking-wider">
+            <span className="text-3xl font-light tracking-wider">
               {Math.round(progress)}%
             </span>
           </div>
         </div>
 
         {/* Text Content */}
-        <div className="max-w-md">
-          <p className="text-sm text-muted-foreground leading-relaxed">
-            Designing with intent, blending innovation and aesthetics to create intuitive, 
-            user-centered experiences. Passionate about using design for social good, 
-            currently honing my craft as a UXD student at MIT-SD.
+        <div className="max-w-xs">
+          <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wide">
+            Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences. Passionate about using design for social good, currently honing my craft as a UXD student at MIT-SD.
           </p>
         </div>
       </div>
