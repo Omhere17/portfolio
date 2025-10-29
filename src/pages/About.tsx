@@ -421,8 +421,8 @@ const About = () => {
             </div>
 
             {/* Interests in Focus Section */}
-            <div className="space-y-6 pt-12">
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center my-[60px]">
+            <div className="space-y-6 pt-12 py-[29px]">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center my-[6px]">
                 {/* Text Content */}
                 <div className="space-y-6">
                   <h2 className="text-3xl font-bold text-black lg:text-4xl">
@@ -465,7 +465,7 @@ I am enthusiastic about learning new things and understanding the science behind
             </div>
 
             {/* Extracurriculars & Volunteering Section */}
-            <div className="space-y-6 pt-12">
+            <div className="space-y-6 pt-12 py-[80px]">
               <h2 className="text-3xl font-bold text-black lg:text-4xl">Extracurriculars & Volunteering</h2>
               
               <Accordion type="single" collapsible className="w-full">
