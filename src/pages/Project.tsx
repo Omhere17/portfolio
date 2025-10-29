@@ -45,6 +45,12 @@ import shelter5 from "@/assets/shelter-5.png";
 import shelter6 from "@/assets/shelter-6.png";
 import shelter7 from "@/assets/shelter-7.png";
 import shelter8 from "@/assets/shelter-8.png";
+import shelter9 from "@/assets/shelter-9.png";
+import shelter10 from "@/assets/shelter-10.png";
+import shelter11 from "@/assets/shelter-11.png";
+import shelter12 from "@/assets/shelter-12.png";
+import shelter13 from "@/assets/shelter-13.png";
+import shelter14 from "@/assets/shelter-14.png";
 import kalakoshaCover from "@/assets/kalakosha-cover.png";
 import kalakosha1 from "@/assets/kalakosha-1.png";
 import kalakosha2 from "@/assets/kalakosha-2.png";
@@ -210,6 +216,30 @@ const projects = [
       {
         src: shelter8,
         alt: "Shelter to Home solution",
+      },
+      {
+        src: shelter9,
+        alt: "Shelter to Home data analysis insights",
+      },
+      {
+        src: shelter10,
+        alt: "Shelter to Home problems with existing products",
+      },
+      {
+        src: shelter11,
+        alt: "Shelter to Home problem statement and features",
+      },
+      {
+        src: shelter12,
+        alt: "Shelter to Home user flow and prototypes",
+      },
+      {
+        src: shelter13,
+        alt: "Shelter to Home color palette and logo",
+      },
+      {
+        src: shelter14,
+        alt: "Shelter to Home high fidelity designs",
       },
     ] as ProjectImage[],
   },
