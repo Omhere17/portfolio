@@ -154,32 +154,6 @@ const projects = [
       },
     ] as ProjectImage[],
   },
-  {
-    id: "ecommerce-redesign",
-    title: "E-commerce Platform Redesign",
-    description: "Transforming the shopping experience with modern UI patterns and seamless checkout flows.",
-    tags: ["UI/UX Design", "Research", "Prototyping"],
-    coverImage: "/placeholder.svg",
-    projectImages: [
-      {
-        src: "/placeholder.svg",
-        alt: "E-commerce Platform Redesign",
-      },
-    ] as ProjectImage[],
-  },
-  {
-    id: "healthcare-app",
-    title: "Healthcare Mobile App",
-    description: "Empowering patients with easy access to health records and appointment scheduling.",
-    tags: ["Mobile Design", "UX Research", "Accessibility"],
-    coverImage: "/placeholder.svg",
-    projectImages: [
-      {
-        src: "/placeholder.svg",
-        alt: "Healthcare Mobile App",
-      },
-    ] as ProjectImage[],
-  },
 ];
 
 export default function Project() {
@@ -240,7 +214,7 @@ export default function Project() {
       {/* View Other Projects Section */}
       <section className="py-20 bg-muted/30 mt-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-8">View Other Projects</h2>
+          <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-5xl mx-auto">View Other Projects</h2>
           
           <Carousel
             opts={{
