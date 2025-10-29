@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { useEffect, useRef, useState } from "react";
 import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
@@ -67,31 +66,6 @@ const projects = [
 ];
 
 export const SelectedWorks = () => {
-  const [visibleProjects, setVisibleProjects] = useState<Set<string>>(new Set());
-  const projectRefs = useRef<{ [key: string]: HTMLElement | null }>({});
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const projectId = entry.target.getAttribute("data-project-id");
-            if (projectId) {
-              setVisibleProjects((prev) => new Set(prev).add(projectId));
-            }
-          }
-        });
-      },
-      { threshold: 0.2, rootMargin: "0px 0px -100px 0px" }
-    );
-
-    Object.values(projectRefs.current).forEach((ref) => {
-      if (ref) observer.observe(ref);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className="relative min-h-screen pt-32 lg:pt-48 pb-0">
       <div className="container mx-auto px-6">
@@ -126,15 +100,7 @@ export const SelectedWorks = () => {
                 to={project.link}
                 className="block"
               >
-                <article
-                  ref={(el) => (projectRefs.current[project.id] = el)}
-                  data-project-id={project.id}
-                  className={`flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16 cursor-pointer group transition-all duration-700 ${
-                    visibleProjects.has(project.id)
-                      ? "opacity-100 translate-y-0"
-                      : "opacity-0 translate-y-12"
-                  }`}
-                >
+                <article className="flex flex-col lg:flex-row-reverse lg:items-center gap-6 sm:gap-8 lg:gap-16 cursor-pointer group">
                   {/* Project Image */}
                   <div className="lg:w-1/2">
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
