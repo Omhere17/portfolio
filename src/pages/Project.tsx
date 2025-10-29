@@ -22,7 +22,7 @@ import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
 import stravaLast from "@/assets/strava-1.png";
 import mooloCover from "@/assets/moolo-cover.png";
-import mooloIntro from "@/assets/moolo-intro-2.png";
+import mooloIntro from "@/assets/moolo-intro-3.jpg";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 
@@ -178,7 +178,9 @@ export default function Project() {
               <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] py-12 bg-muted/20">
                 <div 
                   className="w-full h-[80vh]"
-                  dangerouslySetInnerHTML={{ __html: image.embedCode }}
+                  dangerouslySetInnerHTML={{ 
+                    __html: image.embedCode.replace(/width="\d+"/, 'width="100%"').replace(/height="\d+"/, 'height="100%"')
+                  }}
                 />
               </div>
             )}
