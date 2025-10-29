@@ -422,7 +422,7 @@ const About = () => {
 
             {/* Interests in Focus Section */}
             <div className="space-y-6 pt-12">
-              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center my-[60px]">
                 {/* Text Content */}
                 <div className="space-y-6">
                   <h2 className="text-3xl font-bold text-black lg:text-4xl">
