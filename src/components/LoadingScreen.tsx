@@ -3,24 +3,32 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export const LoadingScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
-  const [showFullName, setShowFullName] = useState(true);
+  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    // Shrink to "Om" after 1.5 seconds
-    const shrinkTimer = setTimeout(() => {
-      setShowFullName(false);
-    }, 1500);
+    // Animate progress from 0 to 100
+    const progressInterval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev >= 100) {
+          clearInterval(progressInterval);
+          return 100;
+        }
+        return prev + 2;
+      });
+    }, 30);
 
-    // Complete loading after 2.5 seconds
+    // Complete loading after progress reaches 100
     const loadingTimer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 3000);
 
     return () => {
-      clearTimeout(shrinkTimer);
+      clearInterval(progressInterval);
       clearTimeout(loadingTimer);
     };
   }, []);
+
+  const letters = "Om Tiwari".split("");
 
   return (
     <AnimatePresence>
@@ -30,43 +38,91 @@ export const LoadingScreen = () => {
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "-100%" }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="fixed left-0 top-0 bottom-0 w-1/2 z-[9999] bg-primary flex items-center justify-end pr-4"
-          >
-            <motion.div
-              className="text-8xl font-bold text-white"
-              animate={showFullName ? { scale: 1 } : { scale: 0.8 }}
-              transition={{ duration: 0.5, ease: "easeInOut" }}
-            >
-              <motion.span
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5 }}
-              >
-                Om
-              </motion.span>
-            </motion.div>
-          </motion.div>
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            className="fixed left-0 top-0 bottom-0 w-1/2 z-[9999] bg-primary"
+          />
 
           {/* Right half */}
           <motion.div
             initial={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="fixed right-0 top-0 bottom-0 w-1/2 z-[9999] bg-primary flex items-center justify-start pl-4"
+            transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
+            className="fixed right-0 top-0 bottom-0 w-1/2 z-[9999] bg-primary"
+          />
+
+          {/* Content overlay */}
+          <motion.div
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[10000] flex flex-col items-center justify-center pointer-events-none"
           >
-            <AnimatePresence>
-              {showFullName && (
-                <motion.div
-                  initial={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: 20 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-8xl font-bold text-white"
+            {/* Animated letters */}
+            <div className="relative mb-16 h-32 flex items-center justify-center">
+              {letters.map((letter, index) => (
+                <motion.span
+                  key={index}
+                  className="text-6xl md:text-7xl font-bold text-white absolute"
+                  initial={{ 
+                    opacity: 0,
+                    x: 0,
+                    y: 0,
+                    rotate: 0
+                  }}
+                  animate={{
+                    opacity: [0, 1, 1, 1],
+                    x: [
+                      Math.random() * 200 - 100,
+                      Math.random() * 100 - 50,
+                      (index - letters.length / 2) * (letter === " " ? 40 : 50),
+                    ],
+                    y: [
+                      Math.random() * 200 - 100,
+                      Math.random() * 100 - 50,
+                      0,
+                    ],
+                    rotate: [
+                      Math.random() * 360,
+                      Math.random() * 180,
+                      0,
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    times: [0, 0.3, 1],
+                    ease: "easeInOut",
+                    delay: index * 0.05,
+                  }}
+                  style={{ 
+                    display: letter === " " ? "inline-block" : "inline-block",
+                    width: letter === " " ? "0.5em" : "auto"
+                  }}
                 >
-                  Tiwari
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  {letter === " " ? "\u00A0" : letter}
+                </motion.span>
+              ))}
+            </div>
+
+            {/* Progress bar and percentage */}
+            <div className="flex flex-col items-center gap-4">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="text-3xl font-bold text-white"
+              >
+                {progress}%
+              </motion.div>
+              
+              <div className="w-48 h-1 bg-white/20 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-white rounded-full"
+                  initial={{ width: 0 }}
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 0.3 }}
+                />
+              </div>
+            </div>
           </motion.div>
         </>
       )}
