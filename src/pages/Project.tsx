@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Footer } from "@/components/Footer";
+import { useState, useEffect } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 import {
   Carousel,
   CarouselContent,
@@ -35,7 +37,14 @@ import mooloIntro10 from "@/assets/moolo-intro-10.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 import shelterCover from "@/assets/shelter-cover.png";
-import shelterProject from "@/assets/shelter-project.png";
+import shelter1 from "@/assets/shelter-1.png";
+import shelter2 from "@/assets/shelter-2.png";
+import shelter3 from "@/assets/shelter-3.png";
+import shelter4 from "@/assets/shelter-4.png";
+import shelter5 from "@/assets/shelter-5.png";
+import shelter6 from "@/assets/shelter-6.png";
+import shelter7 from "@/assets/shelter-7.png";
+import shelter8 from "@/assets/shelter-8.png";
 import kalakoshaCover from "@/assets/kalakosha-cover.png";
 import kalakosha1 from "@/assets/kalakosha-1.png";
 import kalakosha2 from "@/assets/kalakosha-2.png";
@@ -171,8 +180,36 @@ const projects = [
     coverImage: shelterCover,
     projectImages: [
       {
-        src: shelterProject,
-        alt: "Shelter to Home data-driven UX design",
+        src: shelter1,
+        alt: "Shelter to Home overview",
+      },
+      {
+        src: shelter2,
+        alt: "Shelter to Home hypothesis and research",
+      },
+      {
+        src: shelter3,
+        alt: "Shelter to Home desk research",
+      },
+      {
+        src: shelter4,
+        alt: "Shelter to Home affinity mapping",
+      },
+      {
+        src: shelter5,
+        alt: "Shelter to Home affinity mapping volunteers",
+      },
+      {
+        src: shelter6,
+        alt: "Shelter to Home data visualization",
+      },
+      {
+        src: shelter7,
+        alt: "Shelter to Home insights",
+      },
+      {
+        src: shelter8,
+        alt: "Shelter to Home solution",
       },
     ] as ProjectImage[],
   },
@@ -213,6 +250,33 @@ export default function Project() {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    setIsLoading(true);
+    setLoadedImages(new Set());
+  }, [id]);
+
+  useEffect(() => {
+    if (!project) return;
+    
+    const imagePromises = project.projectImages.map((image, index) => {
+      return new Promise((resolve) => {
+        const img = new Image();
+        img.src = image.src;
+        img.onload = () => {
+          setLoadedImages(prev => new Set(prev).add(index));
+          resolve(true);
+        };
+        img.onerror = () => resolve(false);
+      });
+    });
+
+    Promise.all(imagePromises).then(() => {
+      setTimeout(() => setIsLoading(false), 300);
+    });
+  }, [project]);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -238,8 +302,21 @@ export default function Project() {
         </div>
       </nav>
 
+      {/* Loading State */}
+      {isLoading && (
+        <div className="w-full min-h-[70vh] flex items-center justify-center bg-background">
+          <div className="flex flex-col items-center gap-4">
+            <div className="relative w-16 h-16">
+              <div className="absolute inset-0 border-4 border-primary/20 rounded-full"></div>
+              <div className="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+            </div>
+            <p className="text-sm text-muted-foreground">Loading project...</p>
+          </div>
+        </div>
+      )}
+
       {/* Project Content */}
-      <div className="w-full">
+      <div className={`w-full transition-opacity duration-300 ${isLoading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}>
         {project.projectImages.map((image, index) => (
           <div key={index} className="w-full">
             {/* Project Image */}
