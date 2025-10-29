@@ -20,7 +20,7 @@ const projects = [
   },
   {
     id: "kaze-airlines",
-    title: "Kaze Airlines branding",
+    title: "Kaze Airlines Branding",
     description:
       "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
     tags: ["Branding", "Visual Design", "Visual Design"],
