@@ -19,7 +19,7 @@ export const TrustedBy = () => {
   const duplicatedLogos = [...logos, ...logos, ...logos];
 
   return (
-    <section className="py-16 overflow-hidden">
+    <section className="pt-8 pb-16 overflow-hidden">
       <div className="container mx-auto px-16 lg:px-24">
         <h3 className="text-center text-2xl font-medium mb-12">Trusted by</h3>
         
