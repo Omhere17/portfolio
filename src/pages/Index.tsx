@@ -10,11 +10,16 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { LoadingScreen } from "@/components/LoadingScreen";
 
 const Index = () => {
-  const [showLoading, setShowLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
+  const [showLoading, setShowLoading] = useState(() => {
+    return !sessionStorage.getItem('loadingShown');
+  });
+  const [showContent, setShowContent] = useState(() => {
+    return sessionStorage.getItem('loadingShown') === 'true';
+  });
 
   useEffect(() => {
     if (!showLoading) {
+      sessionStorage.setItem('loadingShown', 'true');
       setTimeout(() => setShowContent(true), 50);
     }
   }, [showLoading]);
