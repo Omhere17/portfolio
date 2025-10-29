@@ -33,7 +33,7 @@ const About = () => {
           <div className="space-y-12">
             {/* Header Section */}
             <div className="space-y-3 my-0">
-              <h1 className="text-3xl font-bold text-primary lg:text-xl italic">
+              <h1 className="text-3xl font-bold text-black lg:text-xl italic">
                 The Path that Shaped me
               </h1>
               
@@ -92,7 +92,7 @@ const About = () => {
 
             {/* Education Section */}
             <div className="space-y-6 pt-12">
-              <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+              <h2 className="text-3xl font-bold text-black lg:text-4xl">
                 Education
               </h2>
               
@@ -257,7 +257,7 @@ const About = () => {
 
             {/* Experience Section */}
             <div className="space-y-6 pt-12">
-              <h2 className="text-3xl font-bold text-primary lg:text-4xl">Work Experience</h2>
+              <h2 className="text-3xl font-bold text-black lg:text-4xl">Work Experience</h2>
               
               <Accordion type="single" collapsible className="w-full">
                 {/* Antef */}
@@ -425,7 +425,7 @@ const About = () => {
               <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                 {/* Text Content */}
                 <div className="space-y-6">
-                  <h2 className="text-3xl font-bold text-primary lg:text-4xl">
+                  <h2 className="text-3xl font-bold text-black lg:text-4xl">
                     Interests in focus
                   </h2>
                   
@@ -466,7 +466,7 @@ I am enthusiastic about learning new things and understanding the science behind
 
             {/* Extracurriculars & Volunteering Section */}
             <div className="space-y-6 pt-12">
-              <h2 className="text-3xl font-bold text-primary lg:text-4xl">Extracurriculars & Volunteering</h2>
+              <h2 className="text-3xl font-bold text-black lg:text-4xl">Extracurriculars & Volunteering</h2>
               
               <Accordion type="single" collapsible className="w-full">
                 {/* GDG on campus MITAOE */}

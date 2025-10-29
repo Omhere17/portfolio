@@ -74,7 +74,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left Section - Contact Info */}
           <div className="space-y-12">
-            <h1 className="text-3xl lg:text-4xl font-bold text-primary">
+            <h1 className="text-3xl lg:text-4xl font-bold text-black">
               Reach out to me.
             </h1>
             
