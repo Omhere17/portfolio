@@ -24,6 +24,8 @@ import stravaLast from "@/assets/strava-1.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import mooloSlide1 from "@/assets/moolo-slide-1.png";
 import mooloSlide2 from "@/assets/moolo-slide-2.png";
+import mooloFirst from "@/assets/moolo-first.jpg";
+import mooloSecond from "@/assets/moolo-second.jpg";
 
 interface ProjectImage {
   src: string;
@@ -81,11 +83,14 @@ const projects = [
     projectImages: [
       {
         src: mooloSlide1,
-        alt: "Moolo IoT product introduction",
-        embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gi5Yng4cE50?si=q2HzAbma9bGjzdZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        alt: "Moolo IoT product overview",
       },
       {
         src: mooloSlide2,
+        alt: "Moolo product details",
+      },
+      {
+        src: mooloSecond,
         alt: "Moolo product features",
       },
     ] as ProjectImage[],
