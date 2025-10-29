@@ -34,6 +34,8 @@ import mooloIntro9 from "@/assets/moolo-intro-9.png";
 import mooloIntro10 from "@/assets/moolo-intro-10.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
+import shelterCover from "@/assets/shelter-cover.png";
+import shelterProject from "@/assets/shelter-project.png";
 
 interface ProjectImage {
   src: string;
@@ -151,6 +153,20 @@ const projects = [
       {
         src: kazeProject,
         alt: "Kaze Airlines branding",
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "shelter-to-home",
+    title: "Shelter to Home",
+    description:
+      "Creating a digital platform designed to help animal NGOs boost adoptions, attract volunteers, and secure donations. Through a data-driven approach, it identifies challenges in these areas and provides solutions to bridge the gaps effectively.",
+    tags: ["Data Driven UX", "Data Visualization", "Social Design"],
+    coverImage: shelterCover,
+    projectImages: [
+      {
+        src: shelterProject,
+        alt: "Shelter to Home data-driven UX design",
       },
     ] as ProjectImage[],
   },

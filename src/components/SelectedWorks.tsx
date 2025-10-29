@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
+import shelterCover from "@/assets/shelter-cover.png";
 
 const projects = [
   {
@@ -32,6 +33,15 @@ const projects = [
     tags: ["Tangible Interaction", "IOT", "Machine learning"],
     image: mooloCover,
     link: "/project/moolo-iot",
+  },
+  {
+    id: "shelter-to-home",
+    title: "Shelter to Home",
+    description:
+      "Creating a digital platform designed to help animal NGOs boost adoptions, attract volunteers, and secure donations. Through a data-driven approach, it identifies challenges in these areas and provides solutions to bridge the gaps effectively.",
+    tags: ["Data Driven UX", "Data Visualization", "Social Design"],
+    image: shelterCover,
+    link: "/project/shelter-to-home",
   },
 ];
 
