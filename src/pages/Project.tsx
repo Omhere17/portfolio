@@ -25,6 +25,13 @@ import mooloCover from "@/assets/moolo-cover.png";
 import mooloIntro1 from "@/assets/moolo-intro-1.png";
 import mooloIntro2 from "@/assets/moolo-intro-2.png";
 import mooloIntro3 from "@/assets/moolo-intro-3.png";
+import mooloIntro4 from "@/assets/moolo-intro-4.png";
+import mooloIntro5 from "@/assets/moolo-intro-5.png";
+import mooloIntro6 from "@/assets/moolo-intro-6.png";
+import mooloIntro7 from "@/assets/moolo-intro-7.png";
+import mooloIntro8 from "@/assets/moolo-intro-8.png";
+import mooloIntro9 from "@/assets/moolo-intro-9.png";
+import mooloIntro10 from "@/assets/moolo-intro-10.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 
@@ -93,6 +100,34 @@ const projects = [
       {
         src: mooloIntro3,
         alt: "Moolo desk research statistics",
+      },
+      {
+        src: mooloIntro4,
+        alt: "Moolo financial topics taught",
+      },
+      {
+        src: mooloIntro5,
+        alt: "Moolo primary research",
+      },
+      {
+        src: mooloIntro6,
+        alt: "Moolo personas",
+      },
+      {
+        src: mooloIntro7,
+        alt: "Moolo affinity mapping",
+      },
+      {
+        src: mooloIntro8,
+        alt: "Moolo problem statement",
+      },
+      {
+        src: mooloIntro9,
+        alt: "Moolo early concept",
+      },
+      {
+        src: mooloIntro10,
+        alt: "Moolo required components",
       },
       {
         src: mooloSecond,
