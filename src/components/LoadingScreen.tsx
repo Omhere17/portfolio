@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
-import { Progress } from "@/components/ui/progress";
 
 export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
   const [progress, setProgress] = useState(0);
-  const [isExiting, setIsExiting] = useState(false);
+  const [isExpanding, setIsExpanding] = useState(false);
 
   useEffect(() => {
     const duration = 2500; // 2.5 seconds
@@ -17,11 +16,11 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
         if (next >= 100) {
           clearInterval(timer);
           setTimeout(() => {
-            setIsExiting(true);
+            setIsExpanding(true);
             setTimeout(() => {
               onLoadingComplete();
-            }, 600);
-          }, 300);
+            }, 800);
+          }, 200);
           return 100;
         }
         return next;
@@ -31,37 +30,70 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
     return () => clearInterval(timer);
   }, [onLoadingComplete]);
 
+  // Calculate stroke dasharray for circular progress
+  const radius = 80;
+  const circumference = 2 * Math.PI * radius;
+  const strokeDashoffset = circumference - (progress / 100) * circumference;
+
   return (
-    <div
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-[#4A3428] transition-opacity duration-600 ${
-        isExiting ? "opacity-0" : "opacity-100"
-      }`}
-    >
-      {/* Stylized Name */}
-      <div className="mb-16">
-        <h1 className="text-7xl md:text-8xl font-bold text-[#F5F1E8] tracking-wide" style={{ 
-          fontFamily: "'Brush Script MT', cursive",
-          textShadow: "2px 2px 4px rgba(0,0,0,0.3)"
-        }}>
-          Om Tiwari
-        </h1>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
+      {/* Expanding Circle Background */}
+      <div
+        className={`absolute inset-0 flex items-center justify-center transition-all duration-800 ${
+          isExpanding ? "scale-[20]" : "scale-100"
+        }`}
+      >
+        <div className="w-48 h-48 rounded-full bg-background" />
       </div>
 
-      {/* Progress Section */}
-      <div className="w-64 md:w-80 space-y-4">
-        {/* Percentage */}
-        <div className="text-center">
-          <span className="text-4xl md:text-5xl font-light text-[#F5F1E8] tracking-wider">
-            {Math.round(progress)} %
-          </span>
+      {/* Content */}
+      <div
+        className={`relative z-10 flex items-center gap-12 transition-opacity duration-500 ${
+          isExpanding ? "opacity-0" : "opacity-100"
+        }`}
+      >
+        {/* Circular Progress */}
+        <div className="relative flex items-center justify-center">
+          <svg className="w-48 h-48 transform -rotate-90">
+            {/* Background circle */}
+            <circle
+              cx="96"
+              cy="96"
+              r={radius}
+              stroke="currentColor"
+              strokeWidth="2"
+              fill="none"
+              className="text-border"
+            />
+            {/* Progress circle */}
+            <circle
+              cx="96"
+              cy="96"
+              r={radius}
+              stroke="currentColor"
+              strokeWidth="2"
+              fill="none"
+              strokeDasharray={circumference}
+              strokeDashoffset={strokeDashoffset}
+              className="text-foreground transition-all duration-100 ease-linear"
+              strokeLinecap="round"
+            />
+          </svg>
+          {/* Percentage in center */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-5xl font-light tracking-wider">
+              {Math.round(progress)}%
+            </span>
+          </div>
         </div>
 
-        {/* Progress Bar */}
-        <div className="relative h-1 bg-[#F5F1E8]/20 rounded-full overflow-hidden">
-          <div
-            className="absolute top-0 left-0 h-full bg-[#F5F1E8] transition-all duration-100 ease-linear rounded-full"
-            style={{ width: `${progress}%` }}
-          />
+        {/* Text Content */}
+        <div className="max-w-md">
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            Designing with intent, blending innovation and aesthetics to create intuitive, 
+            user-centered experiences. Passionate about using design for social good, 
+            currently honing my craft as a UXD student at MIT-SD.
+          </p>
         </div>
       </div>
     </div>

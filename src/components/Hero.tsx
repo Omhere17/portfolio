@@ -1,27 +1,33 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import profileImage from "@/assets/profile.png";
 
 export const Hero = () => {
+  const scrollToWorks = () => {
+    const worksSection = document.getElementById("selected-works");
+    worksSection?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
     <section className="min-h-screen flex items-center pt-20 pb-16">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-center lg:gap-16">
           {/* Profile Image */}
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start animate-fade-in">
             <div className="relative">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-border">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-[450px] lg:h-[450px] rounded-full overflow-hidden border-4 border-border transition-all duration-500 hover:scale-105 hover:border-primary">
                 <img
                   src={profileImage}
                   alt="Om Tiwari - UX Designer"
-                  className="w-full h-full object-cover grayscale"
+                  className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />
               </div>
             </div>
           </div>
 
           {/* Content */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight whitespace-nowrap">
               Hello! I'm Om Tiwari
             </h1>
@@ -35,7 +41,7 @@ export const Hero = () => {
             </p>
 
             <div className="flex items-center gap-2 mb-8 justify-center lg:justify-start">
-              <div className="w-2 h-2 rounded-full bg-primary"></div>
+              <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
               <p className="text-base text-foreground">
                 Previously at <span className="font-semibold">Antef & Devnco</span>
               </p>
@@ -45,7 +51,8 @@ export const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 border-2 border-foreground transition-all duration-300 flex items-center gap-2"
+                className="rounded-full px-8 border-2 border-foreground transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                onClick={scrollToWorks}
               >
                 Selected Works
                 <ArrowDown className="h-4 w-4" />
@@ -53,10 +60,13 @@ export const Hero = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8 border-2 border-foreground transition-all duration-300 flex items-center gap-2"
+                className="rounded-full px-8 border-2 border-foreground transition-all duration-300 flex items-center gap-2 hover:scale-105"
+                asChild
               >
-                More about me
-                <ArrowUpRight className="h-4 w-4" />
+                <Link to="/about" className="flex items-center gap-2">
+                  More about me
+                  <ArrowUpRight className="h-4 w-4" />
+                </Link>
               </Button>
             </div>
           </div>
