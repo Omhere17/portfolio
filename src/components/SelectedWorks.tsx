@@ -6,6 +6,7 @@ import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
 import kalakoshaCover from "@/assets/kalakosha-cover.png";
+import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
   {
@@ -52,6 +53,15 @@ const projects = [
     tags: ["Dashboard", "User Interface", "Prototyping"],
     image: kalakoshaCover,
     link: "/project/kala-kosha",
+  },
+  {
+    id: "visual-representation",
+    title: "Visual Representation",
+    description:
+      "Created a set of illustrations using a consistent set of visual elements to demonstrate how the same components can be rearranged and transformed to produce varied yet thematically linked visuals.",
+    tags: ["Illustrations", "Mock Ups", "Semiotics"],
+    image: visualRepCover,
+    link: "/project/visual-representation",
   },
 ];
 

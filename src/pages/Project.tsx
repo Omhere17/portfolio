@@ -57,6 +57,8 @@ import kalakosha2 from "@/assets/kalakosha-2.png";
 import kalakosha3 from "@/assets/kalakosha-3.png";
 import kalakosha4 from "@/assets/kalakosha-4.png";
 import kalakosha5 from "@/assets/kalakosha-5.png";
+import visualRepCover from "@/assets/visual-rep-cover.png";
+import visualRepProject from "@/assets/visual-rep-project.png";
 
 interface ProjectImage {
   src: string;
@@ -271,6 +273,20 @@ const projects = [
         src: kalakosha5,
         alt: "Kala Kosha admin panel architecture",
         embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/8B9aycTf6YMcwwsLPrgMUo/Smart-Artisans?page-id=974%3A1106&node-id=3003-11222&viewport=-3121%2C-1621%2C0.11&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3003%3A11222&embed-host=share" allowfullscreen></iframe>',
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "visual-representation",
+    title: "Visual Representation",
+    description:
+      "Created a set of illustrations using a consistent set of visual elements to demonstrate how the same components can be rearranged and transformed to produce varied yet thematically linked visuals.",
+    tags: ["Illustrations", "Mock Ups", "Semiotics"],
+    coverImage: visualRepCover,
+    projectImages: [
+      {
+        src: visualRepProject,
+        alt: "Visual Representation illustrations",
       },
     ] as ProjectImage[],
   },
