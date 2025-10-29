@@ -58,7 +58,16 @@ import kalakosha3 from "@/assets/kalakosha-3.png";
 import kalakosha4 from "@/assets/kalakosha-4.png";
 import kalakosha5 from "@/assets/kalakosha-5.png";
 import visualRepCover from "@/assets/visual-rep-cover.png";
-import visualRepProject from "@/assets/visual-rep-project.png";
+import visualRep1 from "@/assets/visual-rep-1.png";
+import visualRep2 from "@/assets/visual-rep-2.png";
+import visualRep3 from "@/assets/visual-rep-3.png";
+import visualRep4 from "@/assets/visual-rep-4.png";
+import visualRep5 from "@/assets/visual-rep-5.png";
+import visualRep6 from "@/assets/visual-rep-6.png";
+import visualRep7 from "@/assets/visual-rep-7.png";
+import visualRep8 from "@/assets/visual-rep-8.png";
+import visualRep9 from "@/assets/visual-rep-9.png";
+import visualRep10 from "@/assets/visual-rep-10.png";
 
 interface ProjectImage {
   src: string;
@@ -285,8 +294,44 @@ const projects = [
     coverImage: visualRepCover,
     projectImages: [
       {
-        src: visualRepProject,
-        alt: "Visual Representation illustrations",
+        src: visualRep1,
+        alt: "Visual Representation - Elements Used",
+      },
+      {
+        src: visualRep2,
+        alt: "Visual Representation - Colors and Ideations",
+      },
+      {
+        src: visualRep3,
+        alt: "Visual Representation - Illustrations Part 1",
+      },
+      {
+        src: visualRep4,
+        alt: "Visual Representation - Illustrations Part 2",
+      },
+      {
+        src: visualRep5,
+        alt: "Visual Representation - Typography and 12x12 Poster",
+      },
+      {
+        src: visualRep6,
+        alt: "Visual Representation - A4 Poster and 12x12 Poster",
+      },
+      {
+        src: visualRep7,
+        alt: "Visual Representation - Playing Cards and Mock-ups",
+      },
+      {
+        src: visualRep8,
+        alt: "Visual Representation - Mock-ups Part 1",
+      },
+      {
+        src: visualRep9,
+        alt: "Visual Representation - Mock-ups Part 2",
+      },
+      {
+        src: visualRep10,
+        alt: "Visual Representation - Thank You",
       },
     ] as ProjectImage[],
   },
