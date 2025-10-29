@@ -372,65 +372,67 @@ export default function Project() {
       </div>
 
       {/* View Other Projects Section */}
-      <section className="py-20 bg-muted/30 mt-16">
-        <div className="container mx-auto px-6">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-5xl mx-auto">View Other Projects</h2>
-          
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            className="w-full max-w-5xl mx-auto"
-          >
-            <CarouselContent>
-              {otherProjects.map((otherProject) => (
-                <CarouselItem key={otherProject.id}>
-                  <article 
-                    className="grid lg:grid-cols-2 gap-8 items-center cursor-pointer"
-                    onClick={() => navigate(`/project/${otherProject.id}`)}
-                  >
-                    {/* Project Image */}
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                      <img
-                        src={otherProject.coverImage}
-                        alt={otherProject.title}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-
-                    {/* Project Details */}
-                    <div className="space-y-4">
-                      <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
-                        {otherProject.title}
-                      </h3>
-
-                      <div className="flex flex-wrap gap-2">
-                        {otherProject.tags.map((tag, index) => (
-                          <Badge
-                            key={index}
-                            variant="outline"
-                            className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground"
-                          >
-                            {tag}
-                          </Badge>
-                        ))}
+      {!isLoading && (
+        <section className="py-20 bg-muted/30 mt-16">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-5xl mx-auto">View Other Projects</h2>
+            
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full max-w-5xl mx-auto"
+            >
+              <CarouselContent>
+                {otherProjects.map((otherProject) => (
+                  <CarouselItem key={otherProject.id}>
+                    <article 
+                      className="grid lg:grid-cols-2 gap-8 items-center cursor-pointer"
+                      onClick={() => navigate(`/project/${otherProject.id}`)}
+                    >
+                      {/* Project Image */}
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
+                        <img
+                          src={otherProject.coverImage}
+                          alt={otherProject.title}
+                          className="w-full h-full object-cover"
+                        />
                       </div>
 
-                      <p className="text-base text-muted-foreground leading-relaxed">
-                        {otherProject.description}
-                      </p>
-                    </div>
-                  </article>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
-      </section>
-      <Footer />
+                      {/* Project Details */}
+                      <div className="space-y-4">
+                        <h3 className="text-2xl lg:text-3xl font-bold leading-tight">
+                          {otherProject.title}
+                        </h3>
+
+                        <div className="flex flex-wrap gap-2">
+                          {otherProject.tags.map((tag, index) => (
+                            <Badge
+                              key={index}
+                              variant="outline"
+                              className="rounded-full px-4 py-1.5 text-sm border-2 border-foreground"
+                            >
+                              {tag}
+                            </Badge>
+                          ))}
+                        </div>
+
+                        <p className="text-base text-muted-foreground leading-relaxed">
+                          {otherProject.description}
+                        </p>
+                      </div>
+                    </article>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </section>
+      )}
+      {!isLoading && <Footer />}
     </div>
   );
 }
