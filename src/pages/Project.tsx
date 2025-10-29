@@ -175,9 +175,9 @@ export default function Project() {
             
             {/* Figma Embed */}
             {image.embedCode && (
-              <div className="w-full flex justify-center py-12 bg-muted/20">
+              <div className="w-full py-12 bg-muted/20">
                 <div 
-                  className="w-full max-w-[800px] aspect-video"
+                  className="w-full aspect-video"
                   dangerouslySetInnerHTML={{ __html: image.embedCode }}
                 />
               </div>
@@ -189,7 +189,7 @@ export default function Project() {
       {/* View Other Projects Section */}
       <section className="py-20 bg-muted/30 mt-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold mb-8">View Other Projects</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-8">View Other Projects</h2>
           
           <Carousel
             opts={{
