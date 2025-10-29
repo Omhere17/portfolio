@@ -22,7 +22,7 @@ import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
 import stravaLast from "@/assets/strava-1.png";
 import mooloCover from "@/assets/moolo-cover.png";
-import mooloIntro from "@/assets/moolo-intro-new.jpg";
+import mooloIntro from "@/assets/moolo-intro-new.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 
