@@ -3,6 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
+import mooloCover from "@/assets/moolo-cover.png";
 
 const projects = [
   {
@@ -24,20 +25,13 @@ const projects = [
     link: "/project/kaze-airlines",
   },
   {
-    id: "ecommerce-redesign",
-    title: "E-commerce Platform Redesign",
-    description: "Transforming the shopping experience with modern UI patterns and seamless checkout flows.",
-    tags: ["UI/UX Design", "Research", "Prototyping"],
-    image: "/placeholder.svg",
-    link: "/project/ecommerce-redesign",
-  },
-  {
-    id: "healthcare-app",
-    title: "Healthcare Mobile App",
-    description: "Empowering patients with easy access to health records and appointment scheduling.",
-    tags: ["Mobile Design", "UX Research", "Accessibility"],
-    image: "/placeholder.svg",
-    link: "/project/healthcare-app",
+    id: "moolo-iot",
+    title: "IoT-Based Kids Tangible Product",
+    description:
+      "Iot based interactive device that simplifies complex financial concepts through engaging, hands-on learning.",
+    tags: ["Tangible Interaction", "IOT", "Machine learning"],
+    image: mooloCover,
+    link: "/project/moolo-iot",
   },
 ];
 
@@ -86,7 +80,7 @@ export const SelectedWorks = () => {
 
                   {/* Project Details */}
                   <div className="lg:w-1/2 space-y-4 sm:space-y-6">
-                    <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">
                       {project.title}
                     </h3>
 
