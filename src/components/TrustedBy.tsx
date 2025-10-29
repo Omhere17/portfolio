@@ -10,9 +10,9 @@ export const TrustedBy = () => {
     { src: devncoLogo, alt: "Devnco", size: "h-10" },
     { src: mitsdLogo, alt: "MITSD", size: "h-12" },
     { src: antefLogo, alt: "Antef", size: "h-12" },
-    { src: gdgLogo, alt: "GDG", size: "h-12" },
-    { src: ystocxxLogo, alt: "Y stocxx", size: "h-10" },
-    { src: nasaSpaceAppsLogo, alt: "NASA Space Apps", size: "h-10" },
+    { src: gdgLogo, alt: "GDG", size: "h-16" },
+    { src: ystocxxLogo, alt: "Y stocxx", size: "h-14" },
+    { src: nasaSpaceAppsLogo, alt: "NASA Space Apps", size: "h-14" },
   ];
 
   // Triple logos for seamless endless loop
@@ -30,7 +30,7 @@ export const TrustedBy = () => {
                 <img 
                   src={logo.src} 
                   alt={logo.alt}
-                  className={`${logo.size} w-auto opacity-60 hover:opacity-100 transition-opacity`}
+                  className={`${logo.size} w-auto opacity-60 hover:opacity-100 transition-opacity grayscale`}
                 />
                 <div className="w-4 h-4 rounded-full bg-primary ml-16" />
               </div>
