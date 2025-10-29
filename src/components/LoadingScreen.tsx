@@ -25,7 +25,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
               setTimeout(() => {
                 onLoadingComplete();
               }, 1000);
-            }, 1000);
+            }, 500);
           }, 300);
           return 100;
         }
