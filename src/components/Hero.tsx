@@ -28,29 +28,28 @@ export const Hero = () => {
 
           {/* Content */}
           <div 
-            className="text-center lg:text-left animate-fade-in" 
-            style={{ animationDelay: "0.2s" }}
+            className="text-center lg:text-left" 
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight whitespace-nowrap">
-              Hello! I'm Om Tiwari
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight whitespace-nowrap animate-[fade-in_0.8s_ease-out_0.2s_both] [animation-delay:0.2s]" style={{ animation: "fade-in 0.8s ease-out 0.2s both, slide-down 0.8s ease-out 0.2s both" }}>
+              Hello! I&apos;m Om Tiwari
             </h1>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold italic text-primary mb-8 leading-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold italic text-primary mb-8 leading-tight" style={{ animation: "fade-in 0.8s ease-out 0.4s both, slide-down 0.8s ease-out 0.4s both" }}>
               A UX Designer
             </h2>
 
-            <p className="text-base sm:text-lg text-muted-foreground mb-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground mb-6 max-w-2xl mx-auto lg:mx-0 leading-relaxed" style={{ animation: "fade-in 0.8s ease-out 0.6s both, slide-down 0.8s ease-out 0.6s both" }}>
               Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.
               Passionate about using design for social good, currently honing my craft as a UXD student at MIT-SD.
             </p>
 
-            <div className="flex items-center gap-2 mb-8 justify-center lg:justify-start">
+            <div className="flex items-center gap-2 mb-8 justify-center lg:justify-start" style={{ animation: "fade-in 0.8s ease-out 0.8s both, slide-down 0.8s ease-out 0.8s both" }}>
               <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
               <p className="text-base text-foreground">
                 Previously at <span className="font-semibold">Antef & Devnco</span>
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" style={{ animation: "fade-in 0.8s ease-out 1s both, slide-down 0.8s ease-out 1s both" }}>
               <Button
                 variant="outline"
                 size="lg"

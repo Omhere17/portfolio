@@ -97,13 +97,10 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
         </div>
 
         {/* Text Content */}
-        <div className="max-w-xs">
-          <h2 className="text-2xl font-bold mb-1">
-            Hello! I'm Om Tiwari.
+        <div className="flex items-center justify-center">
+          <h2 className="text-5xl font-bold">
+            Namaste!
           </h2>
-          <p className="text-2xl font-bold italic text-primary">
-            A UX Designer
-          </p>
         </div>
       </div>
     </div>
