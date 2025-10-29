@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => void }) => {
   const [progress, setProgress] = useState(0);
+  const [isComplete, setIsComplete] = useState(false);
   const [isExpanding, setIsExpanding] = useState(false);
 
   useEffect(() => {
@@ -15,12 +16,13 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
         const next = prev + increment;
         if (next >= 100) {
           clearInterval(timer);
+          setIsComplete(true);
           setTimeout(() => {
             setIsExpanding(true);
             setTimeout(() => {
               onLoadingComplete();
-            }, 800);
-          }, 200);
+            }, 1000);
+          }, 300);
           return 100;
         }
         return next;
@@ -39,12 +41,16 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
     <div className="fixed inset-0 z-50 bg-background overflow-hidden">
       {/* Expanding Circle Background */}
       <div
-        className={`absolute bottom-8 left-8 transition-all duration-800 ease-in-out ${
-          isExpanding ? "scale-[50]" : "scale-100"
+        className={`absolute bottom-8 left-8 transition-all ease-in-out ${
+          isExpanding ? "scale-[50] duration-1000" : "scale-100 duration-300"
         }`}
         style={{ transformOrigin: "center" }}
       >
-        <div className="w-32 h-32 rounded-full bg-background border-2 border-border" />
+        <div 
+          className={`w-32 h-32 rounded-full transition-all duration-300 ${
+            isComplete ? "bg-primary border-primary" : "bg-background border-border"
+          } border-2`}
+        />
       </div>
 
       {/* Content */}
