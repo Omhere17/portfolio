@@ -22,7 +22,9 @@ import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
 import stravaLast from "@/assets/strava-1.png";
 import mooloCover from "@/assets/moolo-cover.png";
-import mooloIntro from "@/assets/moolo-intro-new.png";
+import mooloIntro1 from "@/assets/moolo-intro-1.png";
+import mooloIntro2 from "@/assets/moolo-intro-2.png";
+import mooloIntro3 from "@/assets/moolo-intro-3.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 
@@ -81,9 +83,16 @@ const projects = [
     coverImage: mooloCover,
     projectImages: [
       {
-        src: mooloIntro,
-        alt: "Moolo IoT product introduction",
-        embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gi5Yng4cE50?si=q2HzAbma9bGjzdZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+        src: mooloIntro1,
+        alt: "Moolo IoT project overview",
+      },
+      {
+        src: mooloIntro2,
+        alt: "Moolo process followed",
+      },
+      {
+        src: mooloIntro3,
+        alt: "Moolo desk research statistics",
       },
       {
         src: mooloSecond,
