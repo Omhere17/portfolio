@@ -98,7 +98,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
 
         {/* Text Content */}
         <div className="flex items-center justify-center">
-          <h2 className="text-5xl font-bold">
+          <h2 className="text-5xl font-bold text-muted-foreground">
             Namaste!
           </h2>
         </div>
