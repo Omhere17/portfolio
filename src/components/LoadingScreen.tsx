@@ -72,19 +72,21 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
               fill="none"
               className="text-border"
             />
-            {/* Progress circle */}
-            <circle
-              cx="64"
-              cy="64"
-              r={radius}
-              stroke="currentColor"
-              strokeWidth="1.5"
-              fill="none"
-              strokeDasharray={circumference}
-              strokeDashoffset={strokeDashoffset}
-              className="text-foreground transition-all duration-100 ease-linear"
-              strokeLinecap="round"
-            />
+          {/* Progress circle */}
+          <circle
+            cx="64"
+            cy="64"
+            r={radius}
+            stroke="currentColor"
+            strokeWidth="1.5"
+            fill="none"
+            strokeDasharray={circumference}
+            strokeDashoffset={strokeDashoffset}
+            className={`transition-all duration-300 ease-linear ${
+              isComplete ? "text-white" : "text-foreground"
+            }`}
+            strokeLinecap="round"
+          />
           </svg>
           {/* Percentage in center */}
           <div className="absolute inset-0 flex items-center justify-center">
@@ -96,8 +98,11 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
 
         {/* Text Content */}
         <div className="max-w-xs">
-          <p className="text-xs text-muted-foreground leading-relaxed uppercase tracking-wide">
-            Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences. Passionate about using design for social good, currently honing my craft as a UXD student at MIT-SD.
+          <h2 className="text-2xl font-bold mb-1">
+            Hello! I'm Om Tiwari.
+          </h2>
+          <p className="text-2xl font-bold italic text-primary">
+            A UX Designer
           </p>
         </div>
       </div>
