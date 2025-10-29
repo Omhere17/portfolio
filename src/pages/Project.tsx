@@ -37,7 +37,11 @@ import mooloSecond from "@/assets/moolo-second.jpg";
 import shelterCover from "@/assets/shelter-cover.png";
 import shelterProject from "@/assets/shelter-project.png";
 import kalakoshaCover from "@/assets/kalakosha-cover.png";
-import kalakoshaProject from "@/assets/kalakosha-project.png";
+import kalakosha1 from "@/assets/kalakosha-1.png";
+import kalakosha2 from "@/assets/kalakosha-2.png";
+import kalakosha3 from "@/assets/kalakosha-3.png";
+import kalakosha4 from "@/assets/kalakosha-4.png";
+import kalakosha5 from "@/assets/kalakosha-5.png";
 
 interface ProjectImage {
   src: string;
@@ -181,8 +185,24 @@ const projects = [
     coverImage: kalakoshaCover,
     projectImages: [
       {
-        src: kalakoshaProject,
-        alt: "Kala Kosha artisan dashboard",
+        src: kalakosha1,
+        alt: "Kala Kosha overview",
+      },
+      {
+        src: kalakosha2,
+        alt: "Kala Kosha context and research",
+      },
+      {
+        src: kalakosha3,
+        alt: "Kala Kosha stakeholders and interfaces",
+      },
+      {
+        src: kalakosha4,
+        alt: "Kala Kosha information architecture",
+      },
+      {
+        src: kalakosha5,
+        alt: "Kala Kosha admin panel architecture",
         embedCode: '<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/8B9aycTf6YMcwwsLPrgMUo/Smart-Artisans?page-id=974%3A1106&node-id=3003-11222&viewport=-3121%2C-1621%2C0.11&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=3003%3A11222&embed-host=share" allowfullscreen></iframe>',
       },
     ] as ProjectImage[],
