@@ -5,6 +5,7 @@ import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
+import kalakoshaCover from "@/assets/kalakosha-cover.png";
 
 const projects = [
   {
@@ -42,6 +43,15 @@ const projects = [
     tags: ["Data Driven UX", "Data Visualization", "Social Design"],
     image: shelterCover,
     link: "/project/shelter-to-home",
+  },
+  {
+    id: "kala-kosha",
+    title: "Kala Kosha",
+    description:
+      "Empowering traditional Indian artisans by providing digital tools to showcase their craft globally, enhancing their reach, recognition, and financial stability.",
+    tags: ["Dashboard", "User Interface", "Prototyping"],
+    image: kalakoshaCover,
+    link: "/project/kala-kosha",
   },
 ];
 

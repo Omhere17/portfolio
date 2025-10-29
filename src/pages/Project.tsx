@@ -36,6 +36,8 @@ import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 import shelterCover from "@/assets/shelter-cover.png";
 import shelterProject from "@/assets/shelter-project.png";
+import kalakoshaCover from "@/assets/kalakosha-cover.png";
+import kalakoshaProject from "@/assets/kalakosha-project.png";
 
 interface ProjectImage {
   src: string;
@@ -167,6 +169,20 @@ const projects = [
       {
         src: shelterProject,
         alt: "Shelter to Home data-driven UX design",
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "kala-kosha",
+    title: "Kala Kosha",
+    description:
+      "Empowering traditional Indian artisans by providing digital tools to showcase their craft globally, enhancing their reach, recognition, and financial stability.",
+    tags: ["Dashboard", "User Interface", "Prototyping"],
+    coverImage: kalakoshaCover,
+    projectImages: [
+      {
+        src: kalakoshaProject,
+        alt: "Kala Kosha artisan dashboard",
       },
     ] as ProjectImage[],
   },
