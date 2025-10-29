@@ -11,14 +11,6 @@ import { LoadingScreen } from "@/components/LoadingScreen";
 
 const Index = () => {
   const [showLoading, setShowLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
-
-  useEffect(() => {
-    if (!showLoading) {
-      // Trigger fade-in after loading completes
-      setTimeout(() => setShowContent(true), 100);
-    }
-  }, [showLoading]);
 
   if (showLoading) {
     return <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />;
@@ -27,14 +19,12 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <CustomCursor />
-      <div className={`transition-opacity duration-1000 ${showContent ? "opacity-100" : "opacity-0"}`}>
-        <Navigation />
-        <Hero />
-        <SelectedWorks />
-        <DesignPhilosophy />
-        <TrustedBy />
-        <Footer />
-      </div>
+      <Navigation />
+      <Hero />
+      <SelectedWorks />
+      <DesignPhilosophy />
+      <TrustedBy />
+      <Footer />
       <ThemeToggle />
     </div>
   );

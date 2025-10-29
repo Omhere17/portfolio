@@ -24,7 +24,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
               setIsWhiteExpanding(true);
               setTimeout(() => {
                 onLoadingComplete();
-              }, 100);
+              }, 1000);
             }, 1000);
           }, 300);
           return 100;
@@ -69,7 +69,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
 
       {/* Content */}
       <div
-        className={`absolute bottom-8 left-8 flex items-center gap-8 transition-opacity duration-500 ${
+        className={`absolute bottom-8 left-8 flex items-end gap-8 transition-opacity duration-500 ${
           isExpanding ? "opacity-0" : "opacity-100"
         }`}
       >
