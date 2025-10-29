@@ -34,7 +34,7 @@ export const TrustedBy = () => {
   // Triple logos for seamless endless loop
   const duplicatedLogos = [...logos, ...logos, ...logos];
   return <section className="pt-8 pb-16 overflow-hidden">
-      <div className="container mx-auto px-16 lg:px-24">
+      <div className="container mx-auto px-16 lg:px-24 py-16">
         <h3 className="text-center text-2xl font-medium mb-12">Earning the Trust of People at</h3>
         
         <div className="relative flex items-center">
