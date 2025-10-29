@@ -24,7 +24,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
               setIsWhiteExpanding(true);
               setTimeout(() => {
                 onLoadingComplete();
-              }, 1000);
+              }, 100);
             }, 1000);
           }, 300);
           return 100;
@@ -111,10 +111,15 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
         </div>
 
         {/* Text Content */}
-        <div className="flex items-center justify-center">
-          <h2 className="text-5xl font-bold text-muted-foreground">
-            Loading..
+        <div className="flex items-center justify-center gap-1">
+          <h2 className="text-base font-medium text-muted-foreground">
+            Loading
           </h2>
+          <div className="flex gap-0.5 items-end pb-0.5">
+            <span className="text-base font-medium text-muted-foreground animate-bounce" style={{ animationDelay: '0ms', animationDuration: '1s' }}>.</span>
+            <span className="text-base font-medium text-muted-foreground animate-bounce" style={{ animationDelay: '150ms', animationDuration: '1s' }}>.</span>
+            <span className="text-base font-medium text-muted-foreground animate-bounce" style={{ animationDelay: '300ms', animationDuration: '1s' }}>.</span>
+          </div>
         </div>
       </div>
     </div>
