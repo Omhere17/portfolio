@@ -81,10 +81,6 @@ const projects = [
     projectImages: [
       {
         src: mooloFirst,
-        alt: "Moolo IoT product introduction",
-      },
-      {
-        src: mooloFirst,
         alt: "Moolo product video",
         embedCode: '<!-- Add video embed code here -->',
       },
