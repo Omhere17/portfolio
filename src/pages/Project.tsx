@@ -22,6 +22,7 @@ import strava4 from "@/assets/strava-4.png";
 import strava5 from "@/assets/strava-5.png";
 import stravaLast from "@/assets/strava-1.png";
 import mooloCover from "@/assets/moolo-cover.png";
+import mooloIntro from "@/assets/moolo-intro.png";
 import mooloFirst from "@/assets/moolo-first.jpg";
 import mooloSecond from "@/assets/moolo-second.jpg";
 
@@ -80,9 +81,9 @@ const projects = [
     coverImage: mooloCover,
     projectImages: [
       {
-        src: mooloFirst,
-        alt: "Moolo product video",
-        embedCode: '<!-- Add video embed code here -->',
+        src: mooloIntro,
+        alt: "Moolo IoT product introduction",
+        embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/gi5Yng4cE50?si=q2HzAbma9bGjzdZx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
       },
       {
         src: mooloSecond,
@@ -186,9 +187,9 @@ export default function Project() {
       </div>
 
       {/* View Other Projects Section */}
-      <section className="py-12 bg-muted/30">
+      <section className="py-20 bg-muted/30 mt-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-8 text-center">View Other Projects</h2>
+          <h2 className="text-3xl font-bold mb-8">View Other Projects</h2>
           
           <Carousel
             opts={{
