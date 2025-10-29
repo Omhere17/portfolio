@@ -24,7 +24,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
               setIsWhiteExpanding(true);
               setTimeout(() => {
                 onLoadingComplete();
-              }, 1000);
+              }, 600);
             }, 1000);
           }, 300);
           return 100;
@@ -60,7 +60,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
       {/* White Expanding Circle - Reveals Home Page */}
       <div
         className={`absolute bottom-8 left-8 transition-all ease-in-out ${
-          isWhiteExpanding ? "scale-[50] duration-1000" : "scale-0 duration-300"
+          isWhiteExpanding ? "scale-[50] duration-600" : "scale-0 duration-300"
         }`}
         style={{ transformOrigin: "center" }}
       >
@@ -112,8 +112,13 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
 
         {/* Text Content */}
         <div className="flex items-center justify-center">
-          <h2 className="text-5xl font-bold text-muted-foreground">
-            Loading..
+          <h2 className="text-5xl font-bold text-muted-foreground flex items-center gap-1">
+            Loading
+            <span className="flex gap-1">
+              <span className="animate-[bounce_1.4s_ease-in-out_0s_infinite]">.</span>
+              <span className="animate-[bounce_1.4s_ease-in-out_0.2s_infinite]">.</span>
+              <span className="animate-[bounce_1.4s_ease-in-out_0.4s_infinite]">.</span>
+            </span>
           </h2>
         </div>
       </div>
