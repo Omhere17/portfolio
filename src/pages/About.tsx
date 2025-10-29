@@ -2,6 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
+import { TrustedBy } from "@/components/TrustedBy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { InterestsCarousel } from "@/components/InterestsCarousel";
 import childhoodImg from "@/assets/about-childhood.png";
@@ -550,6 +551,7 @@ I am enthusiastic about learning new things and understanding the science behind
           </div>
         </div>
       </main>
+      <TrustedBy />
       <Footer />
       <ThemeToggle />
     </div>;

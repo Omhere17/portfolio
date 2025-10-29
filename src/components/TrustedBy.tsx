@@ -1,12 +1,18 @@
 import devncoLogo from "@/assets/devnco-logo.png";
 import mitsdLogo from "@/assets/mitsd-logo.png";
 import antefLogo from "@/assets/antef-logo.png";
+import gdgLogo from "@/assets/gdg-logo.png";
+import ystocxxLogo from "@/assets/ystocxx-logo.png";
+import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
 
 export const TrustedBy = () => {
   const logos = [
     { src: devncoLogo, alt: "Devnco", size: "h-10" },
     { src: mitsdLogo, alt: "MITSD", size: "h-12" },
     { src: antefLogo, alt: "Antef", size: "h-12" },
+    { src: gdgLogo, alt: "GDG", size: "h-12" },
+    { src: ystocxxLogo, alt: "Y stocxx", size: "h-10" },
+    { src: nasaSpaceAppsLogo, alt: "NASA Space Apps", size: "h-10" },
   ];
 
   // Triple logos for seamless endless loop
