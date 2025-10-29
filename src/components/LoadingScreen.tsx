@@ -4,6 +4,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
   const [progress, setProgress] = useState(0);
   const [isComplete, setIsComplete] = useState(false);
   const [isExpanding, setIsExpanding] = useState(false);
+  const [isWhiteExpanding, setIsWhiteExpanding] = useState(false);
 
   useEffect(() => {
     const duration = 2500; // 2.5 seconds
@@ -20,7 +21,10 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
           setTimeout(() => {
             setIsExpanding(true);
             setTimeout(() => {
-              onLoadingComplete();
+              setIsWhiteExpanding(true);
+              setTimeout(() => {
+                onLoadingComplete();
+              }, 1000);
             }, 1000);
           }, 300);
           return 100;
@@ -39,7 +43,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
 
   return (
     <div className="fixed inset-0 z-50 bg-background overflow-hidden">
-      {/* Expanding Circle Background */}
+      {/* Blue Expanding Circle Background */}
       <div
         className={`absolute bottom-8 left-8 transition-all ease-in-out ${
           isExpanding ? "scale-[50] duration-1000" : "scale-100 duration-300"
@@ -51,6 +55,16 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
             isComplete ? "bg-primary border-primary" : "bg-background border-border"
           } border-2`}
         />
+      </div>
+
+      {/* White Expanding Circle - Reveals Home Page */}
+      <div
+        className={`absolute bottom-8 left-8 transition-all ease-in-out ${
+          isWhiteExpanding ? "scale-[50] duration-1000" : "scale-0 duration-300"
+        }`}
+        style={{ transformOrigin: "center" }}
+      >
+        <div className="w-32 h-32 rounded-full bg-background border-2 border-background" />
       </div>
 
       {/* Content */}
@@ -99,7 +113,7 @@ export const LoadingScreen = ({ onLoadingComplete }: { onLoadingComplete: () => 
         {/* Text Content */}
         <div className="flex items-center justify-center">
           <h2 className="text-5xl font-bold text-muted-foreground">
-            Namaste!
+            Loading..
           </h2>
         </div>
       </div>
