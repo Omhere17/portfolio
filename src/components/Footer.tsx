@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 export const Footer = () => {
+  const location = useLocation();
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -113,15 +115,26 @@ export const Footer = () => {
 
               {/* Desktop: Navigation Links under text */}
               <nav className="hidden md:flex justify-between text-lg">
-                <a href="#work" className="no-custom-cursor hover:opacity-80 transition-opacity">
-                  Work
-                </a>
-                <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
-                  About
-                </a>
-                <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
-                  Contact
-                </a>
+                {location.pathname !== '/work' && (
+                  <a href="/work" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                    Work
+                  </a>
+                )}
+                {location.pathname !== '/about' && (
+                  <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                    About
+                  </a>
+                )}
+                {location.pathname !== '/contact' && (
+                  <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                    Contact
+                  </a>
+                )}
+                {location.pathname !== '/' && (
+                  <a href="/" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                    Home
+                  </a>
+                )}
                 <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor hover:opacity-80 transition-opacity">
                   Resume
                 </a>
@@ -131,15 +144,26 @@ export const Footer = () => {
 
           {/* Mobile Navigation Links */}
           <nav className="flex md:hidden flex-wrap gap-6 text-lg mb-12">
-            <a href="#work" className="no-custom-cursor hover:opacity-80 transition-opacity">
-              Work
-            </a>
-            <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
-              About
-            </a>
-            <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
-              Contact
-            </a>
+            {location.pathname !== '/work' && (
+              <a href="/work" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                Work
+              </a>
+            )}
+            {location.pathname !== '/about' && (
+              <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                About
+              </a>
+            )}
+            {location.pathname !== '/contact' && (
+              <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                Contact
+              </a>
+            )}
+            {location.pathname !== '/' && (
+              <a href="/" className="no-custom-cursor hover:opacity-80 transition-opacity">
+                Home
+              </a>
+            )}
             <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor hover:opacity-80 transition-opacity">
               Resume
             </a>

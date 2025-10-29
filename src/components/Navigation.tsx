@@ -61,10 +61,10 @@ export const Navigation = () => {
           {/* Resume Button - Desktop */}
           <Button
             variant="secondary"
-            className="hidden md:flex items-center gap-2 rounded-full px-6"
+            className="hidden md:flex items-center gap-2 rounded-full px-6 no-custom-cursor"
             asChild
           >
-            <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
+            <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor">
               Resume
               <Download className="h-4 w-4" />
             </a>
@@ -115,10 +115,10 @@ export const Navigation = () => {
               })}
               <Button
                 variant="secondary"
-                className="flex items-center justify-center gap-2 rounded-full w-full"
+                className="flex items-center justify-center gap-2 rounded-full w-full no-custom-cursor"
                 asChild
               >
-                <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf">
+                <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor">
                   Resume
                   <Download className="h-4 w-4" />
                 </a>
