@@ -465,7 +465,7 @@ I am enthusiastic about learning new things and understanding the science behind
             </div>
 
             {/* Extracurriculars & Volunteering Section */}
-            <div className="space-y-6 pt-12 py-[80px]">
+            <div className="space-y-6 pt-12 py-0">
               <h2 className="text-3xl font-bold text-black lg:text-4xl">Extracurriculars & Volunteering</h2>
               
               <Accordion type="single" collapsible className="w-full">
