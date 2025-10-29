@@ -34,7 +34,7 @@ export const Navigation = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className={`text-base font-medium transition-colors hover:text-primary relative ${
+                  className={`no-custom-cursor text-base font-medium transition-colors hover:text-primary relative ${
                     isActive
                       ? "text-primary after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-primary"
                       : "text-foreground"
@@ -46,7 +46,7 @@ export const Navigation = () => {
                 <Link
                   key={item.name}
                   to={item.href}
-                  className={`text-base font-medium transition-colors hover:text-primary relative ${
+                  className={`no-custom-cursor text-base font-medium transition-colors hover:text-primary relative ${
                     isActive
                       ? "text-primary after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-0.5 after:bg-primary"
                       : "text-foreground"
@@ -93,7 +93,7 @@ export const Navigation = () => {
                   <a
                     key={item.name}
                     href={item.href}
-                    className={`text-base font-medium transition-colors ${
+                    className={`no-custom-cursor text-base font-medium transition-colors ${
                       isActive ? "text-primary" : "text-foreground"
                     }`}
                     onClick={() => setIsMenuOpen(false)}
@@ -104,7 +104,7 @@ export const Navigation = () => {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`text-base font-medium transition-colors ${
+                    className={`no-custom-cursor text-base font-medium transition-colors ${
                       isActive ? "text-primary" : "text-foreground"
                     }`}
                     onClick={() => setIsMenuOpen(false)}

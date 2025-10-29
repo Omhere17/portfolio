@@ -32,11 +32,11 @@ export const Footer = () => {
                 <h2 className="text-5xl font-bold">Om.</h2>
                 
                 <div className="flex gap-6 lg:hidden">
-                  <a
+                 <a
                     href="https://www.linkedin.com/in/om-tiwari-6b100627b"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
+                    className="no-custom-cursor hover:opacity-80 transition-opacity"
                     aria-label="LinkedIn"
                   >
                     <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -47,7 +47,7 @@ export const Footer = () => {
                     href="https://www.behance.net/omtiwari2"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:opacity-80 transition-opacity"
+                    className="no-custom-cursor hover:opacity-80 transition-opacity"
                     aria-label="Behance"
                   >
                     <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -56,7 +56,7 @@ export const Footer = () => {
                   </a>
                   <a
                     href="mailto:omtiwari.pune@gmail.com"
-                    className="hover:opacity-80 transition-opacity"
+                    className="no-custom-cursor hover:opacity-80 transition-opacity"
                     aria-label="Email"
                   >
                     <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -72,7 +72,7 @@ export const Footer = () => {
                   href="https://www.linkedin.com/in/om-tiwari-6b100627b"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
+                  className="no-custom-cursor hover:opacity-80 transition-opacity"
                   aria-label="LinkedIn"
                 >
                   <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -83,7 +83,7 @@ export const Footer = () => {
                   href="https://www.behance.net/omtiwari2"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:opacity-80 transition-opacity"
+                  className="no-custom-cursor hover:opacity-80 transition-opacity"
                   aria-label="Behance"
                 >
                   <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -92,7 +92,7 @@ export const Footer = () => {
                 </a>
                 <a
                   href="mailto:omtiwari.pune@gmail.com"
-                  className="hover:opacity-80 transition-opacity"
+                  className="no-custom-cursor hover:opacity-80 transition-opacity"
                   aria-label="Email"
                 >
                   <svg className="h-8 w-8" viewBox="0 0 640 640" fill="white">
@@ -113,16 +113,16 @@ export const Footer = () => {
 
               {/* Desktop: Navigation Links under text */}
               <nav className="hidden md:flex justify-between text-lg">
-                <a href="#work" className="hover:opacity-80 transition-opacity">
+                <a href="#work" className="no-custom-cursor hover:opacity-80 transition-opacity">
                   Work
                 </a>
-                <a href="/about" className="hover:opacity-80 transition-opacity">
+                <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
                   About
                 </a>
-                <a href="/contact" className="hover:opacity-80 transition-opacity">
+                <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
                   Contact
                 </a>
-                <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="hover:opacity-80 transition-opacity">
+                <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor hover:opacity-80 transition-opacity">
                   Resume
                 </a>
               </nav>
@@ -131,16 +131,16 @@ export const Footer = () => {
 
           {/* Mobile Navigation Links */}
           <nav className="flex md:hidden flex-wrap gap-6 text-lg mb-12">
-            <a href="#work" className="hover:opacity-80 transition-opacity">
+            <a href="#work" className="no-custom-cursor hover:opacity-80 transition-opacity">
               Work
             </a>
-            <a href="/about" className="hover:opacity-80 transition-opacity">
+            <a href="/about" className="no-custom-cursor hover:opacity-80 transition-opacity">
               About
             </a>
-            <a href="/contact" className="hover:opacity-80 transition-opacity">
+            <a href="/contact" className="no-custom-cursor hover:opacity-80 transition-opacity">
               Contact
             </a>
-            <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="hover:opacity-80 transition-opacity">
+            <a href="/Resume_OmTiwari.pdf" download="Resume_OmTiwari.pdf" className="no-custom-cursor hover:opacity-80 transition-opacity">
               Resume
             </a>
           </nav>

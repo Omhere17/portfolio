@@ -15,9 +15,10 @@ export const CustomCursor = () => {
       const projectArticle = target.closest('article');
       setIsOverProject(!!projectArticle);
       
-      // Check if hovering over text elements (excluding buttons)
+      // Check if hovering over text elements (excluding buttons and no-custom-cursor elements)
       const isText = target.matches('p, h1, h2, h3, h4, h5, h6, span, a, li, label');
-      setIsOverText(isText && !projectArticle);
+      const hasNoCustomCursor = target.closest('.no-custom-cursor');
+      setIsOverText(isText && !projectArticle && !hasNoCustomCursor);
     };
 
     window.addEventListener("mousemove", updatePosition);
