@@ -42,9 +42,9 @@ export const TrustedBy = () => {
       <div className="container mx-auto px-16 lg:px-24 py-16">
         <h3 className="text-center text-2xl font-medium mb-12">Earning the Trust of People at</h3>
         
-        <div className="relative flex items-center">
+        <div className="relative flex items-center overflow-hidden">
           {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-48 bg-gradient-to-r from-background via-background/80 to-transparent z-10 pointer-events-none" />
           
           <div className="flex items-center animate-marquee">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
@@ -54,7 +54,7 @@ export const TrustedBy = () => {
           </div>
           
           {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-48 bg-gradient-to-l from-background via-background/80 to-transparent z-10 pointer-events-none" />
         </div>
       </div>
     </section>;
