@@ -219,11 +219,11 @@ const About = () => {
                           <div className="flex items-center gap-3 whitespace-nowrap">
                             <span className="text-base md:text-lg lg:text-lg font-medium">10th Grade</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg lg:text-lg font-medium">CBSE</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">ICSE</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
-                            <span className="text-gray-500">Pune</span>
+                            <span className="text-gray-500">Pimpri</span>
                             <span className="text-border">|</span>
                             <span className="text-gray-500">2007-2019</span>
                           </div>
