@@ -24,6 +24,7 @@ import interestFootballAction from "@/assets/interest-football-action.png";
 import interestFootballField from "@/assets/interest-football-field.png";
 import gdgLogo from "@/assets/gdg-logo.png";
 import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
+import zestrixLogo from "@/assets/zestrix-logo.jpg";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -343,9 +344,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <div className="w-12 h-12 lg:w-16 lg:h-16 flex items-center justify-center flex-shrink-0 rounded-lg bg-muted">
-                          <span className="text-xl lg:text-2xl font-bold text-primary">Z</span>
-                        </div>
+                        <img src={zestrixLogo} alt="Zestrix Solutions" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Zestrix Solutions
                         </span>
