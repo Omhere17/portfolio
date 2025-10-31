@@ -4,6 +4,7 @@ import antefLogo from "@/assets/antef-logo.png";
 import gdgLogo from "@/assets/gdg-logo.png";
 import ystocxxLogo from "@/assets/ystocxx-logo.png";
 import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
+import zestrixLogo from "@/assets/zestrix-logo.jpg";
 export const TrustedBy = () => {
   const logos = [{
     src: devncoLogo,
@@ -28,6 +29,10 @@ export const TrustedBy = () => {
   }, {
     src: nasaSpaceAppsLogo,
     alt: "NASA Space Apps",
+    size: "h-14"
+  }, {
+    src: zestrixLogo,
+    alt: "Zestrix Solutions",
     size: "h-14"
   }];
 
