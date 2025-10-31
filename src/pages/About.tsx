@@ -206,26 +206,26 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
+                        <img src={podarLogo} alt="Podar International School" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
-                          MITAOE - School of Design
+                          Podar International School
                         </span>
                       </div>
                       <div className="flex-1 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-2 lg:gap-4 lg:pr-4">
                         <span className="hidden lg:block text-xl font-medium text-foreground">
-                          MITAOE - School of Design
+                          Podar International School
                         </span>
                         <div className="flex items-center gap-3 text-sm lg:text-base text-foreground/80 flex-wrap">
                           <div className="flex items-center gap-3 whitespace-nowrap">
-                            <span className="text-base md:text-lg lg:text-lg font-medium">Bachelor's Degree</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">10th Grade</span>
                             <span className="text-border">|</span>
-                            <span className="text-base md:text-lg lg:text-lg font-medium">Bdes - Ux Design</span>
+                            <span className="text-base md:text-lg lg:text-lg font-medium">CBSE</span>
                           </div>
                           <span className="text-border hidden lg:inline">|</span>
                           <div className="flex items-center gap-3">
                             <span className="text-gray-500">Pune</span>
                             <span className="text-border">|</span>
-                            <span className="text-gray-500">2021-2026</span>
+                            <span className="text-gray-500">2007-2019</span>
                           </div>
                         </div>
                       </div>
@@ -236,17 +236,17 @@ const About = () => {
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Achievements</h3>
                         <ul className="space-y-2 text-foreground/80">
-                          <li>College Academic Merit, 3rd Rank UX Design (2nd Year)</li>
-                          <li>College Academic Merit, 3rd Rank UX Design (3rd Year)</li>
-                          <li>Zonal Representative, Aaviskar 2024 - Research Competition</li>
+                          <li>School Football Team Captain</li>
+                          <li>Inter-school Football Tournaments Representative</li>
+                          <li>Academic Excellence Awards</li>
                         </ul>
                       </div>
                       <div>
                         <h3 className="font-semibold text-lg mb-4 text-foreground">Extra Curricular Activites</h3>
                         <ul className="space-y-2 text-foreground/80">
-                          <li>Google Developers Group oncampus MITAOE, Creative Lead</li>
-                          <li>NASA Space Apps Challenge, Visual Designer</li>
-                          <li>Departmental Sports</li>
+                          <li>School Football Team</li>
+                          <li>Art Classes and Creative Pursuits</li>
+                          <li>Music and Sports Activities</li>
                         </ul>
                       </div>
                     </div>
