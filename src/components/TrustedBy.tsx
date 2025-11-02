@@ -6,10 +6,12 @@ import antefLogoLight from "@/assets/antef-logo-light.png";
 import antefLogoDark from "@/assets/antef-logo-dark.png";
 import gdgLogoLight from "@/assets/gdg-logo-light.png";
 import gdgLogoDark from "@/assets/gdg-logo-dark.png";
-import ystocxxLogo from "@/assets/ystocxx-logo.png";
+import ystocxxLogoLight from "@/assets/ystocxx-logo-light.png";
+import ystocxxLogoDark from "@/assets/ystocxx-logo-dark.png";
 import nasaSpaceAppsLogoLight from "@/assets/nasa-space-apps-logo-light.png";
 import nasaSpaceAppsLogoDark from "@/assets/nasa-space-apps-logo-dark.png";
-import zestrixLogo from "@/assets/zestrix-logo.jpg";
+import zestrixLogoLight from "@/assets/zestrix-logo-light.png";
+import zestrixLogoDark from "@/assets/zestrix-logo-dark.png";
 
 export const TrustedBy = () => {
   const logos = [{
@@ -33,8 +35,8 @@ export const TrustedBy = () => {
     alt: "GDG",
     size: "h-12"
   }, {
-    lightSrc: ystocxxLogo,
-    darkSrc: ystocxxLogo,
+    lightSrc: ystocxxLogoLight,
+    darkSrc: ystocxxLogoDark,
     alt: "Y stocxx",
     size: "h-12"
   }, {
@@ -43,8 +45,8 @@ export const TrustedBy = () => {
     alt: "NASA Space Apps",
     size: "h-12"
   }, {
-    lightSrc: zestrixLogo,
-    darkSrc: zestrixLogo,
+    lightSrc: zestrixLogoLight,
+    darkSrc: zestrixLogoDark,
     alt: "Zestrix Solutions",
     size: "h-12"
   }];
@@ -59,7 +61,7 @@ export const TrustedBy = () => {
           {/* Left fade */}
           <div className="absolute left-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
           
-          <div className="flex items-center animate-marquee group-hover:[animation-duration:60s]">
+          <div className="flex items-center animate-marquee group-hover:[animation-play-state:paused]">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
                 <img 
                   src={logo.lightSrc} 
