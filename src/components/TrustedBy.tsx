@@ -18,37 +18,37 @@ export const TrustedBy = () => {
     lightSrc: devncoLogoLight,
     darkSrc: devncoLogoDark,
     alt: "Devnco",
-    size: "h-12"
+    size: "h-10"
   }, {
     lightSrc: mitsdLogoLight,
     darkSrc: mitsdLogoDark,
     alt: "MITSD",
-    size: "h-12"
+    size: "h-8"
   }, {
     lightSrc: antefLogoLight,
     darkSrc: antefLogoDark,
     alt: "Antef",
-    size: "h-12"
+    size: "h-10"
   }, {
     lightSrc: gdgLogoLight,
     darkSrc: gdgLogoDark,
     alt: "GDG",
-    size: "h-12"
+    size: "h-10"
   }, {
     lightSrc: ystocxxLogoLight,
     darkSrc: ystocxxLogoDark,
     alt: "Y stocxx",
-    size: "h-12"
+    size: "h-8"
   }, {
     lightSrc: nasaSpaceAppsLogoLight,
     darkSrc: nasaSpaceAppsLogoDark,
     alt: "NASA Space Apps",
-    size: "h-12"
+    size: "h-10"
   }, {
     lightSrc: zestrixLogoLight,
     darkSrc: zestrixLogoDark,
     alt: "Zestrix Solutions",
-    size: "h-12"
+    size: "h-9"
   }];
 
   // Duplicate logos for seamless endless loop
@@ -61,7 +61,7 @@ export const TrustedBy = () => {
           {/* Left fade */}
           <div className="absolute left-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
           
-          <div className="flex items-center animate-marquee group-hover:[animation-duration:40s]">
+          <div className="flex items-center animate-marquee">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
                 <img 
                   src={logo.lightSrc} 
