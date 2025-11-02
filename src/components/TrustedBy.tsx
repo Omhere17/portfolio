@@ -9,7 +9,7 @@ export const TrustedBy = () => {
   const logos = [{
     src: devncoLogo,
     alt: "Devnco",
-    size: "h-10"
+    size: "h-12"
   }, {
     src: mitsdLogo,
     alt: "MITSD",
@@ -21,19 +21,19 @@ export const TrustedBy = () => {
   }, {
     src: gdgLogo,
     alt: "GDG",
-    size: "h-16"
+    size: "h-12"
   }, {
     src: ystocxxLogo,
     alt: "Y stocxx",
-    size: "h-14"
+    size: "h-12"
   }, {
     src: nasaSpaceAppsLogo,
     alt: "NASA Space Apps",
-    size: "h-14"
+    size: "h-12"
   }, {
     src: zestrixLogo,
     alt: "Zestrix Solutions",
-    size: "h-14"
+    size: "h-12"
   }];
 
   // Triple logos for seamless endless loop
@@ -44,7 +44,7 @@ export const TrustedBy = () => {
         
         <div className="relative flex items-center overflow-hidden">
           {/* Left fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 lg:w-24 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
           
           <div className="flex items-center animate-marquee">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
@@ -54,7 +54,7 @@ export const TrustedBy = () => {
           </div>
           
           {/* Right fade */}
-          <div className="absolute right-0 top-0 bottom-0 w-16 lg:w-24 bg-gradient-to-l from-background via-background/90 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-l from-background via-background/90 to-transparent z-10 pointer-events-none" />
         </div>
       </div>
     </section>;
