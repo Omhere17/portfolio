@@ -1,37 +1,50 @@
-import devncoLogo from "@/assets/devnco-logo.png";
-import mitsdLogo from "@/assets/mitsd-logo.png";
-import antefLogo from "@/assets/antef-logo.png";
-import gdgLogo from "@/assets/gdg-logo.png";
+import devncoLogoLight from "@/assets/devnco-logo-light.png";
+import devncoLogoDark from "@/assets/devnco-logo-dark.png";
+import mitsdLogoLight from "@/assets/mitsd-logo-light.png";
+import mitsdLogoDark from "@/assets/mitsd-logo-dark.png";
+import antefLogoLight from "@/assets/antef-logo-light.png";
+import antefLogoDark from "@/assets/antef-logo-dark.png";
+import gdgLogoLight from "@/assets/gdg-logo-light.png";
+import gdgLogoDark from "@/assets/gdg-logo-dark.png";
 import ystocxxLogo from "@/assets/ystocxx-logo.png";
-import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
+import nasaSpaceAppsLogoLight from "@/assets/nasa-space-apps-logo-light.png";
+import nasaSpaceAppsLogoDark from "@/assets/nasa-space-apps-logo-dark.png";
 import zestrixLogo from "@/assets/zestrix-logo.jpg";
+
 export const TrustedBy = () => {
   const logos = [{
-    src: devncoLogo,
+    lightSrc: devncoLogoLight,
+    darkSrc: devncoLogoDark,
     alt: "Devnco",
     size: "h-12"
   }, {
-    src: mitsdLogo,
+    lightSrc: mitsdLogoLight,
+    darkSrc: mitsdLogoDark,
     alt: "MITSD",
     size: "h-12"
   }, {
-    src: antefLogo,
+    lightSrc: antefLogoLight,
+    darkSrc: antefLogoDark,
     alt: "Antef",
     size: "h-12"
   }, {
-    src: gdgLogo,
+    lightSrc: gdgLogoLight,
+    darkSrc: gdgLogoDark,
     alt: "GDG",
     size: "h-12"
   }, {
-    src: ystocxxLogo,
+    lightSrc: ystocxxLogo,
+    darkSrc: ystocxxLogo,
     alt: "Y stocxx",
     size: "h-12"
   }, {
-    src: nasaSpaceAppsLogo,
+    lightSrc: nasaSpaceAppsLogoLight,
+    darkSrc: nasaSpaceAppsLogoDark,
     alt: "NASA Space Apps",
     size: "h-12"
   }, {
-    src: zestrixLogo,
+    lightSrc: zestrixLogo,
+    darkSrc: zestrixLogo,
     alt: "Zestrix Solutions",
     size: "h-12"
   }];
@@ -42,13 +55,22 @@ export const TrustedBy = () => {
       <div className="container mx-auto px-16 lg:px-24 py-16">
         <h3 className="text-center text-2xl font-medium mb-12">Earning the Trust of People at</h3>
         
-        <div className="relative flex items-center overflow-hidden">
+        <div className="relative flex items-center overflow-hidden group">
           {/* Left fade */}
           <div className="absolute left-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
           
-          <div className="flex items-center animate-marquee">
+          <div className="flex items-center animate-marquee group-hover:[animation-duration:60s]">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
-                <img src={logo.src} alt={logo.alt} className={`${logo.size} w-auto opacity-60 hover:opacity-100 transition-opacity grayscale`} />
+                <img 
+                  src={logo.lightSrc} 
+                  alt={logo.alt} 
+                  className={`${logo.size} w-auto opacity-40 hover:opacity-100 transition-all grayscale hover:grayscale-0 dark:hidden`} 
+                />
+                <img 
+                  src={logo.darkSrc} 
+                  alt={logo.alt} 
+                  className={`${logo.size} w-auto opacity-40 hover:opacity-100 transition-all grayscale hover:grayscale-0 hidden dark:block`} 
+                />
                 <div className="w-4 h-4 rounded-full bg-primary ml-16" />
               </div>)}
           </div>
