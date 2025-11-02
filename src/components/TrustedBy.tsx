@@ -51,8 +51,8 @@ export const TrustedBy = () => {
     size: "h-12"
   }];
 
-  // Triple logos for seamless endless loop
-  const duplicatedLogos = [...logos, ...logos, ...logos];
+  // Duplicate logos for seamless endless loop
+  const duplicatedLogos = [...logos, ...logos];
   return <section className="pt-8 pb-16 overflow-hidden">
       <div className="container mx-auto px-16 lg:px-24 py-16">
         <h3 className="text-center text-2xl font-medium mb-12">Earning the Trust of People at</h3>
@@ -61,7 +61,7 @@ export const TrustedBy = () => {
           {/* Left fade */}
           <div className="absolute left-0 top-0 bottom-0 w-8 lg:w-16 bg-gradient-to-r from-background via-background/90 to-transparent z-10 pointer-events-none" />
           
-          <div className="flex items-center animate-marquee group-hover:[animation-play-state:paused]">
+          <div className="flex items-center animate-marquee group-hover:[animation-duration:40s]">
             {duplicatedLogos.map((logo, index) => <div key={index} className="flex items-center mx-8 flex-shrink-0">
                 <img 
                   src={logo.lightSrc} 
