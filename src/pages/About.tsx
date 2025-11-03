@@ -11,14 +11,10 @@ import footballImg from "@/assets/about-football.png";
 import guitarImg from "@/assets/about-guitar.png";
 import podarLogo from "@/assets/podar-logo.png";
 import nowrosjeeLogo from "@/assets/nowrosjee-logo.png";
-import mitsdLogoLight from "@/assets/mitsd-logo-light.png";
-import mitsdLogoDark from "@/assets/mitsd-logo-dark.png";
-import devncoLogoLight from "@/assets/devnco-logo-light.png";
-import devncoLogoDark from "@/assets/devnco-logo-dark.png";
-import antefLogoLight from "@/assets/antef-logo-light.png";
-import antefLogoDark from "@/assets/antef-logo-dark.png";
-import ystocxxLogoLight from "@/assets/ystocxx-logo-light.png";
-import ystocxxLogoDark from "@/assets/ystocxx-logo-dark.png";
+import mitsdLogo from "@/assets/mitsd-logo-text.png";
+import devncoLogo from "@/assets/devnco-logo.png";
+import antefLogo from "@/assets/antef-logo.png";
+import ystocxxLogo from "@/assets/ystocxx-logo.png";
 import interestPottery from "@/assets/interest-pottery.png";
 import interestMeditation from "@/assets/interest-meditation.png";
 import interestWoodwork from "@/assets/interest-woodwork.png";
@@ -26,12 +22,9 @@ import interestFootballTeam from "@/assets/interest-football-team.png";
 import interestGuitar from "@/assets/interest-guitar.png";
 import interestFootballAction from "@/assets/interest-football-action.png";
 import interestFootballField from "@/assets/interest-football-field.png";
-import gdgLogoLight from "@/assets/gdg-logo-light.png";
-import gdgLogoDark from "@/assets/gdg-logo-dark.png";
-import nasaSpaceAppsLogoLight from "@/assets/nasa-space-apps-logo-light.png";
-import nasaSpaceAppsLogoDark from "@/assets/nasa-space-apps-logo-dark.png";
-import zestrixLogoLight from "@/assets/zestrix-logo-light.png";
-import zestrixLogoDark from "@/assets/zestrix-logo-dark.png";
+import gdgLogo from "@/assets/gdg-logo.png";
+import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
+import zestrixLogo from "@/assets/zestrix-logo.jpg";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -110,8 +103,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={mitsdLogoLight} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={mitsdLogoDark} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={mitsdLogo} alt="MITAOE School of Design" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           MITAOE - School of Design
                         </span>
@@ -274,8 +266,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={antefLogoLight} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={antefLogoDark} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={antefLogo} alt="Antef" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Antef
                         </span>
@@ -314,8 +305,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={devncoLogoLight} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={devncoLogoDark} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={devncoLogo} alt="Devnco Technologies" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Devnco Technologies
                         </span>
@@ -354,8 +344,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={zestrixLogoLight} alt="Zestrix Solutions" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={zestrixLogoDark} alt="Zestrix Solutions" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={zestrixLogo} alt="Zestrix Solutions" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Zestrix Solutions
                         </span>
@@ -394,8 +383,7 @@ const About = () => {
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={ystocxxLogoLight} alt="Ystocxx" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={ystocxxLogoDark} alt="Ystocxx" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={ystocxxLogo} alt="Ystocxx" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           Ystocxx
                         </span>
@@ -485,8 +473,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={gdgLogoLight} alt="GDG on campus MITAOE" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={gdgLogoDark} alt="GDG on campus MITAOE" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={gdgLogo} alt="GDG on campus MITAOE" className="w-12 h-12 lg:w-16 lg:h-16 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           GDG on campus MITAOE
                         </span>
@@ -525,8 +512,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   <AccordionTrigger className="hover:no-underline py-6 transition-all duration-300 hover:scale-[1.02] hover:bg-muted data-[state=open]:bg-muted rounded-lg px-4">
                     <div className="flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-6 flex-1 text-left">
                       <div className="flex items-center gap-4 lg:gap-6">
-                        <img src={nasaSpaceAppsLogoLight} alt="NASA Space Apps Challenge" className="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 dark:hidden" />
-                        <img src={nasaSpaceAppsLogoDark} alt="NASA Space Apps Challenge" className="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 hidden dark:block" />
+                        <img src={nasaSpaceAppsLogo} alt="NASA Space Apps Challenge" className="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300" />
                         <span className="text-sm md:text-lg font-medium text-foreground lg:hidden lg:text-xl whitespace-nowrap">
                           NASA Space Apps Challenge
                         </span>
