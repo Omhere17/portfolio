@@ -23,7 +23,7 @@ export const TrustedBy = () => {
     lightSrc: mitsdLogoLight,
     darkSrc: mitsdLogoDark,
     alt: "MITSD",
-    size: "h-9"
+    size: "h-10"
   }, {
     lightSrc: antefLogoLight,
     darkSrc: antefLogoDark,
@@ -33,7 +33,7 @@ export const TrustedBy = () => {
     lightSrc: gdgLogoLight,
     darkSrc: gdgLogoDark,
     alt: "GDG",
-    size: "h-11"
+    size: "h-12"
   }, {
     lightSrc: ystocxxLogoLight,
     darkSrc: ystocxxLogoDark,
@@ -43,12 +43,12 @@ export const TrustedBy = () => {
     lightSrc: nasaSpaceAppsLogoLight,
     darkSrc: nasaSpaceAppsLogoDark,
     alt: "NASA Space Apps",
-    size: "h-11"
+    size: "h-12"
   }, {
     lightSrc: zestrixLogoLight,
     darkSrc: zestrixLogoDark,
     alt: "Zestrix Solutions",
-    size: "h-10"
+    size: "h-11"
   }];
 
   // Duplicate logos for seamless endless loop
