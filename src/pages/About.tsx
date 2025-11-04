@@ -474,74 +474,81 @@ I am enthusiastic about learning new things and understanding the science behind
 
             {/* Digital Tools Proficiency Section */}
             <div className="space-y-8 pt-12">
-              <h2 className="text-3xl font-bold text-black lg:text-4xl text-center">
+              <h2 className="text-3xl font-bold text-black lg:text-4xl">
                 Digital Tools Proficiency
               </h2>
               
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8 max-w-6xl mx-auto">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-w-6xl">
                 {/* Row 1 */}
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Illustrator</span>
+                  <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">After Effects</span>
+                  <span className="text-xs font-medium text-foreground text-center">After Effect</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">InDesign</span>
+                  <span className="text-xs font-medium text-foreground text-center">Substance Painter</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Premiere Pro</span>
+                  <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Photoshop</span>
+                  <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Figma</span>
+                  <span className="text-xs font-medium text-foreground text-center">Figma</span>
                 </div>
 
-                {/* Row 2 */}
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105 col-start-2 sm:col-start-auto">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain" />
+                {/* Row 2 - Offset start */}
+                <div className="col-start-2 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Tableau</span>
+                  <span className="text-xs font-medium text-foreground text-center">Blender</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={unityLogo} alt="Unity" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={notionLogo} alt="Notion" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Unity</span>
+                  <span className="text-xs font-medium text-foreground text-center">Webflow</span>
                 </div>
 
-                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
-                  <div className="w-16 h-16 flex items-center justify-center">
-                    <img src={notionLogo} alt="Notion" className="w-full h-full object-contain" />
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={unityLogo} alt="Unity" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
-                  <span className="text-sm font-medium text-foreground text-center">Notion</span>
+                  <span className="text-xs font-medium text-foreground text-center">Unreal Engine</span>
+                </div>
+
+                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <img src={figmaLogo} alt="Framer" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                  </div>
+                  <span className="text-xs font-medium text-foreground text-center">Framer</span>
                 </div>
               </div>
             </div>
