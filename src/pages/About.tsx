@@ -25,6 +25,15 @@ import interestFootballField from "@/assets/interest-football-field.png";
 import gdgLogo from "@/assets/gdg-logo.png";
 import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
 import zestrixLogo from "@/assets/zestrix-logo.jpg";
+import illustratorLogo from "@/assets/illustrator-logo.svg";
+import afterEffectsLogo from "@/assets/after-effects-logo.svg";
+import premiereLogo from "@/assets/premiere-logo.svg";
+import photoshopLogo from "@/assets/photoshop-logo.svg";
+import figmaLogo from "@/assets/figma-logo.svg";
+import tableauLogo from "@/assets/tableau-logo.svg";
+import unityLogo from "@/assets/unity-logo.svg";
+import notionLogo from "@/assets/notion-logo.svg";
+import indesignLogo from "@/assets/indesign-logo.svg";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -459,6 +468,80 @@ I am enthusiastic about learning new things and understanding the science behind
                   src: interestFootballField,
                   alt: "Football Field"
                 }]} />
+                </div>
+              </div>
+            </div>
+
+            {/* Digital Tools Proficiency Section */}
+            <div className="space-y-8 pt-12">
+              <h2 className="text-3xl font-bold text-black lg:text-4xl text-center">
+                Digital Tools Proficiency
+              </h2>
+              
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8 max-w-6xl mx-auto">
+                {/* Row 1 */}
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Illustrator</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">After Effects</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">InDesign</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Premiere Pro</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Photoshop</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Figma</span>
+                </div>
+
+                {/* Row 2 */}
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105 col-start-2 sm:col-start-auto">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Tableau</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={unityLogo} alt="Unity" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Unity</span>
+                </div>
+
+                <div className="flex flex-col items-center gap-4 p-6 rounded-lg bg-muted/30 hover:bg-muted/50 transition-all duration-300 hover:scale-105">
+                  <div className="w-16 h-16 flex items-center justify-center">
+                    <img src={notionLogo} alt="Notion" className="w-full h-full object-contain" />
+                  </div>
+                  <span className="text-sm font-medium text-foreground text-center">Notion</span>
                 </div>
               </div>
             </div>
