@@ -522,29 +522,29 @@ I am enthusiastic about learning new things and understanding the science behind
                   <span className="text-xs font-medium text-foreground text-center">Figma</span>
                 </div>
 
-                {/* Row 2 - Equal width boxes spread across */}
-                <div className="col-start-1 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                {/* Row 2 - Wider boxes spread across */}
+                <div className="col-start-1 col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
                   <div className="w-12 h-12 flex items-center justify-center">
                     <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
                   <span className="text-xs font-medium text-foreground text-center">Blender</span>
                 </div>
 
-                <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
                   <div className="w-12 h-12 flex items-center justify-center">
                     <img src={notionLogo} alt="Notion" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
                   <span className="text-xs font-medium text-foreground text-center">Webflow</span>
                 </div>
 
-                <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-2 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
                   <div className="w-12 h-12 flex items-center justify-center">
                     <img src={unityLogo} alt="Unity" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
                   <span className="text-xs font-medium text-foreground text-center">Unreal Engine</span>
                 </div>
 
-                <div className="col-span-1 sm:col-span-1 md:col-span-1 lg:col-span-1 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
+                <div className="col-start-1 col-span-1 sm:col-span-2 md:col-span-2 lg:col-span-2 lg:col-start-3 flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group">
                   <div className="w-12 h-12 flex items-center justify-center">
                     <img src={figmaLogo} alt="Framer" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
                   </div>
