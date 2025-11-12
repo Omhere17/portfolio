@@ -478,77 +478,83 @@ I am enthusiastic about learning new things and understanding the science behind
                 Digital Tools Proficiency
               </h2>
               
-              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 max-w-6xl">
-                {/* Figma */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+              <div className="space-y-4 max-w-6xl">
+                {/* Top Row - 6 logos */}
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+                  {/* Figma */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Figma</span>
                   </div>
-                  <span className="text-xs font-medium text-foreground text-center">Figma</span>
+
+                  {/* Illustrator */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
+                  </div>
+
+                  {/* Photoshop */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
+                  </div>
+
+                  {/* Notion */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={notionLogo} alt="Notion" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Notion</span>
+                  </div>
+
+                  {/* Tableau */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Tableau</span>
+                  </div>
+
+                  {/* Unity */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={unityLogo} alt="Unity" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Unity</span>
+                  </div>
                 </div>
 
-                {/* Illustrator */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                {/* Bottom Row - 3 logos spread across */}
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Premiere Pro */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
                   </div>
-                  <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
-                </div>
 
-                {/* Photoshop */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                  {/* After Effects */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">After Effects</span>
                   </div>
-                  <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
-                </div>
 
-                {/* Notion */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={notionLogo} alt="Notion" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                  {/* InDesign */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">InDesign</span>
                   </div>
-                  <span className="text-xs font-medium text-foreground text-center">Notion</span>
-                </div>
-
-                {/* Tableau */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                  </div>
-                  <span className="text-xs font-medium text-foreground text-center">Tableau</span>
-                </div>
-
-                {/* Unity */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={unityLogo} alt="Unity" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                  </div>
-                  <span className="text-xs font-medium text-foreground text-center">Unity</span>
-                </div>
-
-                {/* Premiere Pro */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                  </div>
-                  <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
-                </div>
-
-                {/* After Effects */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                  </div>
-                  <span className="text-xs font-medium text-foreground text-center">After Effects</span>
-                </div>
-
-                {/* InDesign */}
-                <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                  <div className="w-12 h-12 flex items-center justify-center">
-                    <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
-                  </div>
-                  <span className="text-xs font-medium text-foreground text-center">InDesign</span>
                 </div>
               </div>
             </div>
