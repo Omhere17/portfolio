@@ -5,6 +5,7 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { TrustedBy } from "@/components/TrustedBy";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { InterestsCarousel } from "@/components/InterestsCarousel";
+import { useState } from "react";
 import childhoodImg from "@/assets/about-childhood.png";
 import musicImg from "@/assets/about-music.png";
 import footballImg from "@/assets/about-football.png";
@@ -35,7 +36,18 @@ import miroLight from "@/assets/miro-light.png";
 import unityLight from "@/assets/unity-light.png";
 import tableauLight from "@/assets/tableau-light.png";
 import webflowLight from "@/assets/webflow-light.png";
+import figmaHover from "@/assets/figma-hover.png";
+import photoshopHover from "@/assets/photoshop-hover.png";
+import illustratorHover from "@/assets/illustrator-hover.png";
+import afterEffectsHover from "@/assets/after-effects-hover.png";
+import premiereHover from "@/assets/premiere-hover.png";
+import notionHover from "@/assets/notion-hover.png";
+import miroHover from "@/assets/miro-hover.png";
+import unityHover from "@/assets/unity-hover.png";
+import tableauHover from "@/assets/tableau-hover.png";
+import webflowHover from "@/assets/webflow-hover.png";
 const About = () => {
+  const [hoveredLogo, setHoveredLogo] = useState<string | null>(null);
   return <div className="min-h-screen">
       <CustomCursor />
       <Navigation />
@@ -483,41 +495,81 @@ I am enthusiastic about learning new things and understanding the science behind
                 {/* Top Row - 5 logos */}
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
                   {/* Figma */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('figma')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={figmaLight} alt="Figma" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'figma' ? figmaHover : figmaLight} 
+                        alt="Figma" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Figma</span>
                   </div>
 
                   {/* Photoshop */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('photoshop')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={photoshopLight} alt="Adobe Photoshop" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'photoshop' ? photoshopHover : photoshopLight} 
+                        alt="Adobe Photoshop" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
                   </div>
 
                   {/* Illustrator */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('illustrator')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={illustratorLight} alt="Adobe Illustrator" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'illustrator' ? illustratorHover : illustratorLight} 
+                        alt="Adobe Illustrator" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
                   </div>
 
                   {/* After Effects */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('aftereffects')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={afterEffectsLight} alt="Adobe After Effects" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'aftereffects' ? afterEffectsHover : afterEffectsLight} 
+                        alt="Adobe After Effects" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">After Effects</span>
                   </div>
 
                   {/* Premiere Pro */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('premiere')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={premiereLight} alt="Adobe Premiere Pro" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'premiere' ? premiereHover : premiereLight} 
+                        alt="Adobe Premiere Pro" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
                   </div>
@@ -526,41 +578,81 @@ I am enthusiastic about learning new things and understanding the science behind
                 {/* Bottom Row - 5 logos */}
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
                   {/* Notion */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('notion')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={notionLight} alt="Notion" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'notion' ? notionHover : notionLight} 
+                        alt="Notion" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Notion</span>
                   </div>
 
                   {/* Miro */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('miro')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={miroLight} alt="Miro" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'miro' ? miroHover : miroLight} 
+                        alt="Miro" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Miro</span>
                   </div>
 
                   {/* Unity */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('unity')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={unityLight} alt="Unity" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'unity' ? unityHover : unityLight} 
+                        alt="Unity" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Unity</span>
                   </div>
 
                   {/* Tableau */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('tableau')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={tableauLight} alt="Tableau" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'tableau' ? tableauHover : tableauLight} 
+                        alt="Tableau" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Tableau</span>
                   </div>
 
                   {/* Webflow */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                  <div 
+                    className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer"
+                    onMouseEnter={() => setHoveredLogo('webflow')}
+                    onMouseLeave={() => setHoveredLogo(null)}
+                  >
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={webflowLight} alt="Webflow" className="w-full h-full object-contain transition-all duration-300" />
+                      <img 
+                        src={hoveredLogo === 'webflow' ? webflowHover : webflowLight} 
+                        alt="Webflow" 
+                        className="w-full h-full object-contain transition-all duration-300" 
+                      />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Webflow</span>
                   </div>
@@ -658,6 +750,6 @@ I am enthusiastic about learning new things and understanding the science behind
       <TrustedBy />
       <Footer />
       <ThemeToggle />
-    </div>;
+    </div>
 };
 export default About;
