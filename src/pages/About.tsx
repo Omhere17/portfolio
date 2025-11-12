@@ -25,15 +25,16 @@ import interestFootballField from "@/assets/interest-football-field.png";
 import gdgLogo from "@/assets/gdg-logo.png";
 import nasaSpaceAppsLogo from "@/assets/nasa-space-apps-logo.png";
 import zestrixLogo from "@/assets/zestrix-logo.jpg";
-import illustratorLogo from "@/assets/illustrator-logo.svg";
-import afterEffectsLogo from "@/assets/after-effects-logo.svg";
-import premiereLogo from "@/assets/premiere-logo.svg";
-import photoshopLogo from "@/assets/photoshop-logo.svg";
-import figmaLogo from "@/assets/figma-logo.svg";
-import tableauLogo from "@/assets/tableau-logo.svg";
-import unityLogo from "@/assets/unity-logo.svg";
-import notionLogo from "@/assets/notion-logo.svg";
-import indesignLogo from "@/assets/indesign-logo.svg";
+import figmaLight from "@/assets/figma-light.png";
+import photoshopLight from "@/assets/photoshop-light.png";
+import illustratorLight from "@/assets/illustrator-light.png";
+import afterEffectsLight from "@/assets/after-effects-light.png";
+import premiereLight from "@/assets/premiere-light.png";
+import notionLight from "@/assets/notion-light.png";
+import miroLight from "@/assets/miro-light.png";
+import unityLight from "@/assets/unity-light.png";
+import tableauLight from "@/assets/tableau-light.png";
+import webflowLight from "@/assets/webflow-light.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
@@ -479,81 +480,89 @@ I am enthusiastic about learning new things and understanding the science behind
               </h2>
               
               <div className="space-y-4 max-w-6xl">
-                {/* Top Row - 6 logos */}
-                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
+                {/* Top Row - 5 logos */}
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
                   {/* Figma */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
+                      <img src={figmaLight} alt="Figma" className="w-full h-full object-contain transition-all duration-300" />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Figma</span>
-                  </div>
-
-                  {/* Illustrator */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
-                    </div>
-                    <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
                   </div>
 
                   {/* Photoshop */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
+                      <img src={photoshopLight} alt="Adobe Photoshop" className="w-full h-full object-contain transition-all duration-300" />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
                   </div>
 
-                  {/* Notion */}
+                  {/* Illustrator */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={notionLogo} alt="Notion" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
+                      <img src={illustratorLight} alt="Adobe Illustrator" className="w-full h-full object-contain transition-all duration-300" />
                     </div>
-                    <span className="text-xs font-medium text-foreground text-center">Notion</span>
-                  </div>
-
-                  {/* Tableau */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
-                    </div>
-                    <span className="text-xs font-medium text-foreground text-center">Tableau</span>
-                  </div>
-
-                  {/* Unity */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={unityLogo} alt="Unity" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
-                    </div>
-                    <span className="text-xs font-medium text-foreground text-center">Unity</span>
-                  </div>
-                </div>
-
-                {/* Bottom Row - 3 logos spread across */}
-                <div className="grid grid-cols-3 gap-4">
-                  {/* Premiere Pro */}
-                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
-                    <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
-                    </div>
-                    <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
+                    <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
                   </div>
 
                   {/* After Effects */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
+                      <img src={afterEffectsLight} alt="Adobe After Effects" className="w-full h-full object-contain transition-all duration-300" />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">After Effects</span>
                   </div>
 
-                  {/* InDesign */}
+                  {/* Premiere Pro */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(1.5) contrast(0.8)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(1.5) contrast(0.8)'} />
+                      <img src={premiereLight} alt="Adobe Premiere Pro" className="w-full h-full object-contain transition-all duration-300" />
                     </div>
-                    <span className="text-xs font-medium text-foreground text-center">InDesign</span>
+                    <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
+                  </div>
+                </div>
+
+                {/* Bottom Row - 5 logos */}
+                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
+                  {/* Notion */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={notionLight} alt="Notion" className="w-full h-full object-contain transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Notion</span>
+                  </div>
+
+                  {/* Miro */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={miroLight} alt="Miro" className="w-full h-full object-contain transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Miro</span>
+                  </div>
+
+                  {/* Unity */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={unityLight} alt="Unity" className="w-full h-full object-contain transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Unity</span>
+                  </div>
+
+                  {/* Tableau */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={tableauLight} alt="Tableau" className="w-full h-full object-contain transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Tableau</span>
+                  </div>
+
+                  {/* Webflow */}
+                  <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
+                    <div className="w-12 h-12 flex items-center justify-center">
+                      <img src={webflowLight} alt="Webflow" className="w-full h-full object-contain transition-all duration-300" />
+                    </div>
+                    <span className="text-xs font-medium text-foreground text-center">Webflow</span>
                   </div>
                 </div>
               </div>
