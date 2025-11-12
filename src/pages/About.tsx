@@ -35,6 +35,16 @@ import miroLight from "@/assets/miro-light.png";
 import unityLight from "@/assets/unity-light.png";
 import tableauLight from "@/assets/tableau-light.png";
 import webflowLight from "@/assets/webflow-light.png";
+import figmaHover from "@/assets/figma-hover.png";
+import photoshopHover from "@/assets/photoshop-hover.png";
+import illustratorHover from "@/assets/illustrator-hover.png";
+import afterEffectsHover from "@/assets/after-effects-hover.png";
+import premiereHover from "@/assets/premiere-hover.png";
+import notionHover from "@/assets/notion-hover.png";
+import miroHover from "@/assets/miro-hover.png";
+import unityHover from "@/assets/unity-hover.png";
+import tableauHover from "@/assets/tableau-hover.png";
+import webflowHover from "@/assets/webflow-hover.png";
 const About = () => {
   return <div className="min-h-screen">
       <CustomCursor />
