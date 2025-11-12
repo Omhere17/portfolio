@@ -484,7 +484,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Figma */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={figmaLogo} alt="Figma" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Figma</span>
                   </div>
@@ -492,7 +492,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Illustrator */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={illustratorLogo} alt="Adobe Illustrator" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
                   </div>
@@ -500,7 +500,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Photoshop */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={photoshopLogo} alt="Adobe Photoshop" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
                   </div>
@@ -508,7 +508,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Notion */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={notionLogo} alt="Notion" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={notionLogo} alt="Notion" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Notion</span>
                   </div>
@@ -516,7 +516,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Tableau */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={tableauLogo} alt="Tableau" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Tableau</span>
                   </div>
@@ -524,7 +524,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Unity */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={unityLogo} alt="Unity" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={unityLogo} alt="Unity" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Unity</span>
                   </div>
@@ -535,7 +535,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* Premiere Pro */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={premiereLogo} alt="Adobe Premiere Pro" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
                   </div>
@@ -543,7 +543,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* After Effects */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={afterEffectsLogo} alt="Adobe After Effects" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">After Effects</span>
                   </div>
@@ -551,7 +551,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   {/* InDesign */}
                   <div className="flex flex-col items-center justify-center gap-3 p-6 rounded-lg bg-gray-100 dark:bg-gray-800/50 hover:bg-gray-200 dark:hover:bg-gray-700/50 transition-all duration-300 group cursor-pointer">
                     <div className="w-12 h-12 flex items-center justify-center">
-                      <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-300" />
+                      <img src={indesignLogo} alt="Adobe InDesign" className="w-full h-full object-contain transition-all duration-300" style={{ filter: 'grayscale(100%) brightness(0.29)' }} onMouseEnter={(e) => e.currentTarget.style.filter = 'none'} onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%) brightness(0.29)'} />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">InDesign</span>
                   </div>
