@@ -658,6 +658,7 @@ I am enthusiastic about learning new things and understanding the science behind
                   </div>
                 </div>
               </div>
+            </div>
 
             {/* Extracurriculars & Volunteering Section */}
             <div className="space-y-6 pt-20 pb-4">
