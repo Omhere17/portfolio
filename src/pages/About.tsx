@@ -115,7 +115,7 @@ const About = () => {
             </div>
 
             {/* Education Section */}
-            <div className="space-y-6 pt-12">
+            <div className="space-y-6 pt-20 pb-12">
               <h2 className="text-3xl font-bold text-foreground lg:text-4xl">
                 Education
               </h2>
@@ -280,7 +280,7 @@ const About = () => {
             </div>
 
             {/* Experience Section */}
-            <div className="space-y-6 pt-12">
+            <div className="space-y-6 pt-20 pb-12">
               <h2 className="text-3xl font-bold text-foreground lg:text-4xl">Work Experience</h2>
               
               <Accordion type="single" collapsible className="w-full">

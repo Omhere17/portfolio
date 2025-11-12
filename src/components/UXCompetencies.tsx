@@ -47,7 +47,7 @@ export const UXCompetencies = () => {
   return (
     <section className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl lg:text-4xl font-bold text-center mb-16 text-foreground">
+        <h2 className="text-3xl lg:text-4xl font-bold text-left mb-16 text-foreground">
           UX Competencies
         </h2>
         
