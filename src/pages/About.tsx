@@ -749,6 +749,6 @@ I am enthusiastic about learning new things and understanding the science behind
       <TrustedBy />
       <Footer />
       <ThemeToggle />
-    </div>;
+    </div>
 };
 export default About;
