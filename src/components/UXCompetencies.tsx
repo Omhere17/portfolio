@@ -61,7 +61,7 @@ export const UXCompetencies = () => {
                 {section.skills.map((skill, skillIndex) => (
                   <li 
                     key={skillIndex}
-                    className="text-muted-foreground flex items-start"
+                    className="text-muted-foreground flex items-start transition-all duration-200 hover:scale-105 hover:text-foreground hover:translate-x-2 cursor-pointer"
                   >
                     <span className="mr-2 text-primary">•</span>
                     <span>{skill}</span>
