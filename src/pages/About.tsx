@@ -504,7 +504,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'figma' ? figmaHover : figmaLight} 
                         alt="Figma" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Figma</span>
@@ -520,7 +520,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'photoshop' ? photoshopHover : photoshopLight} 
                         alt="Adobe Photoshop" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Photoshop</span>
@@ -536,7 +536,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'illustrator' ? illustratorHover : illustratorLight} 
                         alt="Adobe Illustrator" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Illustrator</span>
@@ -552,7 +552,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'aftereffects' ? afterEffectsHover : afterEffectsLight} 
                         alt="Adobe After Effects" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">After Effects</span>
@@ -568,7 +568,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'premiere' ? premiereHover : premiereLight} 
                         alt="Adobe Premiere Pro" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Premiere Pro</span>
@@ -587,7 +587,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'notion' ? notionHover : notionLight} 
                         alt="Notion" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Notion</span>
@@ -603,7 +603,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'miro' ? miroHover : miroLight} 
                         alt="Miro" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Miro</span>
@@ -619,7 +619,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'unity' ? unityHover : unityLight} 
                         alt="Unity" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Unity</span>
@@ -635,7 +635,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'tableau' ? tableauHover : tableauLight} 
                         alt="Tableau" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Tableau</span>
@@ -651,7 +651,7 @@ I am enthusiastic about learning new things and understanding the science behind
                       <img 
                         src={hoveredLogo === 'webflow' ? webflowHover : webflowLight} 
                         alt="Webflow" 
-                        className="w-full h-full object-contain transition-all duration-300" 
+                        className="w-full h-full object-contain transition-all duration-150"
                       />
                     </div>
                     <span className="text-xs font-medium text-foreground text-center">Webflow</span>
