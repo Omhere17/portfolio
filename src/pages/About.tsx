@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
 import { TrustedBy } from "@/components/TrustedBy";
+import { UXCompetencies } from "@/components/UXCompetencies";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { InterestsCarousel } from "@/components/InterestsCarousel";
 import { useState } from "react";
@@ -485,8 +486,11 @@ I am enthusiastic about learning new things and understanding the science behind
               </div>
             </div>
 
+            {/* UX Competencies Section */}
+            <UXCompetencies />
+
             {/* Digital Tools Proficiency Section */}
-            <div className="space-y-8 pt-12">
+            <div className="space-y-8 pt-24 pb-12">
               <h2 className="text-3xl font-bold text-black lg:text-4xl">
                 Digital Tools Proficiency
               </h2>
@@ -661,7 +665,7 @@ I am enthusiastic about learning new things and understanding the science behind
             </div>
 
             {/* Extracurriculars & Volunteering Section */}
-            <div className="space-y-6 pt-20 pb-4">
+            <div className="space-y-6 pt-28 pb-12">
               <h2 className="text-3xl font-bold text-black lg:text-4xl">Extracurriculars & Volunteering</h2>
               
               <Accordion type="single" collapsible className="w-full">
