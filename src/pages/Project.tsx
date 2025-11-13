@@ -405,12 +405,14 @@ export default function Project() {
       <div className={`w-full transition-opacity duration-300 ${isLoading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}>
         {project.projectImages.map((image, index) => (
           <div key={index} className="w-full">
-            {/* Project Image */}
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="w-full h-auto object-contain shadow-none"
-            />
+            {/* Project Image - Only show if no embed code */}
+            {!image.embedCode && (
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-auto object-contain shadow-none"
+              />
+            )}
             
             {/* Figma Embed */}
             {image.embedCode && (
