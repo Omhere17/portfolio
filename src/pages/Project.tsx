@@ -374,7 +374,6 @@ export default function Project() {
               <img
                 src={image.src}
                 alt={image.alt}
-                loading="lazy"
                 className="max-w-6xl w-full h-auto object-contain shadow-none"
               />
             )}
