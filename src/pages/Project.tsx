@@ -404,13 +404,13 @@ export default function Project() {
       {/* Project Content */}
       <div className={`w-full transition-opacity duration-300 ${isLoading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}>
         {project.projectImages.map((image, index) => (
-          <div key={index} className="w-full">
+          <div key={index} className="w-full flex justify-center">
             {/* Project Image - Only show if no embed code */}
             {!image.embedCode && (
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-auto object-contain shadow-none"
+                className="max-w-5xl w-full h-auto object-contain shadow-none"
               />
             )}
             
