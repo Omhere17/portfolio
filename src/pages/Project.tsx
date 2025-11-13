@@ -79,6 +79,13 @@ import recovr7 from "@/assets/recovr-7.png";
 import recovr8 from "@/assets/recovr-8.png";
 import recovr9 from "@/assets/recovr-9.png";
 import recovr10 from "@/assets/recovr-10.png";
+import recovr11 from "@/assets/recovr-11.png";
+import recovr12 from "@/assets/recovr-12.png";
+import recovr13 from "@/assets/recovr-13.png";
+import recovr14 from "@/assets/recovr-14.png";
+import recovr15 from "@/assets/recovr-15.png";
+import recovr16 from "@/assets/recovr-16.png";
+import recovr17 from "@/assets/recovr-17.png";
 
 interface ProjectImage {
   src: string;
@@ -393,6 +400,39 @@ const projects = [
       {
         src: recovr10,
         alt: "recoVR Design - User Flow for Acrophobia",
+      },
+      {
+        src: recovr11,
+        alt: "recoVR Design - Low Fidelity Wireframes",
+      },
+      {
+        src: recovr12,
+        alt: "recoVR Design - Stage Wireframes",
+      },
+      {
+        src: recovr13,
+        alt: "recoVR Design - Logo Explorations",
+      },
+      {
+        src: recovr14,
+        alt: "recoVR Design - Mood Board",
+      },
+      {
+        src: recovr15,
+        alt: "recoVR Design - Icon Design",
+      },
+      {
+        src: recovr16,
+        alt: "recoVR Design - Final UI Screens",
+      },
+      {
+        src: recovr17,
+        alt: "recoVR Development - Prototyping in Unity",
+      },
+      {
+        src: recovr17,
+        alt: "recoVR Video Demonstration",
+        embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/d49Fko3sN5c?si=HheB6gEX_yWzOqEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
       },
     ] as ProjectImage[],
   },
