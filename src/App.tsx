@@ -23,7 +23,6 @@ const App = () => {
     if (!hasVisited) {
       setShowLoading(true);
       sessionStorage.setItem('hasVisitedSite', 'true');
-      setTimeout(() => setShowLoading(false), 2000);
     }
   }, []);
 

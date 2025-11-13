@@ -511,13 +511,13 @@ export default function Project() {
           imageLoadIndex++;
           
           return (
-            <div key={index} className="w-full flex flex-col justify-center">
+            <div key={index} className="w-full flex flex-col items-center justify-center">
               {/* Project Image */}
               <img
                 src={image.src}
                 alt={image.alt}
                 onLoad={shouldTrackLoad ? handleImageLoad : undefined}
-                className="max-w-6xl w-full h-auto object-contain shadow-none"
+                className="max-w-6xl w-full h-auto object-contain shadow-none mx-auto"
               />
               
               {/* Figma Embed - Show below image if present */}
