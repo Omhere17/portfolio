@@ -8,8 +8,11 @@ export const UXCompetencies = () => {
         "Affinity Mapping",
         "Persona Development",
         "Empathy Mapping",
+        "User Journey Mapping",
         "User Testing",
-        "Ethnography"
+        "Ethnography",
+        "Storyboarding",
+        "UX Audits"
       ]
     },
     {
@@ -19,9 +22,12 @@ export const UXCompetencies = () => {
         "Prototyping",
         "UI Design",
         "Information Architecture",
+        "Card Sorting",
         "Design Systems",
         "Task Flows / User Flows",
-        "Accessibility"
+        "Service Blueprints",
+        "Accessibility",
+        "Data Visualization"
       ]
     },
     {
