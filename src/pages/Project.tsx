@@ -429,10 +429,6 @@ const projects = [
       },
       {
         src: recovr17,
-        alt: "recoVR Development - Prototyping in Unity",
-      },
-      {
-        src: recovr17,
         alt: "recoVR Video Demonstration",
         embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/d49Fko3sN5c?si=HheB6gEX_yWzOqEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
       },
