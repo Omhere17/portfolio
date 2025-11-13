@@ -7,6 +7,7 @@ import recovrCover from "@/assets/recovr-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
+import kazeCover from "@/assets/kaze-cover.png";
 import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
@@ -45,6 +46,15 @@ const projects = [
     tags: ["Data Driven UX", "Data Visualization", "Social Design"],
     image: shelterCover,
     link: "/project/shelter-to-home",
+  },
+  {
+    id: "kaze-airlines",
+    title: "Kaze Airlines Branding",
+    description:
+      "A comprehensive branding project for Kaze Airlines, creating a cohesive visual identity that captures the essence of modern air travel with Japanese-inspired elegance and simplicity.",
+    tags: ["Branding", "Visual Identity", "UI Design"],
+    image: kazeCover,
+    link: "/project/kaze-airlines",
   },
   {
     id: "visual-representation",
