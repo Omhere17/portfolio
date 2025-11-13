@@ -454,8 +454,8 @@ export default function Project() {
   const project = projects.find((p) => p.id === id);
   const [loadedImagesCount, setLoadedImagesCount] = useState(0);
   
-  // Count only actual images (not embeds) for initial load
-  const actualImagesCount = project?.projectImages.filter(img => !img.embedCode).length || 0;
+  // All entries now show images, so count all
+  const actualImagesCount = project?.projectImages.length || 0;
   const initialLoadCount = Math.min(3, actualImagesCount); // Wait for up to 3 images, or all if fewer
   const isInitialLoadComplete = loadedImagesCount >= initialLoadCount || actualImagesCount === 0;
 
@@ -507,22 +507,20 @@ export default function Project() {
       {/* Project Content */}
       <div className="w-full">
         {project.projectImages.map((image, index) => {
-          const shouldTrackLoad = !image.embedCode && imageLoadIndex < initialLoadCount;
-          if (!image.embedCode) imageLoadIndex++;
+          const shouldTrackLoad = imageLoadIndex < initialLoadCount;
+          imageLoadIndex++;
           
           return (
-            <div key={index} className="w-full flex justify-center">
-              {/* Project Image - Only show if no embed code */}
-              {!image.embedCode && (
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  onLoad={shouldTrackLoad ? handleImageLoad : undefined}
-                  className="max-w-6xl w-full h-auto object-contain shadow-none"
-                />
-              )}
+            <div key={index} className="w-full flex flex-col justify-center">
+              {/* Project Image */}
+              <img
+                src={image.src}
+                alt={image.alt}
+                onLoad={shouldTrackLoad ? handleImageLoad : undefined}
+                className="max-w-6xl w-full h-auto object-contain shadow-none"
+              />
               
-              {/* Figma Embed */}
+              {/* Figma Embed - Show below image if present */}
               {image.embedCode && (
                 <div className="max-w-6xl w-full py-8">
                   <div 
