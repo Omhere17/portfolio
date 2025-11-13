@@ -341,33 +341,10 @@ export default function Project() {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadedImages, setLoadedImages] = useState<Set<number>>(new Set());
 
   useEffect(() => {
-    setIsLoading(true);
-    setLoadedImages(new Set());
+    window.scrollTo(0, 0);
   }, [id]);
-
-  useEffect(() => {
-    if (!project) return;
-    
-    const imagePromises = project.projectImages.map((image, index) => {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.src = image.src;
-        img.onload = () => {
-          setLoadedImages(prev => new Set(prev).add(index));
-          resolve(true);
-        };
-        img.onerror = () => resolve(false);
-      });
-    });
-
-    Promise.all(imagePromises).then(() => {
-      setTimeout(() => setIsLoading(false), 300);
-    });
-  }, [project]);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -388,21 +365,8 @@ export default function Project() {
         <ArrowLeft className="h-5 w-5" />
       </Button>
 
-      {/* Loading State */}
-      {isLoading && (
-        <div className="w-full min-h-[70vh] flex items-center justify-center bg-background">
-          <div className="flex flex-col items-center gap-4">
-            <div className="relative w-16 h-16">
-              <div className="absolute inset-0 border-4 border-primary/20 rounded-full"></div>
-              <div className="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-            </div>
-            <p className="text-sm text-muted-foreground">Loading project...</p>
-          </div>
-        </div>
-      )}
-
       {/* Project Content */}
-      <div className={`w-full transition-opacity duration-300 ${isLoading ? 'opacity-0 h-0 overflow-hidden' : 'opacity-100'}`}>
+      <div className="w-full">
         {project.projectImages.map((image, index) => (
           <div key={index} className="w-full flex justify-center">
             {/* Project Image - Only show if no embed code */}
@@ -410,6 +374,7 @@ export default function Project() {
               <img
                 src={image.src}
                 alt={image.alt}
+                loading="lazy"
                 className="max-w-5xl w-full h-auto object-contain shadow-none"
               />
             )}
@@ -430,9 +395,8 @@ export default function Project() {
       </div>
 
       {/* View Other Projects Section */}
-      {!isLoading && (
-        <section className="py-20 bg-muted/30 mt-16">
-          <div className="container mx-auto px-6">
+      <section className="py-20 bg-muted/30 mt-16">
+        <div className="container mx-auto px-6">
             <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-5xl mx-auto">View Other Projects</h2>
             
             <Carousel
@@ -489,8 +453,7 @@ export default function Project() {
             </Carousel>
           </div>
         </section>
-      )}
-      {!isLoading && <Footer />}
+      <Footer />
     </div>
   );
 }
