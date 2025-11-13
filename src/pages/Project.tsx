@@ -452,10 +452,18 @@ export default function Project() {
   const { id } = useParams();
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);
+  const [loadedImagesCount, setLoadedImagesCount] = useState(0);
+  const initialLoadCount = 3; // Number of images to wait for before hiding loading screen
+  const isInitialLoadComplete = loadedImagesCount >= initialLoadCount;
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setLoadedImagesCount(0); // Reset count when project changes
   }, [id]);
+
+  const handleImageLoad = () => {
+    setLoadedImagesCount((prev) => prev + 1);
+  };
 
   if (!project) {
     return <div>Project not found</div>;
@@ -466,6 +474,20 @@ export default function Project() {
   return (
     <div className="min-h-screen">
       <CustomCursor />
+      
+      {/* Loading Screen */}
+      {!isInitialLoadComplete && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-background">
+          <div className="flex flex-col items-center gap-4">
+            <div className="relative w-16 h-16">
+              <div className="absolute inset-0 border-4 border-muted rounded-full"></div>
+              <div className="absolute inset-0 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
+            </div>
+            <p className="text-sm text-muted-foreground">Loading project...</p>
+          </div>
+        </div>
+      )}
+
       {/* Floating Sticky Back Button */}
       <Button
         variant="ghost"
@@ -485,6 +507,7 @@ export default function Project() {
               <img
                 src={image.src}
                 alt={image.alt}
+                onLoad={index < initialLoadCount ? handleImageLoad : undefined}
                 className="max-w-6xl w-full h-auto object-contain shadow-none"
               />
             )}
