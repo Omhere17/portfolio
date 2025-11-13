@@ -10,8 +10,19 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { LoadingScreen } from "@/components/LoadingScreen";
 
 const Index = () => {
-  const [showLoading, setShowLoading] = useState(true);
-  const [showContent, setShowContent] = useState(false);
+  const [showLoading, setShowLoading] = useState(() => {
+    // Check if user has visited before in this session
+    const hasVisited = sessionStorage.getItem('hasVisited');
+    return !hasVisited;
+  });
+  const [showContent, setShowContent] = useState(!showLoading);
+
+  useEffect(() => {
+    // Mark as visited for this session
+    if (showLoading) {
+      sessionStorage.setItem('hasVisited', 'true');
+    }
+  }, [showLoading]);
 
   useEffect(() => {
     if (!showLoading) {
