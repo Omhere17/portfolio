@@ -453,8 +453,11 @@ export default function Project() {
   const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);
   const [loadedImagesCount, setLoadedImagesCount] = useState(0);
-  const initialLoadCount = 3; // Number of images to wait for before hiding loading screen
-  const isInitialLoadComplete = loadedImagesCount >= initialLoadCount;
+  
+  // Count only actual images (not embeds) for initial load
+  const actualImagesCount = project?.projectImages.filter(img => !img.embedCode).length || 0;
+  const initialLoadCount = Math.min(3, actualImagesCount); // Wait for up to 3 images, or all if fewer
+  const isInitialLoadComplete = loadedImagesCount >= initialLoadCount || actualImagesCount === 0;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -470,6 +473,9 @@ export default function Project() {
   }
 
   const otherProjects = projects.filter((p) => p.id !== id);
+  
+  // Track which images need to load for initial screen
+  let imageLoadIndex = 0;
 
   return (
     <div className="min-h-screen">
@@ -500,31 +506,36 @@ export default function Project() {
 
       {/* Project Content */}
       <div className="w-full">
-        {project.projectImages.map((image, index) => (
-          <div key={index} className="w-full flex justify-center">
-            {/* Project Image - Only show if no embed code */}
-            {!image.embedCode && (
-              <img
-                src={image.src}
-                alt={image.alt}
-                onLoad={index < initialLoadCount ? handleImageLoad : undefined}
-                className="max-w-6xl w-full h-auto object-contain shadow-none"
-              />
-            )}
-            
-            {/* Figma Embed */}
-            {image.embedCode && (
-              <div className="max-w-6xl w-full py-8">
-                <div 
-                  className="w-full h-[70vh] bg-muted/20 rounded-lg overflow-hidden"
-                  dangerouslySetInnerHTML={{ 
-                    __html: image.embedCode.replace(/width="\d+"/, 'width="100%"').replace(/height="\d+"/, 'height="100%"')
-                  }}
+        {project.projectImages.map((image, index) => {
+          const shouldTrackLoad = !image.embedCode && imageLoadIndex < initialLoadCount;
+          if (!image.embedCode) imageLoadIndex++;
+          
+          return (
+            <div key={index} className="w-full flex justify-center">
+              {/* Project Image - Only show if no embed code */}
+              {!image.embedCode && (
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  onLoad={shouldTrackLoad ? handleImageLoad : undefined}
+                  className="max-w-6xl w-full h-auto object-contain shadow-none"
                 />
-              </div>
-            )}
-          </div>
-        ))}
+              )}
+              
+              {/* Figma Embed */}
+              {image.embedCode && (
+                <div className="max-w-6xl w-full py-8">
+                  <div 
+                    className="w-full h-[70vh] bg-muted/20 rounded-lg overflow-hidden"
+                    dangerouslySetInnerHTML={{ 
+                      __html: image.embedCode.replace(/width="\d+"/, 'width="100%"').replace(/height="\d+"/, 'height="100%"')
+                    }}
+                  />
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
 
       {/* View Other Projects Section */}
