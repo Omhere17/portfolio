@@ -17,7 +17,7 @@ import visualRepCover from "@/assets/visual-rep-cover.png";
 const projects = [
   {
     id: "recovr-vr",
-    title: "Recovr | Healing Phobias Through Immersive VR",
+    title: "RecoVr - Healing Phobias through VR",
     description:
       "A Virtual Reality app enabling users to confront and manage their phobias safely at home through immersive exposure therapy experiences.",
     tags: ["Virtual Reality", "Exposure Therapy", "Lean UX"],
