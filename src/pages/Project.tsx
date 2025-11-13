@@ -381,9 +381,9 @@ export default function Project() {
             
             {/* Figma Embed */}
             {image.embedCode && (
-              <div className="w-screen relative left-1/2 right-1/2 -mx-[50vw] py-16 bg-muted/20">
+              <div className="max-w-5xl w-full py-8">
                 <div 
-                  className="w-full h-[90vh] px-4 md:px-8"
+                  className="w-full h-[70vh] bg-muted/20 rounded-lg overflow-hidden"
                   dangerouslySetInnerHTML={{ 
                     __html: image.embedCode.replace(/width="\d+"/, 'width="100%"').replace(/height="\d+"/, 'height="100%"')
                   }}
