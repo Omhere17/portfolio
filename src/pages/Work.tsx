@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { CustomCursor } from "@/components/CustomCursor";
 import { Badge } from "@/components/ui/badge";
+import { Skeleton } from "@/components/ui/skeleton";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
@@ -16,13 +17,13 @@ import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
   {
-    id: "recovr-vr",
+    id: "recovr",
     title: "RecoVr - Healing Phobias through VR",
     description:
       "A Virtual Reality app enabling users to confront and manage their phobias safely at home through immersive exposure therapy experiences.",
     tags: ["Virtual Reality", "Exposure Therapy", "Lean UX"],
     image: recovrCover,
-    link: "/project/recovr-vr",
+    link: "/project/recovr",
   },
   {
     id: "strava-gamification",
@@ -79,6 +80,26 @@ const projects = [
     link: "/project/kala-kosha",
   },
 ];
+
+const ProjectImage = ({ src, alt }: { src: string; alt: string }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <div className="relative w-full h-full">
+      {!isLoaded && (
+        <Skeleton className="absolute inset-0 w-full h-full" />
+      )}
+      <img
+        src={src}
+        alt={alt}
+        onLoad={() => setIsLoaded(true)}
+        className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-105 ${
+          isLoaded ? "opacity-100" : "opacity-0"
+        }`}
+      />
+    </div>
+  );
+};
 
 const Work = () => {
   const [visibleProjects, setVisibleProjects] = useState<Set<number>>(new Set());
@@ -155,11 +176,7 @@ const Work = () => {
                     {/* Project Image */}
                     <div className="lg:w-1/2">
                       <div className="aspect-[4/3] rounded-lg overflow-hidden bg-muted">
-                        <img
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                        />
+                        <ProjectImage src={project.image} alt={project.title} />
                       </div>
                     </div>
 
