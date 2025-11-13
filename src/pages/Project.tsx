@@ -378,20 +378,15 @@ export default function Project() {
   return (
     <div className="min-h-screen">
       <CustomCursor />
-      {/* Sticky Navigation */}
-      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b">
-        <div className="container mx-auto px-6 py-4 flex items-center">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => navigate("/")}
-            className="rounded-full"
-          >
-            <ArrowLeft className="h-5 w-5" />
-          </Button>
-          <h1 className="text-xl font-bold absolute left-1/2 -translate-x-1/2">{project.title}</h1>
-        </div>
-      </nav>
+      {/* Floating Sticky Back Button */}
+      <Button
+        variant="ghost"
+        size="icon"
+        onClick={() => navigate("/")}
+        className="fixed top-6 left-6 z-50 rounded-full bg-background/80 backdrop-blur-sm border border-border hover:bg-background shadow-lg"
+      >
+        <ArrowLeft className="h-5 w-5" />
+      </Button>
 
       {/* Loading State */}
       {isLoading && (
