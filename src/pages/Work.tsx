@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import recovrCover from "@/assets/recovr-cover.png";
 import kazeCover from "@/assets/kaze-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
@@ -15,6 +16,15 @@ import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
   {
+    id: "recovr-vr",
+    title: "Recovr | Healing Phobias Through Immersive VR",
+    description:
+      "A Virtual Reality app enabling users to confront and manage their phobias safely at home through immersive exposure therapy experiences.",
+    tags: ["Virtual Reality", "Exposure Therapy", "Lean UX"],
+    image: recovrCover,
+    link: "/project/recovr-vr",
+  },
+  {
     id: "strava-gamification",
     title: "Gamifying the Strava Experience",
     description:
@@ -22,15 +32,6 @@ const projects = [
     tags: ["UX Research", "UI Design", "Prototyping"],
     image: stravaCover,
     link: "/project/strava-gamification",
-  },
-  {
-    id: "kaze-airlines",
-    title: "Kaze Airlines branding",
-    description:
-      "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
-    tags: ["Branding", "Visual Design", "Visual Design"],
-    image: kazeCover,
-    link: "/project/kaze-airlines",
   },
   {
     id: "moolo-iot",
@@ -51,15 +52,6 @@ const projects = [
     link: "/project/shelter-to-home",
   },
   {
-    id: "kala-kosha",
-    title: "Kala Kosha",
-    description:
-      "Empowering traditional Indian artisans by providing digital tools to showcase their craft globally, enhancing their reach, recognition, and financial stability.",
-    tags: ["Dashboard", "User Interface", "Prototyping"],
-    image: kalakoshaCover,
-    link: "/project/kala-kosha",
-  },
-  {
     id: "visual-representation",
     title: "Visual Representation",
     description:
@@ -67,6 +59,24 @@ const projects = [
     tags: ["Illustrations", "Mock Ups", "Semiotics"],
     image: visualRepCover,
     link: "/project/visual-representation",
+  },
+  {
+    id: "kaze-airlines",
+    title: "Kaze Airlines Branding",
+    description:
+      "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
+    tags: ["Branding", "Visual Design", "Visual Design"],
+    image: kazeCover,
+    link: "/project/kaze-airlines",
+  },
+  {
+    id: "kala-kosha",
+    title: "Kala Kosha",
+    description:
+      "Empowering traditional Indian artisans by providing digital tools to showcase their craft globally, enhancing their reach, recognition, and financial stability.",
+    tags: ["Dashboard", "User Interface", "Prototyping"],
+    image: kalakoshaCover,
+    link: "/project/kala-kosha",
   },
 ];
 

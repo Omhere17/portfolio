@@ -1,14 +1,22 @@
 import { Badge } from "@/components/ui/badge";
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import kazeCover from "@/assets/kaze-cover.png";
+import recovrCover from "@/assets/recovr-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
-import kalakoshaCover from "@/assets/kalakosha-cover.png";
 import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
+  {
+    id: "recovr-vr",
+    title: "Recovr | Healing Phobias Through Immersive VR",
+    description:
+      "A Virtual Reality app enabling users to confront and manage their phobias safely at home through immersive exposure therapy experiences.",
+    tags: ["Virtual Reality", "Exposure Therapy", "Lean UX"],
+    image: recovrCover,
+    link: "/project/recovr-vr",
+  },
   {
     id: "strava-gamification",
     title: "Gamifying the Strava Experience",
@@ -17,15 +25,6 @@ const projects = [
     tags: ["UX Research", "UI Design", "Prototyping"],
     image: stravaCover,
     link: "/project/strava-gamification",
-  },
-  {
-    id: "kaze-airlines",
-    title: "Kaze Airlines Branding",
-    description:
-      "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
-    tags: ["Branding", "Visual Design", "Visual Design"],
-    image: kazeCover,
-    link: "/project/kaze-airlines",
   },
   {
     id: "moolo-iot",
@@ -44,15 +43,6 @@ const projects = [
     tags: ["Data Driven UX", "Data Visualization", "Social Design"],
     image: shelterCover,
     link: "/project/shelter-to-home",
-  },
-  {
-    id: "kala-kosha",
-    title: "Kala Kosha",
-    description:
-      "Empowering traditional Indian artisans by providing digital tools to showcase their craft globally, enhancing their reach, recognition, and financial stability.",
-    tags: ["Dashboard", "User Interface", "Prototyping"],
-    image: kalakoshaCover,
-    link: "/project/kala-kosha",
   },
   {
     id: "visual-representation",
