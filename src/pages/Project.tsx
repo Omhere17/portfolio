@@ -86,6 +86,8 @@ import recovr14 from "@/assets/recovr-14.png";
 import recovr15 from "@/assets/recovr-15.png";
 import recovr16 from "@/assets/recovr-16.png";
 import recovr17 from "@/assets/recovr-17.png";
+import recovr18 from "@/assets/recovr-18.png";
+import recovr19 from "@/assets/recovr-19.png";
 
 interface ProjectImage {
   src: string;
@@ -433,6 +435,14 @@ const projects = [
         src: recovr17,
         alt: "recoVR Video Demonstration",
         embedCode: '<iframe width="560" height="315" src="https://www.youtube.com/embed/d49Fko3sN5c?si=HheB6gEX_yWzOqEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+      },
+      {
+        src: recovr18,
+        alt: "recoVR Testing - Check Phase and Usability Testing",
+      },
+      {
+        src: recovr19,
+        alt: "recoVR - Thank You for Joining the Journey",
       },
     ] as ProjectImage[],
   },
