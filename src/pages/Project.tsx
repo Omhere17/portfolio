@@ -68,6 +68,17 @@ import visualRep7 from "@/assets/visual-rep-7.png";
 import visualRep8 from "@/assets/visual-rep-8.png";
 import visualRep9 from "@/assets/visual-rep-9.png";
 import visualRep10 from "@/assets/visual-rep-10.png";
+import recovrCover from "@/assets/recovr-cover.png";
+import recovr1 from "@/assets/recovr-1.png";
+import recovr2 from "@/assets/recovr-2.png";
+import recovr3 from "@/assets/recovr-3.png";
+import recovr4 from "@/assets/recovr-4.png";
+import recovr5 from "@/assets/recovr-5.png";
+import recovr6 from "@/assets/recovr-6.png";
+import recovr7 from "@/assets/recovr-7.png";
+import recovr8 from "@/assets/recovr-8.png";
+import recovr9 from "@/assets/recovr-9.png";
+import recovr10 from "@/assets/recovr-10.png";
 
 interface ProjectImage {
   src: string;
@@ -332,6 +343,56 @@ const projects = [
       {
         src: visualRep10,
         alt: "Visual Representation - Thank You",
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "recovr",
+    title: "recoVR - Virtual Exposure Therapy",
+    description:
+      "A VR-based exposure therapy tool designed to help users confront and manage their phobias in a safe, private, and controlled virtual environment. From trigger to triumph.",
+    tags: ["VR Design", "UX Research", "Unity Development"],
+    coverImage: recovrCover,
+    projectImages: [
+      {
+        src: recovr1,
+        alt: "recoVR Project Overview - Team and Mentors",
+      },
+      {
+        src: recovr2,
+        alt: "recoVR Process - Lean UX Methodology",
+      },
+      {
+        src: recovr3,
+        alt: "recoVR Research - Types and Causes of Phobias",
+      },
+      {
+        src: recovr4,
+        alt: "recoVR Research - Exposure Therapy and VR Benefits",
+      },
+      {
+        src: recovr5,
+        alt: "recoVR Analysis - Competitive Analysis and Persona",
+      },
+      {
+        src: recovr6,
+        alt: "recoVR Design - Storyboarding and Problem Statement",
+      },
+      {
+        src: recovr7,
+        alt: "recoVR Design - Brainstorming and Value Effort Matrix",
+      },
+      {
+        src: recovr8,
+        alt: "recoVR Solution - MVP Features and Target Phobias",
+      },
+      {
+        src: recovr9,
+        alt: "recoVR Design - Phobia Scenarios",
+      },
+      {
+        src: recovr10,
+        alt: "recoVR Design - User Flow for Acrophobia",
       },
     ] as ProjectImage[],
   },
