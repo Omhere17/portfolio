@@ -25,8 +25,8 @@ export const UXCompetencies = () => {
         "Card Sorting",
         "Design Systems",
         "Task Flows / User Flows",
-        "Service Blueprints",
-        "Accessibility",
+        "Gamification",
+        "Accessibility Design",
         "Data Visualization"
       ]
     },
@@ -35,8 +35,8 @@ export const UXCompetencies = () => {
       skills: [
         "Design Thinking",
         "User-Centered Design",
+        "Lean UX",
         "Problem Definition",
-        "Journey Mapping",
         "Service Blueprints"
       ]
     },
@@ -45,7 +45,8 @@ export const UXCompetencies = () => {
       skills: [
         "Agile & Scrum Methodologies",
         "Developer Handoff",
-        "Basic HTML/CSS, JavaScript & Bootstrap"
+        "Basic HTML/CSS, JavaScript & Bootstrap",
+        "Low Code & Low Code Tools"
       ]
     }
   ];
