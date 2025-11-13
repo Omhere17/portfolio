@@ -375,13 +375,13 @@ export default function Project() {
                 src={image.src}
                 alt={image.alt}
                 loading="lazy"
-                className="max-w-5xl w-full h-auto object-contain shadow-none"
+                className="max-w-6xl w-full h-auto object-contain shadow-none"
               />
             )}
             
             {/* Figma Embed */}
             {image.embedCode && (
-              <div className="max-w-5xl w-full py-8">
+              <div className="max-w-6xl w-full py-8">
                 <div 
                   className="w-full h-[70vh] bg-muted/20 rounded-lg overflow-hidden"
                   dangerouslySetInnerHTML={{ 
@@ -397,14 +397,14 @@ export default function Project() {
       {/* View Other Projects Section */}
       <section className="py-20 bg-muted/30 mt-16">
         <div className="container mx-auto px-6">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-5xl mx-auto">View Other Projects</h2>
+            <h2 className="text-2xl lg:text-3xl font-bold mb-8 max-w-6xl mx-auto">View Other Projects</h2>
             
             <Carousel
               opts={{
                 align: "start",
                 loop: true,
               }}
-              className="w-full max-w-5xl mx-auto"
+              className="w-full max-w-6xl mx-auto"
             >
               <CarouselContent>
                 {otherProjects.map((otherProject) => (
