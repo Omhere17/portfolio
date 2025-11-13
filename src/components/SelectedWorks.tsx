@@ -21,15 +21,6 @@ const projects = [
     link: "/project/recovr",
   },
   {
-    id: "strava-gamification",
-    title: "Gamifying the Strava Experience",
-    description:
-      "Gamified the Strava app using the Octalysis Framework. Designed and tested UI concepts to boost weak core drives, improving user motivation and engagement.",
-    tags: ["UX Research", "UI Design", "Prototyping"],
-    image: stravaCover,
-    link: "/project/strava-gamification",
-  },
-  {
     id: "moolo-iot",
     title: "IoT-Based Kids Tangible Product",
     description:
@@ -37,6 +28,15 @@ const projects = [
     tags: ["Tangible Interaction", "IOT", "Machine learning"],
     image: mooloCover,
     link: "/project/moolo-iot",
+  },
+  {
+    id: "strava-gamification",
+    title: "Gamifying the Strava Experience",
+    description:
+      "Gamified the Strava app using the Octalysis Framework. Designed and tested UI concepts to boost weak core drives, improving user motivation and engagement.",
+    tags: ["UX Research", "UI Design", "Prototyping"],
+    image: stravaCover,
+    link: "/project/strava-gamification",
   },
   {
     id: "shelter-to-home",
