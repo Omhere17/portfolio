@@ -69,7 +69,7 @@ const ProjectImage = ({ src, alt }: { src: string; alt: string }) => {
         src={src}
         alt={alt}
         onLoad={() => setIsLoaded(true)}
-        className={`w-full h-full object-contain transition-all duration-500 group-hover:scale-105 ${
+        className={`w-full h-full object-cover transition-all duration-500 group-hover:scale-105 ${
           isLoaded ? "opacity-100" : "opacity-0"
         }`}
       />
