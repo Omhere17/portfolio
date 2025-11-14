@@ -26,10 +26,6 @@ const App = () => {
     }
   }, []);
 
-  if (showLoading) {
-    return <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />;
-  }
-
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
@@ -47,6 +43,7 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
+        {showLoading && <LoadingScreen onLoadingComplete={() => setShowLoading(false)} />}
       </TooltipProvider>
     </QueryClientProvider>
   );
