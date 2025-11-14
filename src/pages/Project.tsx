@@ -88,6 +88,16 @@ import recovr16 from "@/assets/recovr-16.png";
 import recovr17 from "@/assets/recovr-17.png";
 import recovr18 from "@/assets/recovr-18.png";
 import recovr19 from "@/assets/recovr-19.png";
+import eclipseraCover from "@/assets/eclipsera-cover.png";
+import eclipsera1 from "@/assets/eclipsera-1.png";
+import eclipsera2 from "@/assets/eclipsera-2.png";
+import eclipsera3 from "@/assets/eclipsera-3.png";
+import eclipsera4 from "@/assets/eclipsera-4.png";
+import eclipsera5 from "@/assets/eclipsera-5.png";
+import eclipsera6 from "@/assets/eclipsera-6.png";
+import eclipsera7 from "@/assets/eclipsera-7.png";
+import eclipsera8 from "@/assets/eclipsera-8.png";
+import eclipsera9 from "@/assets/eclipsera-9.png";
 
 interface ProjectImage {
   src: string;
@@ -439,6 +449,56 @@ const projects = [
       {
         src: recovr19,
         alt: "recoVR - Thank You for Joining the Journey",
+      },
+    ] as ProjectImage[],
+  },
+  {
+    id: "eclipsera",
+    title: "Eclipsera - Physical Board Game Design",
+    description:
+      "A sci-fi adventure board game where two universes collide. Players must close portals, face demons, and defeat a final villain to restore balance through strategic decision-making and suspense.",
+    tags: ["Game Design", "Physical Product", "Prototyping"],
+    coverImage: eclipseraCover,
+    projectImages: [
+      {
+        src: eclipsera1,
+        alt: "Eclipsera - Game box showing the title and tagline",
+      },
+      {
+        src: eclipsera2,
+        alt: "Eclipsera - Mind map exploring sci-fi themes",
+      },
+      {
+        src: eclipsera3,
+        alt: "Eclipsera - Concept description and game premise",
+      },
+      {
+        src: eclipsera4,
+        alt: "Eclipsera - Introduction to concept and theme",
+      },
+      {
+        src: eclipsera5,
+        alt: "Eclipsera - The experience we wanted players to have",
+      },
+      {
+        src: eclipsera6,
+        alt: "Eclipsera - Stage 1: The Initial Prototype",
+      },
+      {
+        src: eclipsera7,
+        alt: "Eclipsera - Testing and observing initial feedback",
+      },
+      {
+        src: eclipsera8,
+        alt: "Eclipsera - Stage 2: The Mid-Fidelity Prototype",
+      },
+      {
+        src: eclipsera9,
+        alt: "Eclipsera - Testing and observation of improvements",
+      },
+      {
+        src: eclipsera9,
+        alt: "Eclipsera - Stage 3: Final game development",
       },
     ] as ProjectImage[],
   },
