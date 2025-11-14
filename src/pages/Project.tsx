@@ -98,6 +98,11 @@ import eclipsera6 from "@/assets/eclipsera-6.png";
 import eclipsera7 from "@/assets/eclipsera-7.png";
 import eclipsera8 from "@/assets/eclipsera-8.png";
 import eclipsera9 from "@/assets/eclipsera-9.png";
+import eclipsera10 from "@/assets/eclipsera-10.png";
+import eclipsera11 from "@/assets/eclipsera-11.png";
+import eclipsera12 from "@/assets/eclipsera-12.png";
+import eclipsera13 from "@/assets/eclipsera-13.png";
+import eclipsera14 from "@/assets/eclipsera-14.png";
 
 interface ProjectImage {
   src: string;
@@ -499,6 +504,26 @@ const projects = [
       {
         src: eclipsera9,
         alt: "Eclipsera - Stage 3: Final game development",
+      },
+      {
+        src: eclipsera10,
+        alt: "Eclipsera - Mood Board and Final board design",
+      },
+      {
+        src: eclipsera11,
+        alt: "Eclipsera - Cards: Tool cards and Demon cards with designs",
+      },
+      {
+        src: eclipsera12,
+        alt: "Eclipsera - The Spinning wheel concept, Pawns, and Instruction manual",
+      },
+      {
+        src: eclipsera13,
+        alt: "Eclipsera - Packaging design and Die line",
+      },
+      {
+        src: eclipsera14,
+        alt: "Eclipsera - Final prototype and team",
       },
     ] as ProjectImage[],
   },
