@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import recovrCover from "@/assets/recovr-cover.png";
 import kazeCover from "@/assets/kaze-cover.png";
+import eclipseraCover from "@/assets/eclipsera-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
@@ -62,11 +63,20 @@ const projects = [
     link: "/project/visual-representation",
   },
   {
+    id: "eclipsera",
+    title: "Eclipsera - Physical Board Game Design",
+    description:
+      "A sci-fi adventure board game where two universes collide. Players must close portals, face demons, and defeat a final villain to restore balance through strategic decision-making and suspense.",
+    tags: ["Game Design", "Physical Product", "Prototyping"],
+    image: eclipseraCover,
+    link: "/project/eclipsera",
+  },
+  {
     id: "kaze-airlines",
     title: "Kaze Airlines Branding",
     description:
-      "Designing with intent, blending innovation and aesthetics to create intuitive, user-centered experiences.",
-    tags: ["Branding", "Visual Design", "Visual Design"],
+      "A comprehensive branding project for Kaze Airlines, creating a cohesive visual identity that captures the essence of modern air travel with Japanese-inspired elegance and simplicity.",
+    tags: ["Branding", "Visual Identity", "UI Design"],
     image: kazeCover,
     link: "/project/kaze-airlines",
   },

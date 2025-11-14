@@ -7,7 +7,7 @@ import recovrCover from "@/assets/recovr-cover.png";
 import stravaCover from "@/assets/strava-cover.png";
 import mooloCover from "@/assets/moolo-cover.png";
 import shelterCover from "@/assets/shelter-cover.png";
-import kazeCover from "@/assets/kaze-cover.png";
+import eclipseraCover from "@/assets/eclipsera-cover.png";
 import visualRepCover from "@/assets/visual-rep-cover.png";
 
 const projects = [
@@ -48,13 +48,13 @@ const projects = [
     link: "/project/shelter-to-home",
   },
   {
-    id: "kaze-airlines",
-    title: "Kaze Airlines Branding",
+    id: "eclipsera",
+    title: "Eclipsera - Physical Board Game Design",
     description:
-      "A comprehensive branding project for Kaze Airlines, creating a cohesive visual identity that captures the essence of modern air travel with Japanese-inspired elegance and simplicity.",
-    tags: ["Branding", "Visual Identity", "UI Design"],
-    image: kazeCover,
-    link: "/project/kaze-airlines",
+      "A sci-fi adventure board game where two universes collide. Players must close portals, face demons, and defeat a final villain to restore balance through strategic decision-making and suspense.",
+    tags: ["Game Design", "Physical Product", "Prototyping"],
+    image: eclipseraCover,
+    link: "/project/eclipsera",
   },
   {
     id: "visual-representation",
