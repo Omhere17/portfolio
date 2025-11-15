@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ExternalLink } from "lucide-react";
 
 export const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -48,12 +49,12 @@ export const CustomCursor = () => {
     >
       <div className={`w-full h-full flex items-center justify-center ${
         isOverProject 
-          ? 'rounded-full bg-black dark:bg-white text-white dark:text-black text-sm font-medium' 
+          ? 'rounded-full bg-black/40 dark:bg-white/40 text-white dark:text-black' 
           : isOverText 
-            ? 'bg-primary' 
-            : 'rounded-full bg-black dark:bg-white'
+            ? 'bg-primary/60' 
+            : 'rounded-full bg-black/50 dark:bg-white/50'
       }`}>
-        {isOverProject && <span>view</span>}
+        {isOverProject && <ExternalLink className="w-6 h-6" />}
       </div>
     </div>
   );
