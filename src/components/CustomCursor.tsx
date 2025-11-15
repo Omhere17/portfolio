@@ -4,7 +4,6 @@ import { ExternalLink } from "lucide-react";
 export const CustomCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isOverText, setIsOverText] = useState(false);
-  const [isOverProject, setIsOverProject] = useState(false);
 
   useEffect(() => {
     const updatePosition = (e: MouseEvent) => {
@@ -12,14 +11,10 @@ export const CustomCursor = () => {
       
       const target = e.target as HTMLElement;
       
-      // Check if hovering over project articles
-      const projectArticle = target.closest('article');
-      setIsOverProject(!!projectArticle);
-      
       // Check if hovering over text elements (excluding buttons and no-custom-cursor elements)
       const isText = target.matches('p, h1, h2, h3, h4, h5, h6, span, a, li, label');
       const hasNoCustomCursor = target.closest('.no-custom-cursor');
-      setIsOverText(isText && !projectArticle && !hasNoCustomCursor);
+      setIsOverText(isText && !hasNoCustomCursor);
     };
 
     window.addEventListener("mousemove", updatePosition);
@@ -30,7 +25,6 @@ export const CustomCursor = () => {
   }, []);
 
   const getSize = () => {
-    if (isOverProject) return { width: 80, height: 80 };
     if (isOverText) return { width: 3, height: 32 };
     return { width: 24, height: 24 };
   };
@@ -48,13 +42,10 @@ export const CustomCursor = () => {
       }}
     >
       <div className={`w-full h-full flex items-center justify-center ${
-        isOverProject 
-          ? 'rounded-full bg-black/40 dark:bg-white/40 text-white dark:text-black' 
-          : isOverText 
-            ? 'bg-primary/60' 
-            : 'rounded-full bg-black/50 dark:bg-white/50'
+        isOverText 
+          ? 'bg-primary/60' 
+          : 'rounded-full bg-black/50 dark:bg-white/50 border-2 border-black dark:border-white'
       }`}>
-        {isOverProject && <ExternalLink className="w-6 h-6" />}
       </div>
     </div>
   );
